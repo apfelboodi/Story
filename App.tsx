@@ -1,7 +1,6 @@
 
 import React, { useState, useCallback } from 'react';
 import type { Level, StoryTopic, StoryContent } from './types';
-import { generateStoryAndTranslation } from './services/geminiService';
 import { getTopicsForLevel } from './data/topics';
 import LevelSelector from './components/LevelSelector';
 import TopicList from './components/TopicList';
@@ -12,7 +11,6 @@ const App: React.FC = () => {
   const [topics, setTopics] = useState<StoryTopic[]>([]);
   const [selectedTopic, setSelectedTopic] = useState<StoryTopic | null>(null);
   const [storyContent, setStoryContent] = useState<StoryContent | null>(null);
-  const [isLoadingStory, setIsLoadingStory] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleLevelSelect = useCallback((selectedLevel: Level) => {
@@ -23,22 +21,22 @@ const App: React.FC = () => {
     setError(null);
   }, []);
 
-  const handleTopicSelect = useCallback(async (topic: StoryTopic) => {
+  const handleTopicSelect = useCallback((topic: StoryTopic) => {
     if (!level) return;
     setSelectedTopic(topic);
-    setStoryContent(null);
-    setError(null);
-    setIsLoadingStory(true);
-    try {
-      const { germanStory, persianTranslation } = await generateStoryAndTranslation(level, topic.germanTitle);
-      // Now, we also pass the pre-existing audio URL from the topic itself
-      setStoryContent({ germanStory, persianTranslation, audioUrl: topic.audioUrl });
-    } catch (e) {
-      console.error(e);
-      const errorMessage = e instanceof Error ? e.message : 'Ein unbekannter Fehler ist aufgetreten.';
-      setError(errorMessage);
-    } finally {
-      setIsLoadingStory(false);
+    setError(null); // Reset error
+    
+    // If the story content is pre-defined in the topic
+    if (topic.germanStory && topic.persianTranslation) {
+        setStoryContent({
+            germanStory: topic.germanStory,
+            persianTranslation: topic.persianTranslation,
+            audioUrl: topic.audioUrl,
+        });
+    } else {
+        // Handle cases where the story text is missing
+        setStoryContent(null);
+        setError(`Die Geschichte für "${topic.germanTitle}" ist noch nicht verfügbar.`);
     }
   }, [level]);
 
@@ -77,7 +75,6 @@ const App: React.FC = () => {
 
     if (selectedTopic) {
         return <StoryViewer 
-            isLoading={isLoadingStory}
             storyContent={storyContent}
             onBack={handleBackToTopics} 
             topicTitle={selectedTopic.germanTitle}
