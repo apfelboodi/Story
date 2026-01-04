@@ -8,10 +8,12 @@ interface StoryViewerProps {
   storyContent: StoryContent | null;
   onBack: () => void;
   isLoading: boolean;
-  isLoadingAudio: boolean;
   topicTitle: string;
   storyNumber: number;
   level: Level;
+  onGenerateAudio: () => void;
+  isGeneratingAudio: boolean;
+  audioError: string | null;
 }
 
 const LoadingSkeleton: React.FC = () => (
@@ -27,17 +29,56 @@ const LoadingSkeleton: React.FC = () => (
     </div>
 );
 
-const AudioLoadingSkeleton: React.FC = () => (
-    <div className="w-full h-14 bg-slate-100 rounded-lg flex items-center justify-center px-4 mb-6 animate-pulse">
-        <div className="flex items-center gap-3">
-            <svg className="animate-spin h-5 w-5 text-slate-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-            </svg>
-            <p className="text-slate-500 font-semibold">Audio wird geladen...</p>
+const AudioControl: React.FC<{
+    storyContent: StoryContent;
+    onGenerateAudio: () => void;
+    isGeneratingAudio: boolean;
+    audioError: string | null;
+}> = ({ storyContent, onGenerateAudio, isGeneratingAudio, audioError }) => {
+    const isQuotaError = audioError && (audioError.includes('RESOURCE_EXHAUSTED') || audioError.includes('quota'));
+    
+    if (storyContent.audioUrl) {
+        return (
+            <audio controls src={storyContent.audioUrl} className="w-full mb-6 rounded-lg">
+                Your browser does not support the audio element.
+            </audio>
+        );
+    }
+
+    return (
+        <div className="mb-6">
+            <button
+                onClick={onGenerateAudio}
+                disabled={isGeneratingAudio}
+                className="w-full h-14 bg-slate-800 text-white rounded-lg flex items-center justify-center px-4 transition-colors hover:bg-slate-700 disabled:bg-slate-400 disabled:cursor-wait"
+            >
+                {isGeneratingAudio ? (
+                    <>
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <span>Audio wird geladen...</span>
+                    </>
+                ) : (
+                    <span>Hören</span>
+                )}
+            </button>
+            {audioError && (
+                 <div className="mt-3 text-center p-3 bg-red-50 text-red-700 rounded-lg text-sm">
+                    <p className="font-bold">Fehler bei der Audioerstellung</p>
+                    {isQuotaError ? (
+                        <p className="mt-1 font-vazir">
+                          متاسفانه سهمیه رایگان شما تمام شده. لطفا <a href="https://ai.google.dev/gemini-api/docs/billing" target="_blank" rel="noopener noreferrer" className="underline font-bold">Billing را فعال کنید</a>.
+                        </p>
+                    ) : (
+                        <p className="mt-1 text-xs" dir="ltr"><code>{audioError}</code></p>
+                    )}
+                </div>
+            )}
         </div>
-    </div>
-);
+    );
+};
 
 
 const TranslateButton: React.FC<{onClick: () => void}> = ({ onClick }) => (
@@ -50,7 +91,7 @@ const TranslateButton: React.FC<{onClick: () => void}> = ({ onClick }) => (
 );
 
 
-const StoryViewer: React.FC<StoryViewerProps> = ({ storyContent, onBack, isLoading, isLoadingAudio, topicTitle, storyNumber, level }) => {
+const StoryViewer: React.FC<StoryViewerProps> = ({ storyContent, onBack, isLoading, topicTitle, storyNumber, level, onGenerateAudio, isGeneratingAudio, audioError }) => {
     const [showTranslation, setShowTranslation] = useState(false);
     const styles = LEVEL_STYLES[level];
 
@@ -93,20 +134,17 @@ const StoryViewer: React.FC<StoryViewerProps> = ({ storyContent, onBack, isLoadi
                     <div dir="ltr" className="text-left mb-6">
                         <p className="text-lg leading-relaxed whitespace-pre-wrap text-slate-800 text-justify">{storyContent.germanStory}</p>
                     </div>
+                    
+                    <AudioControl 
+                        storyContent={storyContent}
+                        onGenerateAudio={onGenerateAudio}
+                        isGeneratingAudio={isGeneratingAudio}
+                        audioError={audioError}
+                    />
 
-                    <div className="text-right mb-6">
+                    <div className="text-right mb-6 border-t pt-6">
                         <TranslateButton onClick={toggleTranslation} />
                     </div>
-
-                    {isLoadingAudio ? (
-                        <AudioLoadingSkeleton />
-                    ) : (
-                        storyContent.audioUrl && (
-                            <audio controls src={storyContent.audioUrl} className="w-full mb-6 rounded-lg">
-                                Your browser does not support the audio element.
-                            </audio>
-                        )
-                    )}
 
                     {showTranslation && (
                         <div className="border-t pt-6 animate-fade-in">
