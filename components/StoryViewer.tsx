@@ -7,24 +7,10 @@ import { LEVEL_STYLES } from '../constants';
 interface StoryViewerProps {
   storyContent: StoryContent | null;
   onBack: () => void;
-  isLoading: boolean;
   topicTitle: string;
   storyNumber: number;
   level: Level;
 }
-
-const LoadingSkeleton: React.FC = () => (
-    <div className="space-y-4 animate-pulse">
-        <div className="h-8 bg-slate-200 rounded w-3/4"></div>
-        <div className="space-y-2">
-            <div className="h-4 bg-slate-200 rounded"></div>
-            <div className="h-4 bg-slate-200 rounded w-5/6"></div>
-            <div className="h-4 bg-slate-200 rounded w-full"></div>
-            <div className="h-4 bg-slate-200 rounded w-2/3"></div>
-        </div>
-        <div className="h-12 bg-slate-200 rounded w-full mt-6"></div>
-    </div>
-);
 
 const AudioPlayer: React.FC<{ audioUrl?: string }> = ({ audioUrl }) => {
     if (!audioUrl) {
@@ -49,7 +35,7 @@ const TranslateButton: React.FC<{onClick: () => void}> = ({ onClick }) => (
 );
 
 
-const StoryViewer: React.FC<StoryViewerProps> = ({ storyContent, onBack, isLoading, topicTitle, storyNumber, level }) => {
+const StoryViewer: React.FC<StoryViewerProps> = ({ storyContent, onBack, topicTitle, storyNumber, level }) => {
     const [showTranslation, setShowTranslation] = useState(false);
     const styles = LEVEL_STYLES[level];
 
@@ -78,12 +64,7 @@ const StoryViewer: React.FC<StoryViewerProps> = ({ storyContent, onBack, isLoadi
                 </div>
             </div>
 
-            {isLoading ? (
-                 <div>
-                    <p className="text-center text-slate-500 mb-4">Generiere Geschichte...</p>
-                    <LoadingSkeleton />
-                 </div>
-            ) : storyContent ? (
+            {storyContent ? (
                 <div>
                     <div className="text-right mb-4">
                         <TranslateButton onClick={toggleTranslation} />
