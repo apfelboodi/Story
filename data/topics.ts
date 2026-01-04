@@ -1,11 +1,23 @@
 
 import type { Level, StoryTopic } from '../types';
 
-// NOTE: Replace these placeholder URLs with your actual audio file links.
+// NOTE: Add your static stories and translations here.
 export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
   A1: [
-    { germanTitle: "Ein Tag im Park", persianTitle: "یک روز در پارک", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a1-story-1.mp3" },
-    { germanTitle: "Meine Familie", persianTitle: "خانواده من", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a1-story-2.mp3" },
+    { 
+      germanTitle: "Ein Tag im Park", 
+      persianTitle: "یک روز در پارک", 
+      audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a1-story-1.mp3",
+      germanStory: "Heute ist das Wetter schön. Anna geht in den Park. Sie sieht viele Blumen. Die Blumen sind rot und gelb. Ein Hund spielt mit einem Ball. Anna lacht. Sie isst ein Eis. Das Eis ist kalt und süß. Es ist ein schöner Tag.",
+      persianTranslation: "امروز هوا خوب است. آنا به پارک می‌رود. او گل‌های زیادی می‌بیند. گل‌ها قرمز و زرد هستند. یک سگ با یک توپ بازی می‌کند. آنا می‌خندد. او یک بستنی می‌خورد. بستنی سرد و شیرین است. این یک روز زیباست."
+    },
+    { 
+      germanTitle: "Meine Familie", 
+      persianTitle: "خانواده من", 
+      audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a1-story-2.mp3",
+      germanStory: "Ich heiße Leo. Das ist meine Familie. Mein Vater heißt Thomas. Meine Mutter heißt Maria. Ich habe eine Schwester. Sie heißt Lena. Wir haben auch eine Katze. Unsere Katze heißt Mimi. Wir wohnen zusammen in einem Haus.",
+      persianTranslation: "اسم من لئو است. این خانواده من است. اسم پدرم توماس است. اسم مادرم ماریا است. من یک خواهر دارم. اسم او لنا است. ما یک گربه هم داریم. اسم گربه ما میمی است. ما با هم در یک خانه زندگی می‌کنیم."
+    },
     { germanTitle: "Einkaufen im Supermarkt", persianTitle: "خرید در سوپرمارکت" },
     { germanTitle: "Das Wetter heute", persianTitle: "آب و هوای امروز" },
     { germanTitle: "Mein Hobby", persianTitle: "سرگرمی من" },
@@ -101,7 +113,13 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
     { germanTitle: "Eine gute Nacht", persianTitle: "یک شب بخیر" },
   ],
   A2: [
-    { germanTitle: "Ein Wochenende in Berlin", persianTitle: "یک آخر هفته در برلین", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a2-story-1.mp3" },
+    { 
+      germanTitle: "Ein Wochenende in Berlin", 
+      persianTitle: "یک آخر هفته در برلین", 
+      audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a2-story-1.mp3",
+      germanStory: "Letztes Wochenende habe ich Berlin besucht. Ich bin mit dem Zug gefahren. Am Samstag habe ich das Brandenburger Tor gesehen. Es war sehr beeindruckend. Danach habe ich eine Bootsfahrt auf der Spree gemacht. Abends habe ich in einem Restaurant Currywurst gegessen. Berlin ist eine tolle Stadt.",
+      persianTranslation: "آخر هفته گذشته من از برلین دیدن کردم. من با قطار سفر کردم. روز شنبه من دروازه براندنبورگ را دیدم. بسیار تاثیرگذار بود. بعد از آن یک سفر با قایق روی رودخانه شپری انجام دادم. شب در یک رستوران کاری‌ورست خوردم. برلین یک شهر عالی است."
+    },
     { germanTitle: "Ein Brief an einen Freund", persianTitle: "نامه‌ای به یک دوست", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a2-story-2.mp3" },
     { germanTitle: "Beim Arzt", persianTitle: "نزد دکتر" },
     { germanTitle: "Ein Rezept kochen", persianTitle: "پختن یک دستور غذا" },
@@ -199,7 +217,13 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
     { germanTitle: "Ein Tag in der Natur", persianTitle: "یک روز در طبیعت" },
   ],
   B1: [
-    { germanTitle: "Eine lustige Kindheitserinnerung", persianTitle: "یک خاطره خنده‌دار از دوران کودکی", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b1-story-1.mp3" },
+    { 
+      germanTitle: "Eine lustige Kindheitserinnerung", 
+      persianTitle: "یک خاطره خنده‌دار از دوران کودکی", 
+      audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b1-story-1.mp3",
+      germanStory: "Ich erinnere mich an einen Tag, als ich ungefähr acht Jahre alt war. Meine Familie und ich waren im Zirkus. Ein Clown kam zu mir und wollte mir einen Ballon geben. Ich hatte aber ein bisschen Angst vor ihm, weil er so bunte Haare hatte. Ich rannte weg und versteckte mich hinter meinem Vater. Alle haben gelacht, und heute lache ich auch darüber.",
+      persianTranslation: "من روزی را به یاد می‌آورم که تقریباً هشت ساله بودم. من و خانواده‌ام در سیرک بودیم. یک دلقک به سمت من آمد و می‌خواست به من یک بادکنک بدهد. اما من کمی از او می‌ترسیدم، چون موهای خیلی رنگارنگی داشت. من فرار کردم و پشت پدرم قایم شدم. همه خندیدند، و امروز من هم به آن می‌خندم."
+    },
     { germanTitle: "Umweltschutz in der Stadt", persianTitle: "حفاظت از محیط زیست در شهر", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b1-story-2.mp3" },
     { germanTitle: "Ein Bewerbungsgespräch", persianTitle: "یک مصاحبه شغلی" },
     { germanTitle: "Die Vorteile des Sprachenlernens", persianTitle: "مزایای یادگیری زبان" },
@@ -295,7 +319,13 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
     { germanTitle: "Ein Tag im Leben eines Künstlers", persianTitle: "یک روز از زندگی یک هنرمند" },
   ],
   B2: [
-    { germanTitle: "Die Herausforderungen des Studiums im Ausland", persianTitle: "چالش‌های تحصیل در خارج از کشور", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b2-story-1.mp3" },
+    { 
+      germanTitle: "Die Herausforderungen des Studiums im Ausland", 
+      persianTitle: "چالش‌های تحصیل در خارج از کشور", 
+      audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b2-story-1.mp3",
+      germanStory: "Ein Studium im Ausland ist zweifellos eine bereichernde Erfahrung, aber es bringt auch zahlreiche Herausforderungen mit sich. Zunächst muss man sich an ein neues akademisches System gewöhnen, das sich oft stark vom Heimatland unterscheidet. Zudem stellt die Sprachbarriere anfangs eine große Hürde dar, nicht nur im Hörsaal, sondern auch im Alltag. Man muss lernen, selbstständig zu sein, denn das soziale Netz von Familie und Freunden fehlt. Trotz dieser Schwierigkeiten fördert es die persönliche Entwicklung ungemein.",
+      persianTranslation: "تحصیل در خارج از کشور بدون شک تجربه‌ای غنی‌کننده است، اما چالش‌های متعددی را نیز به همراه دارد. ابتدا، فرد باید به یک سیستم آکادمیک جدید عادت کند که اغلب تفاوت زیادی با کشور مبدأ دارد. علاوه بر این، مانع زبانی در ابتدا یک مشکل بزرگ است، نه تنها در کلاس درس، بلکه در زندگی روزمره. فرد باید یاد بگیرد که مستقل باشد، زیرا شبکه اجتماعی خانواده و دوستان وجود ندارد. با وجود این مشکلات، این تجربه رشد شخصی را به طور فوق‌العاده‌ای تقویت می‌کند."
+    },
     { germanTitle: "Ein gesellschaftliches Problem diskutieren", persianTitle: "بحث در مورد یک مشکل اجتماعی", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b2-story-2.mp3" },
     { germanTitle: "Die Rolle der Medien in der modernen Welt", persianTitle: "نقش رسانه‌ها در دنیای مدرن" },
     { germanTitle: "Ein historisches Ereignis in Deutschland", persianTitle: "یک رویداد تاریخی در آلمان" },
