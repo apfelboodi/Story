@@ -1,10 +1,11 @@
 
 import type { Level, StoryTopic } from '../types';
 
+// NOTE: Replace these placeholder URLs with your actual audio file links.
 export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
   A1: [
-    { germanTitle: "Ein Tag im Park", persianTitle: "یک روز در پارک" },
-    { germanTitle: "Meine Familie", persianTitle: "خانواده من" },
+    { germanTitle: "Ein Tag im Park", persianTitle: "یک روز در پارک", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a1-story-1.mp3" },
+    { germanTitle: "Meine Familie", persianTitle: "خانواده من", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a1-story-2.mp3" },
     { germanTitle: "Einkaufen im Supermarkt", persianTitle: "خرید در سوپرمارکت" },
     { germanTitle: "Das Wetter heute", persianTitle: "آب و هوای امروز" },
     { germanTitle: "Mein Hobby", persianTitle: "سرگرمی من" },
@@ -100,8 +101,8 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
     { germanTitle: "Eine gute Nacht", persianTitle: "یک شب بخیر" },
   ],
   A2: [
-    { germanTitle: "Ein Wochenende in Berlin", persianTitle: "یک آخر هفته در برلین" },
-    { germanTitle: "Ein Brief an einen Freund", persianTitle: "نامه‌ای به یک دوست" },
+    { germanTitle: "Ein Wochenende in Berlin", persianTitle: "یک آخر هفته در برلین", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a2-story-1.mp3" },
+    { germanTitle: "Ein Brief an einen Freund", persianTitle: "نامه‌ای به یک دوست", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a2-story-2.mp3" },
     { germanTitle: "Beim Arzt", persianTitle: "نزد دکتر" },
     { germanTitle: "Ein Rezept kochen", persianTitle: "پختن یک دستور غذا" },
     { germanTitle: "Mein letzter Urlaub", persianTitle: "آخرین تعطیلات من" },
@@ -198,8 +199,8 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
     { germanTitle: "Ein Tag in der Natur", persianTitle: "یک روز در طبیعت" },
   ],
   B1: [
-    { germanTitle: "Eine lustige Kindheitserinnerung", persianTitle: "یک خاطره خنده‌دار از دوران کودکی" },
-    { germanTitle: "Umweltschutz in der Stadt", persianTitle: "حفاظت از محیط زیست در شهر" },
+    { germanTitle: "Eine lustige Kindheitserinnerung", persianTitle: "یک خاطره خنده‌دار از دوران کودکی", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b1-story-1.mp3" },
+    { germanTitle: "Umweltschutz in der Stadt", persianTitle: "حفاظت از محیط زیست در شهر", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b1-story-2.mp3" },
     { germanTitle: "Ein Bewerbungsgespräch", persianTitle: "یک مصاحبه شغلی" },
     { germanTitle: "Die Vorteile des Sprachenlernens", persianTitle: "مزایای یادگیری زبان" },
     { germanTitle: "Eine Reise planen", persianTitle: "برنامه‌ریزی برای یک سفر" },
@@ -294,8 +295,8 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
     { germanTitle: "Ein Tag im Leben eines Künstlers", persianTitle: "یک روز از زندگی یک هنرمند" },
   ],
   B2: [
-    { germanTitle: "Die Herausforderungen des Studiums im Ausland", persianTitle: "چالش‌های تحصیل در خارج از کشور" },
-    { germanTitle: "Ein gesellschaftliches Problem diskutieren", persianTitle: "بحث در مورد یک مشکل اجتماعی" },
+    { germanTitle: "Die Herausforderungen des Studiums im Ausland", persianTitle: "چالش‌های تحصیل در خارج از کشور", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b2-story-1.mp3" },
+    { germanTitle: "Ein gesellschaftliches Problem diskutieren", persianTitle: "بحث در مورد یک مشکل اجتماعی", audioUrl: "https://storage.googleapis.com/audio-samples-for-app/b2-story-2.mp3" },
     { germanTitle: "Die Rolle der Medien in der modernen Welt", persianTitle: "نقش رسانه‌ها در دنیای مدرن" },
     { germanTitle: "Ein historisches Ereignis in Deutschland", persianTitle: "یک رویداد تاریخی در آلمان" },
     { germanTitle: "Die Zukunft der Arbeit", persianTitle: "آینده کار" },
