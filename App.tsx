@@ -13,8 +13,9 @@ const App: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState<StoryTopic | null>(null);
   const [storyContent, setStoryContent] = useState<StoryContent | null>(null);
   const [isLoadingStory, setIsLoadingStory] = useState(false);
-  const [isLoadingAudio, setIsLoadingAudio] = useState(false);
+  const [isGeneratingAudio, setIsGeneratingAudio] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [audioError, setAudioError] = useState<string | null>(null);
 
   const handleLevelSelect = useCallback((selectedLevel: Level) => {
     setLevel(selectedLevel);
@@ -22,6 +23,7 @@ const App: React.FC = () => {
     setStoryContent(null);
     setTopics(getTopicsForLevel(selectedLevel));
     setError(null);
+    setAudioError(null);
   }, []);
 
   const handleTopicSelect = useCallback(async (topic: StoryTopic) => {
@@ -29,29 +31,35 @@ const App: React.FC = () => {
     setSelectedTopic(topic);
     setStoryContent(null);
     setError(null);
+    setAudioError(null);
     setIsLoadingStory(true);
-    setIsLoadingAudio(false);
     try {
-      // First, get the text content
       const { germanStory, persianTranslation } = await generateStoryAndTranslation(level, topic.germanTitle);
-      // Display text immediately
-      setStoryContent({ germanStory, persianTranslation, audioUrl: '' });
-      setIsLoadingStory(false);
-
-      // Then, generate audio in the background
-      setIsLoadingAudio(true);
-      const audioUrl = await generateAudio(germanStory, level);
-      setStoryContent(prev => prev ? { ...prev, audioUrl } : null);
-      setIsLoadingAudio(false);
-
+      setStoryContent({ germanStory, persianTranslation });
     } catch (e) {
       console.error(e);
       const errorMessage = e instanceof Error ? e.message : 'Ein unbekannter Fehler ist aufgetreten.';
       setError(errorMessage);
+    } finally {
       setIsLoadingStory(false);
-      setIsLoadingAudio(false);
     }
   }, [level]);
+
+  const handleGenerateAudio = useCallback(async () => {
+    if (!storyContent || !level) return;
+    setIsGeneratingAudio(true);
+    setAudioError(null);
+    try {
+      const audioUrl = await generateAudio(storyContent.germanStory, level);
+      setStoryContent(prev => prev ? { ...prev, audioUrl } : null);
+    } catch (e) {
+      console.error(e);
+      const errorMessage = e instanceof Error ? e.message : 'Audio konnte nicht erzeugt werden.';
+      setAudioError(errorMessage);
+    } finally {
+      setIsGeneratingAudio(false);
+    }
+  }, [storyContent, level]);
 
   const handleBackToLevels = () => {
     setLevel(null);
@@ -59,73 +67,46 @@ const App: React.FC = () => {
     setSelectedTopic(null);
     setStoryContent(null);
     setError(null);
+    setAudioError(null);
   };
 
   const handleBackToTopics = () => {
     setSelectedTopic(null);
     setStoryContent(null);
     setError(null);
+    setAudioError(null);
   };
   
   const renderContent = () => {
     if (error) {
-        const isQuotaError = error.includes('RESOURCE_EXHAUSTED') || error.includes('quota');
-
-        if (isQuotaError) {
-            return (
-                <div className="text-center p-8 bg-white rounded-lg shadow-md max-w-2xl mx-auto animate-fade-in">
-                    <h3 className="text-xl font-bold text-orange-600 mb-4 font-vazir">محدودیت استفاده رایگان</h3>
-                    <p className="text-slate-700 mb-5 text-center font-vazir leading-relaxed">
-                       متاسفانه شما از سهمیه رایگان روزانه برای ساخت فایل صوتی عبور کرده‌اید.
-                       <br/>
-                       برای استفاده نامحدود، نیاز است که قابلیت صورتحساب (Billing) را در پروژه Google Cloud خود فعال کنید.
-                    </p>
-                    <a 
-                        href="https://ai.google.dev/gemini-api/docs/billing" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-block px-6 py-2.5 mb-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-vazir font-bold"
-                    >
-                        آموزش فعال‌سازی صورتحساب
-                    </a>
-                    <p className="text-slate-600 bg-orange-50 p-3 rounded-md mb-6 text-left text-xs" dir="ltr">
-                        <strong>Technical Details:</strong> <code className="break-words">{error}</code>
-                    </p>
-                    <button
-                        onClick={selectedTopic ? handleBackToTopics : handleBackToLevels}
-                        className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-                    >
-                        Zurück
-                    </button>
-                </div>
-            );
-        }
-    
-        return (
-            <div className="text-center p-8 bg-white rounded-lg shadow-md max-w-2xl mx-auto">
-                <h3 className="text-xl font-bold text-red-600 mb-2">Ein Fehler ist aufgetreten</h3>
-                <p className="text-slate-700 bg-red-50 p-3 rounded-md mb-4 text-left" dir="ltr">
-                    <code>{error}</code>
-                </p>
-                <button
-                    onClick={selectedTopic ? handleBackToTopics : handleBackToLevels}
-                    className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-                >
-                    Zurück
-                </button>
-            </div>
-        );
+      // Main error for story generation
+      return (
+          <div className="text-center p-8 bg-white rounded-lg shadow-md max-w-2xl mx-auto">
+              <h3 className="text-xl font-bold text-red-600 mb-2">Fehler beim Laden der Geschichte</h3>
+              <p className="text-slate-700 bg-red-50 p-3 rounded-md mb-4 text-left" dir="ltr">
+                  <code>{error}</code>
+              </p>
+              <button
+                  onClick={selectedTopic ? handleBackToTopics : handleBackToLevels}
+                  className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+              >
+                  Zurück
+              </button>
+          </div>
+      );
     }
 
     if (selectedTopic) {
         return <StoryViewer 
             isLoading={isLoadingStory}
-            isLoadingAudio={isLoadingAudio}
             storyContent={storyContent}
             onBack={handleBackToTopics} 
             topicTitle={selectedTopic.germanTitle}
             storyNumber={selectedTopic.id + 1}
             level={level!}
+            onGenerateAudio={handleGenerateAudio}
+            isGeneratingAudio={isGeneratingAudio}
+            audioError={audioError}
         />;
     }
 
