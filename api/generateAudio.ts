@@ -3,30 +3,25 @@ import { GoogleGenAI, Modality } from "@google/genai";
 
 const ttsModel = 'gemini-2.5-flash-preview-tts';
 
-export default async function handler(request: Request) {
-    if (request.method !== 'POST') {
-        return new Response('Method Not Allowed', { status: 405 });
+// Using the standard Vercel Node.js handler signature
+export default async function handler(req, res) {
+    if (req.method !== 'POST') {
+        return res.status(405).json({ error: 'Method Not Allowed' });
     }
     
     const API_KEY = process.env.API_KEY;
     if (!API_KEY) {
         console.error("API_KEY environment variable not set on Vercel.");
-        return new Response(JSON.stringify({ error: "Server configuration error: API key not found." }), {
-            status: 500,
-            headers: { 'Content-Type': 'application/json' },
-        });
+        return res.status(500).json({ error: "Server configuration error: API key not found." });
     }
     
     const ai = new GoogleGenAI({ apiKey: API_KEY });
 
     try {
-        const { text, level } = await request.json();
+        const { text, level } = req.body;
 
         if (!text || !level) {
-            return new Response(JSON.stringify({ error: 'Text and level are required' }), {
-                status: 400,
-                headers: { 'Content-Type': 'application/json' },
-            });
+            return res.status(400).json({ error: 'Text and level are required' });
         }
         
         const speedInstructions: Record<string, string> = {
@@ -56,25 +51,17 @@ export default async function handler(request: Request) {
             throw new Error("Audio generation failed, no audio data received.");
         }
         
-        // Decode base64 to binary
-        const binaryString = atob(base64Audio);
-        const len = binaryString.length;
-        const bytes = new Uint8Array(len);
-        for (let i = 0; i < len; i++) {
-            bytes[i] = binaryString.charCodeAt(i);
-        }
+        // FIX: Replaced manual base64 decoding with the standard Node.js `Buffer.from` method.
+        // This is more efficient and corrects the "Cannot find name 'Buffer'" error in a Node.js environment
+        // when TypeScript is configured with Node types.
+        const audioBuffer = Buffer.from(base64Audio, 'base64');
 
-        // Return the raw audio data as a blob
-        return new Response(bytes.buffer, {
-            status: 200,
-            headers: { 'Content-Type': 'audio/pcm' },
-        });
+        // Return the raw audio data
+        res.setHeader('Content-Type', 'audio/pcm');
+        return res.status(200).send(audioBuffer);
 
     } catch (error) {
         console.error(error);
-        return new Response(JSON.stringify({ error: 'Failed to generate audio' }), {
-            status: 500,
-            headers: { 'Content-Type': 'application/json' },
-        });
+        return res.status(500).json({ error: 'Failed to generate audio' });
     }
 }
