@@ -49,17 +49,20 @@ export default async function handler(req, res) {
 
         const base64Audio = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
         if (!base64Audio) {
-            throw new Error("Audio generation failed, no audio data received.");
+            console.error('No audio data in Gemini response:', JSON.stringify(response, null, 2));
+            throw new Error("Audio generation failed, the API did not return audio data.");
         }
         
         const audioBuffer = Buffer.from(base64Audio, 'base64');
-
-        // Return the raw audio data
         res.setHeader('Content-Type', 'audio/pcm');
         return res.status(200).send(audioBuffer);
 
     } catch (error) {
-        console.error(error);
-        return res.status(500).json({ error: 'Failed to generate audio' });
+        console.error("--- ERROR IN /api/generateAudio ---", error);
+        const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred during audio generation.';
+        return res.status(500).json({ 
+            error: 'Fehler bei der Audioerstellung auf dem Server.',
+            details: errorMessage 
+        });
     }
 }
