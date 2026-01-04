@@ -1,5 +1,5 @@
 
-import { GoogleGenAI, Modality } from "@google/genai";
+import { GoogleGenAI } from "@google/genai";
 
 const ttsModel = 'gemini-2.5-flash-preview-tts';
 
@@ -37,7 +37,8 @@ export default async function handler(req, res) {
             model: ttsModel,
             contents: [{ parts: [{ text: audioPrompt }] }],
             config: {
-                responseModalities: [Modality.AUDIO],
+                // Using string literal to avoid potential enum issues.
+                responseModalities: ['AUDIO'],
                 speechConfig: {
                     voiceConfig: {
                         prebuiltVoiceConfig: { voiceName: 'Kore' },
@@ -51,9 +52,6 @@ export default async function handler(req, res) {
             throw new Error("Audio generation failed, no audio data received.");
         }
         
-        // FIX: Replaced manual base64 decoding with the standard Node.js `Buffer.from` method.
-        // This is more efficient and corrects the "Cannot find name 'Buffer'" error in a Node.js environment
-        // when TypeScript is configured with Node types.
         const audioBuffer = Buffer.from(base64Audio, 'base64');
 
         // Return the raw audio data
