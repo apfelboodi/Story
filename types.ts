@@ -5,6 +5,9 @@ export interface StoryTopic {
   id: number;
   germanTitle: string;
   persianTitle: string;
+  audioUrl?: string;
+  germanStory?: string;
+  persianTranslation?: string;
 }
 
 export interface StoryContent {
