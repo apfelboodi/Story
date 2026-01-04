@@ -1,7 +1,7 @@
 
 import React, { useState, useCallback } from 'react';
 import type { Level, StoryTopic, StoryContent } from './types';
-import { generateStoryAndTranslation, generateAudio } from './services/geminiService';
+import { generateStoryAndTranslation } from './services/geminiService';
 import { getTopicsForLevel } from './data/topics';
 import LevelSelector from './components/LevelSelector';
 import TopicList from './components/TopicList';
@@ -13,9 +13,7 @@ const App: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState<StoryTopic | null>(null);
   const [storyContent, setStoryContent] = useState<StoryContent | null>(null);
   const [isLoadingStory, setIsLoadingStory] = useState(false);
-  const [isGeneratingAudio, setIsGeneratingAudio] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [audioError, setAudioError] = useState<string | null>(null);
 
   const handleLevelSelect = useCallback((selectedLevel: Level) => {
     setLevel(selectedLevel);
@@ -23,7 +21,6 @@ const App: React.FC = () => {
     setStoryContent(null);
     setTopics(getTopicsForLevel(selectedLevel));
     setError(null);
-    setAudioError(null);
   }, []);
 
   const handleTopicSelect = useCallback(async (topic: StoryTopic) => {
@@ -31,11 +28,11 @@ const App: React.FC = () => {
     setSelectedTopic(topic);
     setStoryContent(null);
     setError(null);
-    setAudioError(null);
     setIsLoadingStory(true);
     try {
       const { germanStory, persianTranslation } = await generateStoryAndTranslation(level, topic.germanTitle);
-      setStoryContent({ germanStory, persianTranslation });
+      // Now, we also pass the pre-existing audio URL from the topic itself
+      setStoryContent({ germanStory, persianTranslation, audioUrl: topic.audioUrl });
     } catch (e) {
       console.error(e);
       const errorMessage = e instanceof Error ? e.message : 'Ein unbekannter Fehler ist aufgetreten.';
@@ -45,36 +42,18 @@ const App: React.FC = () => {
     }
   }, [level]);
 
-  const handleGenerateAudio = useCallback(async () => {
-    if (!storyContent || !level) return;
-    setIsGeneratingAudio(true);
-    setAudioError(null);
-    try {
-      const audioUrl = await generateAudio(storyContent.germanStory, level);
-      setStoryContent(prev => prev ? { ...prev, audioUrl } : null);
-    } catch (e) {
-      console.error(e);
-      const errorMessage = e instanceof Error ? e.message : 'Audio konnte nicht erzeugt werden.';
-      setAudioError(errorMessage);
-    } finally {
-      setIsGeneratingAudio(false);
-    }
-  }, [storyContent, level]);
-
   const handleBackToLevels = () => {
     setLevel(null);
     setTopics([]);
     setSelectedTopic(null);
     setStoryContent(null);
     setError(null);
-    setAudioError(null);
   };
 
   const handleBackToTopics = () => {
     setSelectedTopic(null);
     setStoryContent(null);
     setError(null);
-    setAudioError(null);
   };
   
   const renderContent = () => {
@@ -104,9 +83,6 @@ const App: React.FC = () => {
             topicTitle={selectedTopic.germanTitle}
             storyNumber={selectedTopic.id + 1}
             level={level!}
-            onGenerateAudio={handleGenerateAudio}
-            isGeneratingAudio={isGeneratingAudio}
-            audioError={audioError}
         />;
     }
 
