@@ -1,21 +1,24 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 
-// This is a Vercel serverless function.
-// The API key is read from Vercel's environment variables, NOT from the client.
-const API_KEY = process.env.API_KEY;
-if (!API_KEY) {
-    throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey: API_KEY });
-const textModel = 'gemini-flash-latest';
+const textModel = 'gemini-3-flash-preview';
 
 // By exporting a default function, we create a Vercel serverless function.
 export default async function handler(request: Request) {
     if (request.method !== 'POST') {
         return new Response('Method Not Allowed', { status: 405 });
     }
+
+    const API_KEY = process.env.API_KEY;
+    if (!API_KEY) {
+        console.error("API_KEY environment variable not set on Vercel.");
+        return new Response(JSON.stringify({ error: "Server configuration error: API key not found." }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
+    
+    const ai = new GoogleGenAI({ apiKey: API_KEY });
 
     try {
         const { level, topic } = await request.json();
