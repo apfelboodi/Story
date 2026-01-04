@@ -10,5 +10,5 @@ export interface StoryTopic {
 export interface StoryContent {
   germanStory: string;
   persianTranslation: string;
-  audioUrl: string;
+  audioUrl?: string;
 }
