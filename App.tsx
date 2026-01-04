@@ -69,6 +69,38 @@ const App: React.FC = () => {
   
   const renderContent = () => {
     if (error) {
+        const isQuotaError = error.includes('RESOURCE_EXHAUSTED') || error.includes('quota');
+
+        if (isQuotaError) {
+            return (
+                <div className="text-center p-8 bg-white rounded-lg shadow-md max-w-2xl mx-auto animate-fade-in">
+                    <h3 className="text-xl font-bold text-orange-600 mb-4 font-vazir">محدودیت استفاده رایگان</h3>
+                    <p className="text-slate-700 mb-5 text-center font-vazir leading-relaxed">
+                       متاسفانه شما از سهمیه رایگان روزانه برای ساخت فایل صوتی عبور کرده‌اید.
+                       <br/>
+                       برای استفاده نامحدود، نیاز است که قابلیت صورتحساب (Billing) را در پروژه Google Cloud خود فعال کنید.
+                    </p>
+                    <a 
+                        href="https://ai.google.dev/gemini-api/docs/billing" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-block px-6 py-2.5 mb-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-vazir font-bold"
+                    >
+                        آموزش فعال‌سازی صورتحساب
+                    </a>
+                    <p className="text-slate-600 bg-orange-50 p-3 rounded-md mb-6 text-left text-xs" dir="ltr">
+                        <strong>Technical Details:</strong> <code className="break-words">{error}</code>
+                    </p>
+                    <button
+                        onClick={selectedTopic ? handleBackToTopics : handleBackToLevels}
+                        className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    >
+                        Zurück
+                    </button>
+                </div>
+            );
+        }
+    
         return (
             <div className="text-center p-8 bg-white rounded-lg shadow-md max-w-2xl mx-auto">
                 <h3 className="text-xl font-bold text-red-600 mb-2">Ein Fehler ist aufgetreten</h3>
