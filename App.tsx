@@ -46,7 +46,8 @@ const App: React.FC = () => {
 
     } catch (e) {
       console.error(e);
-      setError('Fehler beim Laden der Geschichte. Bitte versuchen Sie es erneut.');
+      const errorMessage = e instanceof Error ? e.message : 'Ein unbekannter Fehler ist aufgetreten.';
+      setError(errorMessage);
       setIsLoadingStory(false);
       setIsLoadingAudio(false);
     }
@@ -69,8 +70,11 @@ const App: React.FC = () => {
   const renderContent = () => {
     if (error) {
         return (
-            <div className="text-center p-8">
-                <p className="text-red-500 text-xl mb-4">{error}</p>
+            <div className="text-center p-8 bg-white rounded-lg shadow-md max-w-2xl mx-auto">
+                <h3 className="text-xl font-bold text-red-600 mb-2">Ein Fehler ist aufgetreten</h3>
+                <p className="text-slate-700 bg-red-50 p-3 rounded-md mb-4 text-left" dir="ltr">
+                    <code>{error}</code>
+                </p>
                 <button
                     onClick={selectedTopic ? handleBackToTopics : handleBackToLevels}
                     className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
