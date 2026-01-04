@@ -102,8 +102,16 @@ export async function generateAudio(text: string, level: Level): Promise<string>
     });
 
     if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to fetch audio from backend');
+        const errorData = await response.json().catch(() => ({ 
+            error: 'Der Server hat eine ungültige Fehlerantwort gesendet.' 
+        }));
+        
+        // Combine the main error and details for a comprehensive message
+        const message = errorData.details 
+            ? `${errorData.error} Details: ${errorData.details}` 
+            : errorData.error;
+
+        throw new Error(message || 'Unbekannter Fehler beim Abrufen von Audio vom Backend.');
     }
     
     // The backend sends raw audio bytes. We process them here.
