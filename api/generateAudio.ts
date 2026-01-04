@@ -1,19 +1,23 @@
 
 import { GoogleGenAI, Modality } from "@google/genai";
 
-// This is a Vercel serverless function.
-const API_KEY = process.env.API_KEY;
-if (!API_KEY) {
-    throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey: API_KEY });
 const ttsModel = 'gemini-2.5-flash-preview-tts';
 
 export default async function handler(request: Request) {
     if (request.method !== 'POST') {
         return new Response('Method Not Allowed', { status: 405 });
     }
+    
+    const API_KEY = process.env.API_KEY;
+    if (!API_KEY) {
+        console.error("API_KEY environment variable not set on Vercel.");
+        return new Response(JSON.stringify({ error: "Server configuration error: API key not found." }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
+    
+    const ai = new GoogleGenAI({ apiKey: API_KEY });
 
     try {
         const { text, level } = await request.json();
