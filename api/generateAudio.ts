@@ -1,5 +1,6 @@
-
-import { GoogleGenAI } from "@google/genai";
+// FIX: Import `Modality` for use in the API call and `Buffer` to resolve the type error.
+import { GoogleGenAI, Modality } from "@google/genai";
+import { Buffer } from "buffer";
 
 const ttsModel = 'gemini-2.5-flash-preview-tts';
 
@@ -37,8 +38,8 @@ export default async function handler(req, res) {
             model: ttsModel,
             contents: [{ parts: [{ text: audioPrompt }] }],
             config: {
-                // Using string literal to avoid potential enum issues.
-                responseModalities: ['AUDIO'],
+                // FIX: Use `Modality.AUDIO` enum as per Gemini API guidelines instead of a string literal.
+                responseModalities: [Modality.AUDIO],
                 speechConfig: {
                     voiceConfig: {
                         prebuiltVoiceConfig: { voiceName: 'Kore' },
