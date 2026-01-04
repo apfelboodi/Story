@@ -3,31 +3,25 @@ import { GoogleGenAI, Type } from "@google/genai";
 
 const textModel = 'gemini-3-flash-preview';
 
-// By exporting a default function, we create a Vercel serverless function.
-export default async function handler(request: Request) {
-    if (request.method !== 'POST') {
-        return new Response('Method Not Allowed', { status: 405 });
+// Using the standard Vercel Node.js handler signature
+export default async function handler(req, res) {
+    if (req.method !== 'POST') {
+        return res.status(405).json({ error: 'Method Not Allowed' });
     }
 
     const API_KEY = process.env.API_KEY;
     if (!API_KEY) {
         console.error("API_KEY environment variable not set on Vercel.");
-        return new Response(JSON.stringify({ error: "Server configuration error: API key not found." }), {
-            status: 500,
-            headers: { 'Content-Type': 'application/json' },
-        });
+        return res.status(500).json({ error: "Server configuration error: API key not found." });
     }
     
     const ai = new GoogleGenAI({ apiKey: API_KEY });
 
     try {
-        const { level, topic } = await request.json();
+        const { level, topic } = req.body;
 
         if (!level || !topic) {
-            return new Response(JSON.stringify({ error: 'Level and topic are required' }), {
-                status: 400,
-                headers: { 'Content-Type': 'application/json' },
-            });
+            return res.status(400).json({ error: 'Level and topic are required' });
         }
         
         const storyLength = {
@@ -68,16 +62,10 @@ export default async function handler(request: Request) {
         const jsonStr = response.text.trim();
         const data = JSON.parse(jsonStr);
 
-        return new Response(JSON.stringify(data), {
-            status: 200,
-            headers: { 'Content-Type': 'application/json' },
-        });
+        return res.status(200).json(data);
 
     } catch (error) {
         console.error(error);
-        return new Response(JSON.stringify({ error: 'Failed to generate story' }), {
-            status: 500,
-            headers: { 'Content-Type': 'application/json' },
-        });
+        return res.status(500).json({ error: 'Failed to generate story' });
     }
 }
