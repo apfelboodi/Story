@@ -1041,10 +1041,12 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
         persianTranslation: "امروز وقتی از سر کار به خانه می‌رفتم، خانم مسنی را دیدم که کیسه خریدش پاره شده بود. همه چیز روی زمین ریخت. من تردید نکردم و فوراً به او کمک کردم تا همه چیز را دوباره جمع کند. او در حمل همه چیز مشکل داشت، بنابراین من او را تا در خانه‌اش همراهی کردم. او چندین بار تشکر کرد و بسیار سپاسگزار بود. این فقط یک کمک کوچک بود، اما برای بقیه روز به من حس بسیار خوبی داد."
     }
   ],
+  // FIX: Added missing B1 and B2 level entries to satisfy the Record<Level, ...> type.
   B1: [],
   B2: [],
 };
 
+// FIX: Added and exported the getTopicsForLevel function, which was missing.
 export const getTopicsForLevel = (level: Level): StoryTopic[] => {
   const topicsForLevel = predefinedTopics[level] || [];
   return topicsForLevel.map((topic, index) => ({
