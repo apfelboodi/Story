@@ -442,297 +442,609 @@ export const predefinedTopics: Record<Level, Omit<StoryTopic, 'id'>[]> = {
       germanTitle: "Ein Wochenende in Berlin", 
       persianTitle: "یک آخر هفته در برلین", 
       audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a2-story-1.mp3",
-      germanStory: "Letztes Wochenende besuchte ich Berlin. Ich fuhr mit dem Zug, weil es bequem ist. Am Samstag sah ich das Brandenburger Tor. Es war sehr beeindruckend. Danach machte ich eine Bootsfahrt auf der Spree. Abends aß ich in einem Restaurant Currywurst. Berlin ist eine tolle Stadt, die viel zu bieten hat.",
-      persianTranslation: "آخر هفته گذشته از برلین دیدن کردم. من با قطار سفر کردم چون راحت است. روز شنبه دروازه براندنبورگ را دیدم. بسیار تاثیرگذار بود. بعد از آن یک سفر با قایق روی رودخانه شپری انجام دادم. شب در یک رستوران کاری‌ورست خوردم. برلین یک شهر عالی است که چیزهای زیادی برای ارائه دارد."
+      germanStory: "Letztes Wochenende habe ich einen Ausflug nach Berlin gemacht, worauf ich mich schon lange gefreut hatte. Ich bin mit dem Zug gefahren, weil die Reise so viel entspannter ist als mit dem Auto. Am Samstagvormittag stand ich endlich vor dem Brandenburger Tor. Es war noch beeindruckender als auf den Fotos. Danach machte ich eine gemütliche Bootsfahrt auf der Spree und sah die Stadt vom Wasser aus. Zum Abendessen probierte ich in einem kleinen Imbiss eine leckere Currywurst. Berlin ist eine faszinierende Stadt, die ich bald wieder besuchen möchte.",
+      persianTranslation: "آخر هفته گذشته سفری به برلین داشتم که مدت‌ها منتظرش بودم. من با قطار سفر کردم، چون سفر اینطور خیلی آرامش‌بخش‌تر از با ماشین است. صبح شنبه بالاخره جلوی دروازه براندنبورگ ایستادم. حتی از عکس‌ها هم تأثیرگذارتر بود. بعد از آن یک سفر آرام با قایق روی رودخانه شپری داشتم و شهر را از روی آب دیدم. برای شام در یک اغذیه‌فروشی کوچک یک کاری‌ورست خوشمزه را امتحان کردم. برلین شهری شگفت‌انگیز است که می‌خواهم به زودی دوباره از آن دیدن کنم."
     },
     { 
       germanTitle: "Ein Brief an einen Freund", 
       persianTitle: "نامه‌ای به یک دوست", 
       audioUrl: "https://storage.googleapis.com/audio-samples-for-app/a2-story-2.mp3",
-      germanStory: "Lieber Alex, wie geht es dir? Ich wollte dir von meinem neuen Job erzählen. Ich arbeite jetzt in einem Café, das sehr beliebt ist. Die Arbeit ist anstrengend, aber die Kollegen sind sehr nett. Letzte Woche lernte ich, wie man einen Cappuccino macht. Vielleicht kannst du mich ja bald besuchen kommen, damit ich es dir zeigen kann. Viele Grüße, deine Sarah.",
-      persianTranslation: "الکس عزیز، حالت چطور است؟ می‌خواستم درباره شغل جدیدم برایت بگویم. من حالا در یک کافه کار می‌کنم که خیلی محبوب است. کار خسته‌کننده است، اما همکاران خیلی مهربان هستند. هفته گذشته یاد گرفتم چگونه کاپوچینو درست کنم. شاید بتوانی به زودی به دیدنم بیایی تا بتوانم به تو نشان دهم. با بهترین آرزوها، سارای تو."
+      germanStory: "Lieber Alex, ich hoffe, es geht dir gut! Ich schreibe dir, weil ich dir von meinem neuen Job erzählen wollte. Seit einem Monat arbeite ich in einem kleinen, beliebten Café in der Innenstadt. Die Arbeit ist manchmal ziemlich anstrengend, besonders am Wochenende. Aber meine Kollegen sind super nett und wir haben ein tolles Team. Letzte Woche hat mir mein Chef beigebracht, wie man den perfekten Cappuccino mit Milchschaum-Herz macht. Du musst mich unbedingt bald besuchen kommen, dann mache ich einen für dich! Herzliche Grüße, deine Sarah.",
+      persianTranslation: "الکس عزیز، امیدوارم حالت خوب باشد! برایت می‌نویسم چون می‌خواستم از شغل جدیدم برایت بگویم. از یک ماه پیش در یک کافه کوچک و محبوب در مرکز شهر کار می‌کنم. کار گاهی اوقات بسیار خسته‌کننده است، به خصوص آخر هفته‌ها. اما همکارانم فوق‌العاده مهربان هستند و ما یک تیم عالی داریم. هفته گذشته رئیسم به من یاد داد که چگونه کاپوچینوی عالی با یک قلب از کف شیر درست کنم. حتماً باید به زودی به دیدنم بیایی، آن وقت یکی برایت درست می‌کنم! با بهترین آرزوها، سارای تو."
     },
     { 
       germanTitle: "Beim Arzt", 
       persianTitle: "نزد دکتر",
-      germanStory: "Gestern hatte ich starke Kopfschmerzen, deshalb ging ich zum Arzt. Ich musste zuerst im Wartezimmer warten, was eine halbe Stunde dauerte. Dann untersuchte mich die Ärztin. Sie maß meinen Blutdruck und sagte, ich solle mehr Wasser trinken und weniger Stress haben. Sie gab mir ein Rezept für Tabletten.",
-      persianTranslation: "دیروز سردرد شدیدی داشتم، به همین دلیل به دکتر رفتم. ابتدا باید در اتاق انتظار منتظر می‌ماندم که نیم ساعت طول کشید. سپس دکتر مرا معاینه کرد. او فشار خونم را اندازه گرفت و گفت باید آب بیشتری بنوشم و استرس کمتری داشته باشم. او برایم یک نسخه برای قرص داد."
+      germanStory: "Gestern wachte ich mit starken Kopfschmerzen auf, deshalb beschloss ich, zum Arzt zu gehen. Im Wartezimmer musste ich fast eine halbe Stunde warten, weil viele Patienten da waren. Dann rief mich die Ärztin auf. Sie war sehr freundlich, maß meinen Blutdruck und hörte meine Lunge ab. Sie sagte, ich solle mehr Wasser trinken und versuchen, weniger Stress zu haben. Sie gab mir ein Rezept für Schmerztabletten, falls es nicht besser wird.",
+      persianTranslation: "دیروز با سردرد شدیدی از خواب بیدار شدم، برای همین تصمیم گرفتم به دکتر بروم. در اتاق انتظار تقریباً نیم ساعت منتظر ماندم، چون بیماران زیادی آنجا بودند. بعد دکتر مرا صدا زد. او بسیار مهربان بود، فشار خونم را اندازه گرفت و به ریه‌هایم گوش داد. او گفت باید آب بیشتری بنوشم و سعی کنم استرس کمتری داشته باشم. او برایم یک نسخه برای قرص‌های مسکن داد، در صورتی که بهتر نشود."
     },
     { 
       germanTitle: "Ein Rezept kochen", 
       persianTitle: "پختن یک دستور غذا",
-      germanStory: "Heute Abend wollte ich etwas Besonderes kochen. Ich fand ein Rezept für Linsensuppe im Internet. Ich musste zuerst Zwiebeln und Karotten schneiden und sie in Öl anbraten. Dann kochte ich alles mit den Linsen in einem Topf. Die Suppe brauchte eine Stunde, aber sie schmeckte fantastisch.",
-      persianTranslation: "امشب می‌خواستم چیز خاصی بپزم. من یک دستور پخت برای سوپ عدس در اینترنت پیدا کردم. ابتدا باید پیاز و هویج را خرد می‌کردم و آنها را در روغن تفت می‌دادم. سپس همه چیز را با عدس در یک قابلمه پختم. سوپ یک ساعت طول کشید، اما طعم فوق‌العاده‌ای داشت."
+      germanStory: "Heute Abend wollte ich für meine Freunde etwas Besonderes kochen. Ich habe online ein Rezept für eine vegetarische Linsensuppe gefunden. Zuerst musste ich Zwiebeln, Karotten und Sellerie in kleine Würfel schneiden. Das dauerte eine Weile. Dann habe ich das Gemüse in einem großen Topf mit etwas Öl angebraten. Danach kamen die Linsen und Gemüsebrühe dazu. Die Suppe musste fast eine Stunde kochen, aber am Ende duftete die ganze Küche wunderbar und sie schmeckte fantastisch.",
+      persianTranslation: "امشب می‌خواستم برای دوستانم چیز خاصی بپزم. من در اینترنت یک دستور پخت برای سوپ عدس گیاهی پیدا کردم. ابتدا باید پیاز، هویج و کرفس را به قطعات کوچک خرد می‌کردم. این کار مدتی طول کشید. بعد سبزیجات را در یک قابلمه بزرگ با کمی روغن تفت دادم. سپس عدس و آب سبزیجات اضافه شدند. سوپ باید تقریباً یک ساعت می‌پخت، اما در پایان تمام آشپزخانه بوی فوق‌العاده‌ای می‌داد و طعمش عالی بود."
     },
     { 
       germanTitle: "Mein letzter Urlaub", 
       persianTitle: "آخرین تعطیلات من",
-      germanStory: "In meinem letzten Urlaub war ich in Italien am Meer. Wir wohnten in einem kleinen Hotel direkt am Strand. Jeden Tag gingen wir schwimmen und lagen in der Sonne. Abends aßen wir in kleinen Restaurants Pizza und Pasta. Das Wetter war perfekt und ich war sehr entspannt, weil ich den Alltagsstress vergaß.",
-      persianTranslation: "در آخرین تعطیلاتم من در ایتالیا کنار دریا بودم. ما در یک هتل کوچک درست کنار ساحل اقامت داشتیم. هر روز ما شنا می‌کردیم و در آفتاب دراز می‌کشیدیم. شب‌ها در رستوران‌های کوچک پیتزا و پاستا می‌خوردیم. هوا عالی بود و من خیلی آرام بودم چون استرس روزمره را فراموش کردم."
+      germanStory: "In meinem letzten Urlaub war ich mit meiner Familie in Italien am Meer. Wir wohnten in einem kleinen Hotel mit Blick auf den Strand. Jeden Morgen, nach dem Frühstück, gingen wir direkt zum Meer, um zu schwimmen. Das Wasser war herrlich warm. Abends spazierten wir durch die kleine Stadt und aßen in gemütlichen Restaurants Pizza und Pasta. Das Wetter war die ganze Woche perfekt. Ich war sehr entspannt, weil ich den Alltagsstress komplett vergessen konnte.",
+      persianTranslation: "در آخرین تعطیلاتم با خانواده‌ام در ایتالیا کنار دریا بودم. ما در یک هتل کوچک با منظره ساحل اقامت داشتیم. هر روز صبح، بعد از صبحانه، مستقیماً به دریا می‌رفتیم تا شنا کنیم. آب به طور شگفت‌انگیزی گرم بود. عصرها در شهر کوچک قدم می‌زدیم و در رستوران‌های دنج پیتزا و پاستا می‌خوردیم. هوا تمام هفته عالی بود. من خیلی آرام بودم، چون توانستم استرس روزمره را کاملاً فراموش کنم."
     },
     { 
       germanTitle: "Eine neue Wohnung finden", 
       persianTitle: "پیدا کردن یک آپارتمان جدید",
-      germanStory: "Ich suche eine neue Wohnung, weil meine alte zu klein ist. Es ist sehr schwierig, etwas Gutes zu finden, das auch bezahlbar ist. Gestern besichtigte ich eine Wohnung. Sie hatte zwei Zimmer und einen Balkon. Die Miete war aber leider zu hoch für mein Budget. Also muss ich weitersuchen.",
-      persianTranslation: "من به دنبال یک آپارتمان جدید هستم، چون آپارتمان قدیمی‌ام خیلی کوچک است. پیدا کردن چیز خوب که قابل پرداخت هم باشد خیلی سخت است. دیروز من یک آپارتمان را بازدید کردم. دو اتاق و یک بالکن داشت. اما متأسفانه اجاره‌اش برای بودجه من خیلی بالا بود. بنابراین باید به جستجو ادامه دهم."
+      germanStory: "Ich suche schon seit zwei Monaten eine neue Wohnung, weil meine alte zu klein geworden ist. Es ist wirklich schwierig, in dieser Stadt etwas Gutes zu finden, das auch bezahlbar ist. Gestern habe ich eine interessante Wohnung besichtigt. Sie hatte zwei Zimmer und einen sonnigen Balkon, was mir sehr gut gefiel. Leider war die Miete etwas zu hoch für mein Budget. Also muss ich wohl weitersuchen und hoffen, bald Glück zu haben.",
+      persianTranslation: "من دو ماه است که به دنبال یک آپارتمان جدید هستم، چون آپارتمان قدیمی‌ام خیلی کوچک شده است. واقعاً سخت است در این شهر چیز خوبی پیدا کنی که قابل پرداخت هم باشد. دیروز یک آپارتمان جالب را بازدید کردم. دو اتاق و یک بالکن آفتاب‌گیر داشت که خیلی خوشم آمد. متأسفانه اجاره‌اش کمی برای بودجه من بالا بود. بنابراین احتمالاً باید به جستجو ادامه دهم و امیدوارم به زودی شانس بیاورم."
     },
     { 
       germanTitle: "Ein Gespräch mit den Nachbarn", 
       persianTitle: "گفتگو با همسایه‌ها",
-      germanStory: "Gestern traf ich meine neuen Nachbarn im Treppenhaus. Sie sind gerade erst eingezogen. Wir unterhielten uns kurz. Sie heißen Schmidt und kommen aus Hamburg. Sie wirkten sehr sympathisch. Ich habe sie für nächste Woche auf einen Kaffee eingeladen, um sie besser kennenzulernen.",
-      persianTranslation: "دیروز من همسایه‌های جدیدم را در راه‌پله ملاقات کردم. آنها به تازگی اسباب‌کشی کرده‌اند. ما کوتاه با هم صحبت کردیم. نام آنها اشمیت است و از هامبورگ می‌آیند. آنها بسیار خوش‌برخورد به نظر می‌رسیدند. من آنها را برای هفته آینده به یک قهوه دعوت کردم تا بهتر با آنها آشنا شوم."
+      germanStory: "Gestern traf ich meine neuen Nachbarn zum ersten Mal im Treppenhaus. Sie sind gerade erst am Wochenende eingezogen. Wir stellten uns kurz vor und unterhielten uns. Sie heißen Familie Schmidt und kommen ursprünglich aus Hamburg. Sie wirkten sehr sympathisch und freundlich. Ich habe sie für nächste Woche auf einen Kaffee eingeladen, damit wir uns in Ruhe besser kennenlernen können.",
+      persianTranslation: "دیروز برای اولین بار همسایه‌های جدیدم را در راه‌پله ملاقات کردم. آنها تازه آخر هفته اسباب‌کشی کرده‌اند. ما کوتاه خودمان را معرفی کردیم و با هم صحبت کردیم. نام آنها خانواده اشمیت است و اصالتاً از هامبورگ می‌آیند. آنها بسیار خوش‌برخورد و مهربان به نظر می‌رسیدند. من آنها را برای هفته آینده به یک قهوه دعوت کردم تا بتوانیم در آرامش بهتر با هم آشنا شویم."
     },
     { 
       germanTitle: "Ein Fest in Deutschland", 
       persianTitle: "یک جشن در آلمان",
-      germanStory: "Letzten Monat war ich auf dem Oktoberfest in München. Es ist ein sehr großes und berühmtes Fest. Viele Leute tragen traditionelle Kleidung wie Dirndl und Lederhosen. Es gibt riesige Zelte, in denen man Bier trinken und Hähnchen essen kann. Die Atmosphäre war unglaublich, obwohl es sehr voll war.",
-      persianTranslation: "ماه گذشته من در جشن اکتبر در مونیخ بودم. این یک جشن بسیار بزرگ و معروف است. بسیاری از مردم لباس‌های سنتی مانند دیرندل و لدرهوزن می‌پوشند. چادرهای غول‌پیکری وجود دارد که در آنها می‌توان آبجو نوشید و مرغ خورد. جو فوق‌العاده بود، اگرچه خیلی شلوغ بود."
+      germanStory: "Letzten Monat war ich zum ersten Mal auf dem Oktoberfest in München. Es ist ein riesiges und weltberühmtes Volksfest. Viele Leute, auch Touristen, tragen traditionelle Kleidung wie Dirndl und Lederhosen. Es gibt riesige Bierzelte, in denen man bayerisches Bier trinkt und Hähnchen isst. Die Atmosphäre war unglaublich fröhlich und laut, obwohl es sehr voll war. Es war eine tolle Erfahrung.",
+      persianTranslation: "ماه گذشته برای اولین بار در جشن اکتبر در مونیخ بودم. این یک جشن مردمی غول‌پیکر و مشهور جهانی است. بسیاری از مردم، حتی توریست‌ها، لباس‌های سنتی مانند دیرندل و لدرهوزن می‌پوشند. چادرهای آبجوی غول‌پیکری وجود دارد که در آنها آبجوی باواریایی می‌نوشند و مرغ می‌خورند. جو فوق‌العاده شاد و پر سر و صدا بود، اگرچه خیلی شلوغ بود. این یک تجربه عالی بود."
     },
     { 
       germanTitle: "Auf dem Bahnhof", 
       persianTitle: "در ایستگاه قطار",
-      germanStory: "Ich musste heute Morgen einen Freund vom Bahnhof abholen. Sein Zug hatte leider 20 Minuten Verspätung. Ich wartete auf einer Bank und beobachtete die Anzeigetafel. Als der Zug endlich ankam, war die Freude groß, weil wir uns lange nicht gesehen hatten. Wir umarmten uns herzlich.",
-      persianTranslation: "امروز صبح باید دوستی را از ایستگاه قطار می‌آوردم. قطارش متأسفانه ۲۰ دقیقه تأخیر داشت. من روی یک نیمکت منتظر ماندم و تابلوی اعلانات را تماشا کردم. وقتی قطار بالاخره رسید، شادی بزرگی بود چون ما مدت زیادی بود که همدیگر را ندیده بودیم. ما صمیمانه یکدیگر را در آغوش گرفتیم."
+      germanStory: "Ich musste heute Morgen meinen Freund vom Bahnhof abholen. Leider hatte sein Zug aus Frankfurt 20 Minuten Verspätung. Ich wartete auf einer Bank am Bahnsteig und beobachtete die digitale Anzeigetafel. Als der Zug endlich ankam, war die Freude groß, weil wir uns fast ein Jahr nicht gesehen hatten. Wir umarmten uns lange und herzlich, bevor wir zu meiner Wohnung fuhren.",
+      persianTranslation: "امروز صبح باید دوستم را از ایستگاه قطار می‌آوردم. متأسفانه قطارش از فرانکفورت ۲۰ دقیقه تأخیر داشت. من روی یک نیمکت در سکو منتظر ماندم و تابلوی اعلانات دیجیتال را تماشا کردم. وقتی قطار بالاخره رسید، شادی بزرگی بود چون ما تقریباً یک سال بود که همدیگر را ندیده بودیم. ما قبل از اینکه به آپارتمان من برویم، مدت طولانی و صمیمانه یکدیگر را در آغوش گرفتیم."
     },
     { 
       germanTitle: "Sport und Fitness", 
       persianTitle: "ورزش و تناسب اندام",
-      germanStory: "Ich versuche, dreimal pro Woche Sport zu machen. Am Montag gehe ich im Park laufen. Am Mittwoch besuche ich einen Yogakurs, der mir hilft, flexibel zu bleiben. Und am Freitag gehe ich ins Fitnessstudio, um Krafttraining zu machen. Sport hilft mir, fit zu bleiben und den Kopf freizubekommen.",
-      persianTranslation: "من سعی می‌کنم سه بار در هفته ورزش کنم. دوشنبه‌ها در پارک می‌دوم. چهارشنبه‌ها در یک کلاس یوگا شرکت می‌کنم که به من کمک می‌کند انعطاف‌پذیر بمانم. و جمعه‌ها به باشگاه بدنسازی می‌روم تا تمرینات قدرتی انجام دهم. ورزش به من کمک می‌کند تا خوش‌فرم بمانم و ذهنم را آزاد کنم."
-    },
-    { germanTitle: "Eine Party planen", persianTitle: "برنامه‌ریزی یک مهمانی",
-      germanStory: "Für meinen Geburtstag möchte ich eine Party organisieren. Zuerst muss ich eine Gästeliste schreiben und Einladungen verschicken. Dann muss ich überlegen, was es zu essen und zu trinken gibt. Ich werde eine Playlist mit guter Musik erstellen. Ich hoffe, dass alle meine Freunde Zeit haben zu kommen.",
-      persianTranslation: "برای تولدم می‌خواهم یک مهمانی ترتیب دهم. ابتدا باید یک لیست مهمان بنویسم و دعوت‌نامه‌ها را بفرستم. سپس باید فکر کنم چه چیزی برای خوردن و نوشیدن وجود دارد. من یک لیست پخش با موسیقی خوب درست خواهم کرد. امیدوارم همه دوستانم وقت داشته باشند بیایند."
-    },
-    { germanTitle: "Ein unvergesslicher Ausflug", persianTitle: "یک گردش فراموش‌نشدنی",
-      germanStory: "Letzten Sommer machten wir einen Ausflug zu einem Schloss. Das Schloss stand auf einem hohen Berg. Wir mussten eine Stunde wandern, um dorthin zu kommen. Die Aussicht von oben war atemberaubend. Wir machten viele Fotos. Es war ein perfekter Tag, den ich nicht vergessen werde.",
-      persianTranslation: "تابستان گذشته ما به یک قلعه سفر کردیم. قلعه روی یک کوه بلند قرار داشت. ما باید یک ساعت پیاده‌روی می‌کردیم تا به آنجا برسیم. منظره از بالا نفس‌گیر بود. ما عکس‌های زیادی گرفتیم. این یک روز عالی بود که فراموش نخواهم کرد."
-    },
-    { germanTitle: "Ein Problem mit dem Computer", persianTitle: "مشکلی با کامپیوتر",
-      germanStory: "Mein Computer funktioniert seit gestern nicht mehr richtig. Er ist sehr langsam und stürzt oft ab. Ich versuchte, ihn neu zu starten, aber das hat nicht geholfen. Ich kenne mich nicht gut mit Technik aus. Wahrscheinlich muss ich ihn zu einem Experten bringen, damit er ihn repariert.",
-      persianTranslation: "کامپیوتر من از دیروز به درستی کار نمی‌کند. خیلی کند است و اغلب از کار می‌افتد. من سعی کردم آن را دوباره راه‌اندازی کنم، اما این کمکی نکرد. من از تکنولوژی چیز زیادی نمی‌دانم. احتمالاً باید آن را پیش یک متخصص ببرم تا آن را تعمیر کند."
-    },
-    { germanTitle: "Ein Besuch im Museum", persianTitle: "بازدید از موزه",
-      germanStory: "Am Wochenende war ich im Kunstmuseum. Es gab eine Sonderausstellung mit Bildern von Vincent van Gogh. Ich fand die Bilder sehr beeindruckend, besonders die leuchtenden Farben. Ich lief fast drei Stunden durch das Museum. Es hat sich wirklich gelohnt, weil ich viel gelernt habe.",
-      persianTranslation: "آخر هفته من در موزه هنر بودم. یک نمایشگاه ویژه با نقاشی‌های ونسان ون گوگ وجود داشت. من نقاشی‌ها را بسیار تأثیرگذار یافتم، به خصوص رنگ‌های درخشان را. من تقریباً سه ساعت در موزه قدم زدم. واقعاً ارزشش را داشت چون چیزهای زیادی یاد گرفتم."
-    },
-    { germanTitle: "Die Wegbeschreibung", persianTitle: "آدرس دادن",
-      germanStory: "Gestern fragte mich ein Tourist nach dem Weg zum Rathaus. Er sprach nur Englisch. Ich versuchte, ihm den Weg zu erklären: 'Gehen Sie geradeaus bis zur zweiten Kreuzung, dann biegen Sie links ab. Das Rathaus ist dann auf der rechten Seite.' Ich hoffe, dass er es gefunden hat.",
-      persianTranslation: "دیروز یک توریست از من مسیر رسیدن به شهرداری را پرسید. او فقط انگلیسی صحبت می‌کرد. من سعی کردم مسیر را برایش توضیح دهم: «مستقیم تا تقاطع دوم بروید، سپس به چپ بپیچید. شهرداری آنگاه در سمت راست خواهد بود.» امیدوارم او آن را پیدا کرده باشد."
-    },
-    { germanTitle: "Ein kleines Missgeschick", persianTitle: "یک اتفاق ناگوار کوچک",
-      germanStory: "Heute Morgen passierte mir ein kleines Missgeschick. Ich verschüttete meinen Kaffee auf meinem weißen Hemd. Es war ein großer brauner Fleck. Ich musste mich schnell umziehen, bevor ich zur Arbeit ging. Solche Tage gibt es manchmal, aber ich habe darüber gelacht.",
-      persianTranslation: "امروز صبح یک اتفاق ناگوار کوچک برایم افتاد. من قهوه‌ام را روی پیراهن سفیدم ریختم. یک لکه بزرگ قهوه‌ای بود. من باید سریع لباس عوض می‌کردم قبل از اینکه به سر کار بروم. گاهی چنین روزهایی هم وجود دارد، اما من به آن خندیدم."
-    },
-    { germanTitle: "Eine Diskussion über einen Film", persianTitle: "بحث در مورد یک فیلم",
-      germanStory: "Nach dem Kino diskutierten mein Freund und ich lange über den Film. Ich fand den Film fantastisch, aber er fand ihn langweilig. Wir hatten unterschiedliche Meinungen über die Schauspieler und das Ende. Es war eine interessante Diskussion, weil wir verschiedene Perspektiven hatten.",
-      persianTranslation: "بعد از سینما من و دوستم مدت زیادی درباره فیلم بحث کردیم. من فیلم را فوق‌العاده یافتم، اما او آن را خسته‌کننده یافت. ما نظرات متفاوتی درباره بازیگران و پایان فیلم داشتیم. این یک بحث جالب بود چون ما دیدگاه‌های متفاوتی داشتیم."
-    },
-    { germanTitle: "Ein typischer Arbeitstag", persianTitle: "یک روز کاری معمولی",
-      germanStory: "Mein Arbeitstag beginnt um 9 Uhr. Zuerst lese ich meine E-Mails, um zu sehen, was ansteht. Dann habe ich oft Besprechungen mit Kollegen. Mittags esse ich in der Kantine. Am Nachmittag arbeite ich an meinen Projekten. Um 17 Uhr habe ich Feierabend und fahre nach Hause.",
-      persianTranslation: "روز کاری من ساعت ۹ شروع می‌شود. ابتدا ایمیل‌هایم را می‌خوانم تا ببینم چه کارهایی در پیش است. سپس اغلب با همکارانم جلسه دارم. ظهر در غذاخوری ناهار می‌خورم. بعد از ظهر روی پروژه‌هایم کار می‌کنم. ساعت ۱۷ کارم تمام می‌شود و به خانه می‌روم."
-    },
-    { germanTitle: "Ein Geschenk für einen Freund auswählen", persianTitle: "انتخاب هدیه برای یک دوست",
-      germanStory: "Mein bester Freund hat nächste Woche Geburtstag. Ich weiß nicht, was ich ihm schenken soll. Er liest gerne, also ist vielleicht ein Buch eine gute Idee. Oder vielleicht ein Gutschein für ein Konzert, weil er Musik liebt? Es ist schwer, das perfekte Geschenk zu finden.",
-      persianTranslation: "بهترین دوستم هفته آینده تولد دارد. من نمی‌دانم چه چیزی به او هدیه بدهم. او دوست دارد کتاب بخواند، پس شاید یک کتاب ایده خوبی باشد. یا شاید یک کوپن برای یک کنسرت، چون او عاشق موسیقی است؟ پیدا کردن هدیه عالی سخت است."
-    },
-    { germanTitle: "Die vier Jahreszeiten in meiner Heimat", persianTitle: "چهار فصل در کشور من",
-      germanStory: "In meiner Heimat gibt es vier sehr unterschiedliche Jahreszeiten. Die Sommer sind heiß und trocken. Im Herbst wird es kühler und die Blätter der Bäume werden bunt. Die Winter sind kalt und es schneit oft. Im Frühling wird alles wieder grün. Jede Jahreszeit hat ihren eigenen Charme.",
-      persianTranslation: "در کشور من چهار فصل بسیار متفاوت وجود دارد. تابستان‌ها گرم و خشک هستند. در پاییز هوا خنک‌تر می‌شود و برگ‌های درختان رنگارنگ می‌شوند. زمستان‌ها سرد هستند و اغلب برف می‌بارد. در بهار همه چیز دوباره سبز می‌شود. هر فصلی جذابیت خاص خود را دارد."
-    },
-    { germanTitle: "Ein Verkehrsunfall", persianTitle: "یک تصادف رانندگی",
-      germanStory: "Auf dem Weg zur Arbeit sah ich einen kleinen Verkehrsunfall. Ein Auto war einem anderen hinten aufgefahren. Glücklicherweise schien niemand verletzt zu sein. Die Fahrer standen auf der Straße und diskutierten. Sofort bildete sich ein langer Stau, deshalb kam ich zu spät.",
-      persianTranslation: "در راه سر کار یک تصادف رانندگی کوچک دیدم. یک ماشین از پشت به دیگری زده بود. خوشبختانه به نظر می‌رسید کسی آسیب ندیده است. رانندگان در خیابان ایستاده بودند و بحث می‌کردند. فوراً یک ترافیک طولانی ایجاد شد، به همین دلیل من دیر رسیدم."
-    },
-    { germanTitle: "Ein Vorstellungsgespräch für einen Nebenjob", persianTitle: "مصاحبه برای یک کار پاره‌وقت",
-      germanStory: "Ich hatte heute ein Vorstellungsgespräch für einen Nebenjob in einem Buchladen. Ich war ziemlich nervös. Der Manager stellte mir viele Fragen, zum Beispiel warum ich dort arbeiten möchte. Ich glaube, das Gespräch lief ganz gut. Ich bekomme nächste Woche eine Antwort.",
-      persianTranslation: "امروز من یک مصاحبه برای یک کار پاره‌وقت در یک کتابفروشی داشتم. من خیلی مضطرب بودم. مدیر سوالات زیادی از من پرسید، مثلاً چرا می‌خواهم آنجا کار کنم. فکر می‌کنم مصاحبه خیلی خوب پیش رفت. هفته آینده جواب می‌گیرم."
-    },
-    { germanTitle: "Kleidung für verschiedene Anlässe", persianTitle: "لباس برای مناسبت‌های مختلف",
-      germanStory: "Man trägt nicht immer die gleiche Kleidung. Zur Arbeit ziehe ich oft eine Bluse und eine schicke Hose an. Am Wochenende trage ich lieber bequeme Jeans und ein T-Shirt. Wenn ich zu einer Hochzeit gehe, trage ich ein elegantes Kleid. Für jeden Anlass gibt es die passende Kleidung.",
-      persianTranslation: "آدم همیشه لباس یکسانی نمی‌پوشد. برای سر کار من اغلب یک بلوز و یک شلوار شیک می‌پوشم. در آخر هفته ترجیح می‌دههم شلوار جین راحت و یک تی‌شرت بپوشم. وقتی به عروسی می‌روم، یک لباس مجلسی می‌پوشم. برای هر مناسبتی لباس مناسب وجود دارد."
-    },
-    { germanTitle: "Ein Streit und eine Versöhnung", persianTitle: "یک دعوا و یک آشتی",
-      germanStory: "Letzte Woche hatte ich einen Streit mit meiner besten Freundin. Wir waren beide wütend und sprachen nicht mehr miteinander. Nach ein paar Tagen rief ich sie an. Wir redeten über das Problem und entschuldigten uns. Jetzt ist alles wieder gut zwischen uns.",
-      persianTranslation: "هفته گذشته من با بهترین دوستم دعوا کردم. ما هر دو عصبانی بودیم و دیگر با هم صحبت نمی‌کردیم. بعد از چند روز به او زنگ زدم. ما درباره مشکل صحبت کردیم و عذرخواهی کردیم. حالا همه چیز دوباره بین ما خوب است."
-    },
-    { germanTitle: "Wie ich Deutsch lerne", persianTitle: "چگونه آلمانی یاد می‌گیرم",
-      germanStory: "Ich lerne Deutsch seit einem Jahr. Ich besuche einen Sprachkurs und mache jeden Tag meine Hausaufgaben. Außerdem versuche ich, deutsche Filme zu schauen und deutsche Musik zu hören. Es ist nicht immer einfach, aber es macht mir Spaß, Fortschritte zu sehen.",
-      persianTranslation: "من یک سال است که آلمانی یاد می‌گیرم. من در یک کلاس زبان شرکت می‌کنم و هر روز تکالیفم را انجام می‌دههم. علاوه بر این، سعی می‌کنم فیلم‌های آلمانی تماشا کنم و به موسیقی آلمانی گوش دهم. همیشه آسان نیست، اما دیدن پیشرفت برایم لذت‌بخش است."
-    },
-    { germanTitle: "Ein traditionelles Gericht aus meinem Land", persianTitle: "یک غذای سنتی از کشورم",
-      germanStory: "Ein sehr bekanntes Gericht aus meiner Heimat ist Ghorme Sabzi. Es ist ein Eintopf aus verschiedenen Kräutern, Bohnen und Fleisch. Man isst es normalerweise mit Reis. Die Zubereitung dauert mehrere Stunden, aber das Ergebnis ist köstlich. Jeder liebt es.",
-      persianTranslation: "یک غذای بسیار معروف از کشور من قورمه سبزی است. این یک خورش از سبزیجات مختلف، لوبیا و گوشت است. معمولاً آن را با برنج می‌خورند. تهیه آن چندین ساعت طول می‌کشد، اما نتیجه‌اش لذیذ است. همه آن را دوست دارند."
-    },
-    { germanTitle: "Eine E-Mail an den Vermieter", persianTitle: "ایمیلی به صاحب‌خانه",
-      germanStory: "Ich musste meinem Vermieter eine E-Mail schreiben, weil die Heizung in meiner Wohnung kaputt ist. Ich beschrieb das Problem genau und fragte, wann er einen Handwerker schicken kann. Ich hoffe, er antwortet schnell, denn es wird langsam kalt in der Wohnung.",
-      persianTranslation: "من باید به صاحب‌خانه‌ام یک ایمیل می‌نوشتم، چون شوفاژ آپارتمانم خراب است. من مشکل را دقیقاً توصیف کردم و پرسیدم کی می‌تواند یک تعمیرکار بفرستد. امیدوارم او سریع جواب دهد، چون آپارتمان کم‌کم سرد می‌شود."
-    },
-    { germanTitle: "Öffentliche Verkehrsmittel benutzen", persianTitle: "استفاده از وسایل نقلیه عمومی",
-      germanStory: "In meiner Stadt benutze ich oft öffentliche Verkehrsmittel. Ich fahre mit dem Bus zur Arbeit und mit der U-Bahn ins Stadtzentrum. Das ist billiger und umweltfreundlicher als ein eigenes Auto. Manchmal sind die Busse und Bahnen sehr voll, aber meistens ist es praktisch.",
-      persianTranslation: "در شهرم من اغلب از وسایل نقلیه عمومی استفاده می‌کنم. من با اتوبوس به سر کار می‌روم و با مترو به مرکز شهر. این ارزان‌تر و سازگارتر با محیط زیست از داشتن ماشین شخصی است. گاهی اتوبوس‌ها و قطارها خیلی شلوغ هستند، اما بیشتر اوقات کاربردی است."
-    },
-    { germanTitle: "Eine Fahrradtour", persianTitle: "یک تور دوچرخه‌سواری",
-      germanStory: "Am Samstag machte ich mit Freunden eine lange Fahrradtour. Wir fuhren an einem Fluss entlang. Das Wetter war sonnig und warm. Wir hatten ein Picknick dabei und machten mittags eine Pause. Insgesamt fuhren wir 40 Kilometer. Am Abend war ich müde, aber glücklich.",
-      persianTranslation: "روز شنبه من با دوستانم یک تور دوچرخه‌سواری طولانی انجام دادم. ما در امتداد یک رودخانه راندیم. هوا آفتابی و گرم بود. ما یک پیک‌نیک همراه داشتیم و ظهر استراحت کردیم. در مجموع ما ۴۰ کیلومتر راندیم. عصر خسته اما خوشحال بودم."
-    },
-    { germanTitle: "Ein Bankgespräch", persianTitle: "گفتگو در بانک",
-      germanStory: "Ich musste heute zur Bank gehen, um ein Konto zu eröffnen. Ein Bankangestellter half mir. Ich musste viele Formulare ausfüllen und meinen Ausweis zeigen. Er erklärte mir alles geduldig. Nach einer halben Stunde war alles erledigt.",
-      persianTranslation: "امروز باید برای باز کردن یک حساب به بانک می‌رفتم. یک کارمند بانک به من کمک کرد. من باید فرم‌های زیادی را پر می‌کردم و کارت شناسایی‌ام را نشان می‌دادم. او همه چیز را با حوصله برایم توضیح داد. بعد از نیم ساعت همه کارها انجام شد."
-    },
-    { germanTitle: "Ein verlorenes Gepäckstück", persianTitle: "یک چمدان گمشده",
-      germanStory: "Nach meinem Flug konnte ich meinen Koffer am Gepäckband nicht finden. Ich war sehr besorgt, weil alle meine Sachen darin waren. Ich ging zum Fundbüro des Flughafens und füllte ein Formular aus. Glücklicherweise riefen sie mich am nächsten Tag an. Mein Koffer war in einem anderen Flugzeug gelandet.",
-      persianTranslation: "بعد از پروازم نتوانستم چمدانم را روی نوار نقاله پیدا کنم. خیلی نگران بودم چون تمام وسایلم داخل آن بود. به دفتر اشیاء گمشده فرودگاه رفتم و فرمی را پر کردم. خوشبختانه روز بعد به من زنگ زدند. چمدان من در هواپیمای دیگری فرود آمده بود."
-    },
-    { germanTitle: "Ein Konzertbesuch", persianTitle: "رفتن به کنسرت",
-      germanStory: "Letzte Woche war ich auf einem Konzert meiner Lieblingsband. Die Stimmung war fantastisch und alle Leute sangen mit. Die Band spielte alle ihre berühmten Lieder. Das Konzert dauerte zwei Stunden und ich stand die ganze Zeit. Nach dem Konzert war meine Stimme heiser, aber ich war sehr glücklich.",
-      persianTranslation: "هفته گذشته من در کنسرت گروه موسیقی مورد علاقه‌ام بودم. جو فوق‌العاده بود و همه مردم با هم می‌خواندند. گروه تمام آهنگ‌های معروفش را اجرا کرد. کنسرت دو ساعت طول کشید و من تمام مدت ایستاده بودم. بعد از کنسرت صدایم گرفته بود، اما خیلی خوشحال بودم."
-    },
-    { germanTitle: "Meine Kindheit", persianTitle: "کودکی من",
-      germanStory: "Ich hatte eine sehr glückliche Kindheit. Ich wuchs auf dem Land auf und spielte den ganzen Tag draußen. Im Sommer gingen wir im See schwimmen und im Winter bauten wir Schneemänner. Ich hatte viele Freunde in der Nachbarschaft. Ich erinnere mich gerne an diese unbeschwerte Zeit zurück.",
-      persianTranslation: "من کودکی بسیار شادی داشتم. من در روستا بزرگ شدم و تمام روز را بیرون بازی می‌کردم. در تابستان در دریاچه شنا می‌کردیم و در زمستان آدم برفی می‌ساختیم. من دوستان زیادی در محله داشتم. من با خوشحالی آن دوران بی‌دغدغه را به یاد می‌آورم."
-    },
-    { germanTitle: "Eine Wanderung in den Alpen", persianTitle: "پیاده‌روی در کوه‌های آلپ",
-      germanStory: "In den Ferien machten wir eine Wanderung in den Alpen. Wir standen früh auf, um die kühle Morgenluft zu genießen. Der Weg war steil, aber die Aussicht war die Mühe wert. Wir sahen Kühe auf den Almen und aßen auf einer Hütte zu Mittag. Es war ein anstrengender, aber wunderschöner Tag in der Natur.",
-      persianTranslation: "در تعطیلات ما در کوه‌های آلپ پیاده‌روی کردیم. ما زود بیدار شدیم تا از هوای خنک صبح لذت ببریم. مسیر شیب‌دار بود، اما منظره ارزش تلاش را داشت. ما گاوها را در مراتع کوهستانی دیدیم و در یک کلبه کوهستانی ناهار خوردیم. این یک روز خسته‌کننده اما بسیار زیبا در طبیعت بود."
-    },
-    { germanTitle: "Ein Umzug in eine andere Stadt", persianTitle: "اسباب‌کشی به شهری دیگر",
-      germanStory: "Vor zwei Monaten bin ich wegen meines Studiums in eine andere Stadt gezogen. Der Umzug war sehr stressig. Ich musste alle meine Sachen in Kisten packen und eine Transportfirma organisieren. Die neue Stadt gefällt mir gut, aber ich vermisse manchmal meine Familie und meine alten Freunde.",
-      persianTranslation: "دو ماه پیش من به خاطر تحصیلم به شهر دیگری نقل مکان کردم. اسباب‌کشی خیلی استرس‌زا بود. من باید تمام وسایلم را در جعبه‌ها بسته‌بندی می‌کردم و یک شرکت حمل و نقل را سازماندهی می‌کردم. شهر جدید را دوست دارم، اما گاهی دلم برای خانواده و دوستان قدیمی‌ام تنگ می‌شود."
-    },
-    { germanTitle: "Ein Tag als Tourist", persianTitle: "یک روز به عنوان توریست",
-      germanStory: "Gestern beschloss ich, ein Tourist in meiner eigenen Stadt zu sein. Ich besuchte die berühmtesten Sehenswürdigkeiten, die ich normalerweise ignoriere. Ich fuhr mit einem Hop-on-Hop-off-Bus und machte viele Fotos. Ich entdeckte viele schöne Ecken, die ich vorher nicht kannte. Es war eine sehr interessante Erfahrung.",
-      persianTranslation: "دیروز تصمیم گرفتم در شهر خودم یک توریست باشم. من از معروف‌ترین جاذبه‌های دیدنی که معمولاً نادیده می‌گیرم، بازدید کردم. من با یک اتوبوس توریستی سوار شدم و عکس‌های زیادی گرفتم. من گوشه‌های زیبای زیادی را کشف کردم که قبلاً نمی‌شناختم. این یک تجربه بسیار جالب بود."
-    },
-    { germanTitle: "Ein Haustier bekommen", persianTitle: "گرفتن یک حیوان خانگی",
-      germanStory: "Seit langem wünschte ich mir einen Hund. Letzte Woche haben meine Eltern mir erlaubt, einen Hund aus dem Tierheim zu holen. Wir haben einen kleinen Mischlingshund namens Max adoptiert. Er ist sehr verspielt und freundlich. Ein Haustier zu haben ist viel Verantwortung, aber es bringt auch viel Freude.",
-      persianTranslation: "مدت‌ها بود که آرزوی یک سگ را داشتم. هفته گذشته والدینم به من اجازه دادند یک سگ از پناهگاه حیوانات بیاورم. ما یک سگ کوچک میکس به نام ماکس را به سرپرستی گرفتیم. او بسیار بازیگوش و مهربان است. داشتن یک حیوان خانگی مسئولیت زیادی دارد، اما شادی زیادی نیز به همراه دارد."
-    },
-    { germanTitle: "Eine Überraschungsparty", persianTitle: "یک مهمانی غافلگیرکننده",
-      germanStory: "Meine Freunde organisierten eine Überraschungsparty zu meinem Geburtstag. Ich wusste von nichts. Als ich nach Hause kam, waren alle da und riefen 'Überraschung!'. Ich war total sprachlos und habe mich riesig gefreut. Es war der beste Geburtstag, den ich je hatte.",
-      persianTranslation: "دوستانم یک مهمانی غافلگیرکننده برای تولدم ترتیب دادند. من از هیچ چیز خبر نداشتم. وقتی به خانه آمدم، همه آنجا بودند و فریاد زدند «سورپرایز!». من کاملاً لال شده بودم و بی‌نهایت خوشحال شدم. این بهترین تولدی بود که تا به حال داشتم."
-    },
-    { germanTitle: "Ein Gespräch über Zukunftspläne", persianTitle: "گفتگو درباره برنامه‌های آینده",
-      germanStory: "Ich sprach neulich mit meinen Eltern über meine Zukunftspläne. Ich erzählte ihnen, dass ich nach dem Studium gerne im Ausland arbeiten würde. Zuerst waren sie etwas besorgt, aber dann unterstützten sie meine Idee. Es ist gut zu wissen, dass meine Familie hinter mir steht, egal was ich entscheide.",
-      persianTranslation: "اخیراً با والدینم درباره برنامه‌های آینده‌ام صحبت کردم. به آنها گفتم که دوست دارم بعد از تحصیل در خارج از کشور کار کنم. در ابتدا آنها کمی نگران بودند، اما بعد از ایده‌ام حمایت کردند. خوب است بدانم که خانواده‌ام پشت من هستند، مهم نیست چه تصمیمی بگیرم."
-    },
-    { germanTitle: "Ein Besuch auf dem Flohmarkt", persianTitle: "بازدید از بازار کهنه‌فروشان",
-      germanStory: "Am Sonntag besuchte ich einen großen Flohmarkt. Ich liebe es, zwischen den alten Sachen zu stöbern, weil man oft interessante Dinge findet. Ich kaufte ein paar alte Bücher und eine schöne Vase. Das Handeln mit den Verkäufern macht auch immer viel Spaß. Ein Flohmarkt ist wie eine Schatzsuche.",
-      persianTranslation: "روز یکشنبه من از یک بازار کهنه‌فروشان بزرگ دیدن کردم. من عاشق گشتن بین وسایل قدیمی هستم، چون اغلب چیزهای جالبی پیدا می‌کنی. من چند کتاب قدیمی و یک گلدان زیبا خریدم. چانه زدن با فروشندگان هم همیشه خیلی سرگرم‌کننده است. یک بازار کهنه‌فروشان مانند یک گنج‌یابی است."
-    },
-    { germanTitle: "Eine Reklamation im Geschäft", persianTitle: "شکایت در یک فروشگاه",
-      germanStory: "Ich kaufte letzte Woche einen neuen Toaster, aber er funktionierte nicht. Also ging ich heute zurück ins Geschäft, um ihn zu reklamieren. Ich zeigte dem Verkäufer den Kassenbon und erklärte das Problem. Er war sehr verständnisvoll und gab mir sofort ein neues Gerät. Der Umtausch war zum Glück unkompliziert.",
-      persianTranslation: "من هفته گذشته یک توستر جدید خریدم، اما کار نمی‌کرد. بنابراین امروز به فروشگاه برگشتم تا آن را پس دهم. من رسید را به فروشنده نشان دادم و مشکل را توضیح دادم. او بسیار با درک بود و فوراً یک دستگاه جدید به من داد. خوشبختانه تعویض بدون دردسر بود."
-    },
-    { germanTitle: "Ein lustiges Erlebnis in der Sprachschule", persianTitle: "یک تجربه خنده‌دار در آموزشگاه زبان",
-      germanStory: "In meinem Deutschkurs passierte letzte Woche etwas Lustiges. Wir sollten Sätze im Perfekt bilden. Ein Mitschüler wollte sagen 'Ich bin eingeschlafen', aber er sagte 'Ich bin eingeschissen'. Die ganze Klasse, auch die Lehrerin, musste so lachen. Solche Fehler passieren, wenn man eine neue Sprache lernt.",
-      persianTranslation: "هفته گذشته در کلاس آلمانی من اتفاق خنده‌داری افتاد. ما باید جملاتی در زمان گذشته کامل می‌ساختیم. یک همکلاسی می‌خواست بگوید «من به خواب رفتم»، اما گفت «من خرابکاری کردم». تمام کلاس، حتی معلم، خیلی خندیدند. چنین اشتباهاتی وقتی یک زبان جدید یاد می‌گیری، اتفاق می‌افتد."
-    },
-    { germanTitle: "Ein schlechter Tag", persianTitle: "یک روز بد",
-      germanStory: "Gestern hatte ich einen wirklich schlechten Tag. Zuerst habe ich meinen Bus verpasst. Dann hatte ich einen Streit mit meinem Chef. Und am Abend hat es angefangen zu regnen, als ich keinen Regenschirm dabeihatte. Ich war froh, als der Tag endlich vorbei war. Morgen wird es hoffentlich besser.",
-      persianTranslation: "دیروز من یک روز واقعاً بدی داشتم. اول اتوبوسم را از دست دادم. بعد با رئیسم دعوا کردم. و عصر باران شروع به باریدن کرد در حالی که من چتر همراه نداشتم. خوشحال بودم وقتی روز بالاخره تمام شد. امیدوارم فردا بهتر شود."
-    },
-    { germanTitle: "Ein gemeinsamer Kochabend", persianTitle: "یک شب آشپزی مشترک",
-      germanStory: "Am Freitagabend trafen wir uns bei einem Freund, um zusammen zu kochen. Jeder brachte Zutaten mit. Wir entschieden uns, Pizza selbst zu machen. Es war ein lustiges Chaos in der Küche, aber das Ergebnis war fantastisch. Gemeinsam zu kochen und zu essen ist viel schöner als alleine.",
-      persianTranslation: "عصر جمعه ما در خانه یک دوست جمع شدیم تا با هم آشپزی کنیم. هر کس موادی با خود آورد. ما تصمیم گرفتیم خودمان پیتزا درست کنیم. در آشپزخانه یک هرج و مرج خنده‌دار بود، اما نتیجه فوق‌العاده بود. آشپزی و غذا خوردن با هم بسیار زیباتر از تنهایی است."
-    },
-    { germanTitle: "Eine wichtige Prüfung", persianTitle: "یک امتحان مهم",
-      germanStory: "Nächste Woche habe ich eine wichtige Prüfung an der Universität. Deshalb muss ich im Moment viel lernen. Ich wiederhole den ganzen Stoff und mache Übungsaufgaben. Ich bin ein bisschen aufgeregt, aber ich fühle mich gut vorbereitet. Ich hoffe, dass ich die Prüfung bestehen werde.",
-      persianTranslation: "هفته آینده من یک امتحان مهم در دانشگاه دارم. به همین دلیل در حال حاضر باید زیاد درس بخوانم. من تمام مطالب را مرور می‌کنم و تمرین‌ها را حل می‌کنم. من کمی هیجان‌زده هستم، اما احساس می‌کنم خوب آماده شده‌ام. امیدوارم که امتحان را قبول شوم."
-    },
-    { germanTitle: "Ein Anruf bei einer Behörde", persianTitle: "تماس با یک اداره",
-      germanStory: "Ich musste heute bei der Ausländerbehörde anrufen, um einen Termin zu vereinbaren. Ich war lange in der Warteschleife, bis endlich jemand ranging. Die Mitarbeiterin war aber sehr freundlich und half mir, einen passenden Termin zu finden. Manchmal braucht man viel Geduld, wenn man mit Behörden zu tun hat.",
-      persianTranslation: "امروز باید به اداره اتباع خارجی زنگ می‌زدم تا یک وقت ملاقات تعیین کنم. من مدت طولانی در صف انتظار بودم تا بالاخره کسی جواب داد. اما کارمند بسیار مهربان بود و به من کمک کرد تا یک وقت مناسب پیدا کنم. گاهی اوقات وقتی با ادارات سر و کار داری، به صبر زیادی نیاز داری."
-    },
-    { germanTitle: "Ein Traumhaus beschreiben", persianTitle: "توصیف خانه رویایی",
-      germanStory: "Mein Traumhaus wäre ein kleines Holzhaus am See. Es hätte große Fenster, damit viel Licht hereinkommt. Im Wohnzimmer gäbe es einen Kamin für gemütliche Winterabende. Ich wünschte mir auch einen großen Garten, in dem ich mein eigenes Gemüse anbauen könnte. Das wäre für mich der perfekte Ort zum Leben.",
-      persianTranslation: "خانه رویایی من یک کلبه چوبی کوچک کنار دریاچه خواهد بود. پنجره‌های بزرگی خواهد داشت تا نور زیادی وارد شود. در اتاق نشیمن یک شومینه برای عصرهای دنج زمستانی وجود خواهد داشت. من همچنین آرزوی یک باغ بزرگ را دارم که در آن بتوانم سبزیجات خودم را بکارم. این برای من مکان عالی برای زندگی خواهد بود."
-    },
-    { germanTitle: "Ehrenamtliche Arbeit", persianTitle: "کار داوطلبانه",
-      germanStory: "Jeden Samstag arbeite ich ehrenamtlich in einem Tierheim. Ich helfe dabei, die Käfige zu säubern und die Hunde auszuführen. Die Arbeit ist nicht bezahlt, aber sie gibt mir ein gutes Gefühl. Es ist schön zu sehen, wie sehr sich die Tiere über ein bisschen Aufmerksamkeit freuen. Ich finde es wichtig, der Gemeinschaft etwas zurückzugeben.",
-      persianTranslation: "هر شنبه من به صورت داوطلبانه در یک پناهگاه حیوانات کار می‌کنم. من در تمیز کردن قفس‌ها و بیرون بردن سگ‌ها کمک می‌کنم. این کار پولی ندارد، اما به من حس خوبی می‌دهد. دیدن اینکه حیوانات چقدر از کمی توجه خوشحال می‌شوند، زیباست. من فکر می‌کنم مهم است که چیزی به جامعه بازگردانیم."
-    },
-    { germanTitle: "Ein typisches deutsches Frühstück", persianTitle: "یک صبحانه معمولی آلمانی",
-      germanStory: "Ein typisches deutsches Frühstück ist oft sehr reichhaltig. Es gibt verschiedene Sorten Brötchen, Brot, Wurst, Käse und Marmelade. Viele Leute trinken Kaffee, während Kinder oft Kakao oder Tee trinken. Manchmal gibt es auch ein gekochtes Ei oder Müsli. Es ist eine wichtige Mahlzeit, für die man sich Zeit nimmt.",
-      persianTranslation: "یک صبحانه معمولی آلمانی اغلب بسیار مفصل است. انواع مختلف نان، کالباس، پنیر و مربا وجود دارد. بسیاری از مردم قهوه می‌نوشند، در حالی که کودکان اغلب کاکائو یا چای می‌نوشند. گاهی اوقات یک تخم‌مرغ آب‌پز یا موسلی هم وجود دارد. این یک وعده غذایی مهم است که برای آن وقت می‌گذارند."
-    },
-    { germanTitle: "Eine Autopanne", persianTitle: "خرابی ماشین",
-      germanStory: "Gestern hatte ich eine Autopanne auf der Autobahn. Plötzlich machte der Motor komische Geräusche und das Auto blieb stehen. Ich musste den Warnblinker anmachen und den Pannendienst rufen. Nach einer Stunde kam ein Abschleppwagen und brachte mein Auto in eine Werkstatt. Das war eine sehr unangenehme Situation.",
-      persianTranslation: "دیروز من در اتوبان ماشینم خراب شد. ناگهان موتور صداهای عجیبی درآورد و ماشین متوقف شد. من باید فلاشر را روشن می‌کردم و به امداد خودرو زنگ می‌زدم. بعد از یک ساعت یک یدک‌کش آمد و ماشینم را به یک تعمیرگاه برد. این یک وضعیت بسیار ناخوشایند بود."
-    },
-    { germanTitle: "Ein interessanter Traum", persianTitle: "یک رویای جالب",
-      germanStory: "Letzte Nacht hatte ich einen sehr interessanten Traum. Ich träumte, dass ich mit Tieren sprechen konnte. Ein Eichhörnchen erzählte mir von seinem Leben im Park und ein Vogel sang mir ein Lied vor. Als ich aufwachte, war ich ein bisschen traurig, dass es nur ein Traum war. Es wäre toll, wenn das wirklich ginge.",
-      persianTranslation: "دیشب یک رویای بسیار جالب دیدم. من خواب دیدم که می‌توانم با حیوانات صحبت کنم. یک سنجاب از زندگی‌اش در پارک برایم گفت و یک پرنده برایم آهنگی خواند. وقتی بیدار شدم، کمی غمگین بودم که این فقط یک رویا بود. عالی می‌شد اگر این واقعاً ممکن بود."
-    },
-    { germanTitle: "Ein Tag ohne Handy", persianTitle: "یک روز بدون موبایل",
-      germanStory: "Ich habe versucht, einen ganzen Tag ohne mein Handy zu verbringen. Am Anfang war es sehr komisch. Ich wollte ständig nach neuen Nachrichten schauen. Aber nach ein paar Stunden wurde es entspannter. Ich habe ein Buch gelesen und war spazieren. Ich hatte plötzlich viel mehr Zeit. Vielleicht sollte ich das öfter machen.",
-      persianTranslation: "من سعی کردم یک روز کامل را بدون موبایلم بگذرانم. در ابتدا خیلی عجیب بود. من دائماً می‌خواستم پیام‌های جدید را بررسی کنم. اما بعد از چند ساعت آرام‌تر شد. من یک کتاب خواندم و به پیاده‌روی رفتم. ناگهان وقت بسیار بیشتری داشتم. شاید باید این کار را بیشتر انجام دهم."
-    },
-    { germanTitle: "Ein Picknick am See", persianTitle: "پیک‌نیک کنار دریاچه",
-      germanStory: "Am Sonntag fuhren wir zu einem See, um ein Picknick zu machen. Wir breiteten eine Decke im Gras aus. Wir aßen Sandwiches und tranken Limonade. Danach gingen wir im See schwimmen, obwohl das Wasser noch ziemlich kalt war. Es war ein perfekter, entspannter Tag mit Freunden.",
-      persianTranslation: "روز یکشنبه ما به یک دریاچه رفتیم تا پیک‌نیک کنیم. ما یک پتو روی چمن پهن کردیم. ما ساندویچ خوردیم و لیموناد نوشیدیم. بعد از آن در دریاچه شنا کردیم، اگرچه آب هنوز خیلی سرد بود. این یک روز عالی و آرام با دوستان بود."
-    },
-    { germanTitle: "Ein Besuch im Fitnessstudio", persianTitle: "رفتن به باشگاه بدنسازی",
-      germanStory: "Ich habe mich letzte Woche in einem Fitnessstudio angemeldet. Gestern war ich das erste Mal dort. Ein Trainer zeigte mir alle Geräte und erstellte einen Trainingsplan für mich. Das Training war anstrengend, aber es hat sich gut angefühlt. Heute habe ich Muskelkater, aber ich werde weitermachen.",
-      persianTranslation: "من هفته گذشته در یک باشگاه بدنسازی ثبت نام کردم. دیروز برای اولین بار آنجا بودم. یک مربی تمام دستگاه‌ها را به من نشان داد و یک برنامه تمرینی برایم تهیه کرد. تمرین سخت بود، اما حس خوبی داشت. امروز بدن درد دارم، اما ادامه خواهم داد."
-    },
-    { germanTitle: "Eine Entschuldigung schreiben", persianTitle: "نوشتن یک نامه عذرخواهی",
-      germanStory: "Ich habe vergessen, einem Freund zum Geburtstag zu gratulieren. Das war mir sehr peinlich. Deshalb schrieb ich ihm eine lange Nachricht. Ich entschuldigte mich und erklärte, dass ich in letzter Zeit viel Stress hatte. Er hat zum Glück verständnisvoll reagiert und war nicht böse auf mich.",
-      persianTranslation: "من فراموش کردم تولد یک دوست را تبریک بگویم. این برایم خیلی خجالت‌آور بود. به همین دلیل برایش یک پیام طولانی نوشتم. من عذرخواهی کردم و توضیح دادم که اخیراً استرس زیادی داشتم. خوشبختانه او با درک واکنش نشان داد و از من عصبانی نبود."
-    },
-    { germanTitle: "Ein Campingausflug", persianTitle: "سفر کمپینگ",
-      germanStory: "Am Wochenende machten wir einen Campingausflug in den Wald. Wir bauten unser Zelt in der Nähe eines kleinen Flusses auf. Am Abend machten wir ein Lagerfeuer und grillten Würstchen. Nachts die Sterne zu beobachten, war wunderschön. Es war toll, einfach mal weg von der Stadt zu sein.",
-      persianTranslation: "آخر هفته ما یک سفر کمپینگ به جنگل داشتیم. ما چادرمان را نزدیک یک رودخانه کوچک برپا کردیم. عصر آتش روشن کردیم و سوسیس کباب کردیم. تماشای ستاره‌ها در شب بسیار زیبا بود. عالی بود که برای مدتی از شهر دور باشیم."
-    },
-    { germanTitle: "Eine neue Fähigkeit lernen", persianTitle: "یادگیری یک مهارت جدید",
-      germanStory: "Ich wollte schon immer Gitarre spielen lernen. Also habe ich mir letzte Woche eine Gitarre gekauft und einen Online-Kurs begonnen. Die ersten Akkorde sind sehr schwer und meine Finger tun weh. Aber ich übe jeden Tag eine halbe Stunde. Ich bin motiviert und hoffe, bald mein erstes Lied spielen zu können.",
-      persianTranslation: "من همیشه می‌خواستم نواختن گیتار را یاد بگیرم. بنابراین هفته گذشته یک گیتار خریدم و یک دوره آنلاین را شروع کردم. آکوردهای اول بسیار سخت هستند و انگشتانم درد می‌کنند. اما من هر روز نیم ساعت تمرین می‌کنم. من با انگیزه هستم و امیدوارم به زودی بتوانم اولین آهنگم را بنوازم."
-    },
-    { germanTitle: "Ein besonderes Familienfest", persianTitle: "یک جشن خانوادگی خاص",
-      germanStory: "Letzten Samstag feierten meine Großeltern ihre Goldene Hochzeit. Das ist ein sehr besonderes Fest. Die ganze Familie kam zusammen, auch Verwandte, die weit weg wohnen. Wir aßen zusammen, erzählten alte Geschichten und schauten uns Fotos an. Es war ein sehr emotionaler und schöner Tag für uns alle.",
-      persianTranslation: "شنبه گذشته پدربزرگ و مادربزرگم جشن عروسی طلایی خود را برگزار کردند. این یک جشن بسیار خاص است. تمام خانواده دور هم جمع شدند، حتی بستگانی که دور زندگی می‌کنند. ما با هم غذا خوردیم، داستان‌های قدیمی تعریف کردیم و به عکس‌ها نگاه کردیم. این یک روز بسیار احساسی و زیبا برای همه ما بود."
-    },
-    { germanTitle: "Ein guter Ratschlag", persianTitle: "یک نصیحت خوب",
-      germanStory: "Als ich mit meinem Studium unzufrieden war, gab mir mein Vater einen guten Ratschlag. Er sagte: 'Es ist keine Schande, eine Entscheidung zu ändern, wenn du merkst, dass sie falsch war.' Dieser Ratschlag gab mir den Mut, das Studienfach zu wechseln. Heute bin ich sehr glücklich mit meiner neuen Wahl.",
-      persianTranslation: "وقتی از تحصیلم ناراضی بودم، پدرم نصیحت خوبی به من کرد. او گفت: «تغییر دادن یک تصمیم اگر متوجه شوی که اشتباه بوده، شرم‌آور نیست.» این نصیحت به من شجاعت داد تا رشته تحصیلی‌ام را عوض کنم. امروز من از انتخاب جدیدم بسیار خوشحالم."
-    },
-    { germanTitle: "Eine unerwartete Begegnung", persianTitle: "یک برخورد غیرمنتظره",
-      germanStory: "Gestern traf ich zufällig meine alte Grundschullehrerin in der Stadt. Ich hatte sie seit über zehn Jahren nicht mehr gesehen. Zuerst erkannte ich sie nicht, aber dann sprach sie mich an. Wir unterhielten uns eine Weile über die alten Zeiten. Das war eine sehr nette und unerwartete Begegnung.",
-      persianTranslation: "دیروز به طور تصادفی معلم قدیمی دبستانم را در شهر ملاقات کردم. من بیش از ده سال بود که او را ندیده بودم. در ابتدا او را نشناختم، اما بعد او با من صحبت کرد. ما مدتی درباره دوران قدیم صحبت کردیم. این یک برخورد بسیار خوب و غیرمنتظره بود."
-    },
-    { germanTitle: "Ein Tag im Leben eines Studenten", persianTitle: "یک روز از زندگی یک دانشجو",
-      germanStory: "Als Student ist kein Tag wie der andere. Normalerweise stehe ich auf, gehe zu den Vorlesungen an der Universität und verbringe den Nachmittag in der Bibliothek, um zu lernen. Abends koche ich oft mit meinen Mitbewohnern oder wir gehen aus. Man muss diszipliniert sein, aber man hat auch viele Freiheiten.",
-      persianTranslation: "به عنوان یک دانشجو، هیچ روزی شبیه روز دیگر نیست. معمولاً بیدار می‌شوم، به سخنرانی‌ها در دانشگاه می‌روم و بعد از ظهر را در کتابخانه برای درس خواندن می‌گذرانم. عصرها اغلب با هم‌اتاقی‌هایم آشپزی می‌کنم یا بیرون می‌رویم. باید منضبط بود، اما آزادی‌های زیادی هم داری."
-    },
-    { germanTitle: "Ein Missverständnis am Telefon", persianTitle: "یک سوءتفاهم تلفنی",
-      germanStory: "Ich rief gestern bei einer Firma an, weil ich eine Frage hatte. Die Person am Telefon sprach sehr schnell, sodass ich sie kaum verstand. Ich dachte, sie sagte 'nein', aber eigentlich sagte sie 'neu'. Es war ein lustiges Missverständnis, das wir am Ende klären konnten. Man muss am Telefon immer genau hinhören.",
-      persianTranslation: "دیروز به شرکتی زنگ زدم چون سوالی داشتم. فرد پشت تلفن خیلی سریع صحبت می‌کرد، طوری که به سختی متوجه منظورش می‌شدم. من فکر کردم او گفت «نه»، اما در واقع گفت «جدید». این یک سوءتفاهم خنده‌دار بود که در نهایت توانستیم آن را برطرف کنیم. باید همیشه پای تلفن با دقت گوش داد."
-    },
-    { germanTitle: "Eine Reise in die Vergangenheit", persianTitle: "سفری به گذشته",
-      germanStory: "Wenn ich in die Vergangenheit reisen könnte, würde ich die 1920er Jahre in Berlin besuchen. Ich stelle mir diese Zeit sehr aufregend vor, mit all der neuen Kunst, Musik und Kultur. Natürlich gab es auch viele Probleme, aber es wäre faszinierend, die Atmosphäre dieser Zeit selbst zu erleben.",
-      persianTranslation: "اگر می‌توانستم به گذشته سفر کنم، دهه ۱۹۲۰ در برلین را بازدید می‌کردم. من این دوران را بسیار هیجان‌انگیز تصور می‌کنم، با تمام آن هنر، موسیقی و فرهنگ جدید. البته مشکلات زیادی هم وجود داشت، اما تجربه کردن جو آن زمان به شخصه شگفت‌انگیز خواهد بود."
-    },
-    { germanTitle: "Ein Kompliment bekommen", persianTitle: "دریافت یک تعریف",
-      germanStory: "Heute hat mir eine Kollegin ein nettes Kompliment gemacht. Sie sagte, dass sie meine positive Art und meine Hilfsbereitschaft sehr schätzt. Das hat mich wirklich gefreut und mir den ganzen Tag versüßt. Ein ehrliches Kompliment kann eine große Wirkung haben.",
-      persianTranslation: "امروز یک همکار از من تعریف خوبی کرد. او گفت که از رفتار مثبت و کمک‌رسانی من بسیار قدردانی می‌کند. این واقعاً مرا خوشحال کرد و تمام روزم را شیرین کرد. یک تعریف صادقانه می‌تواند تأثیر بزرگی داشته باشد."
-    },
-    { germanTitle: "Ein Regentag zu Hause", persianTitle: "یک روز بارانی در خانه",
-      germanStory: "Es hat den ganzen Samstag geregnet, deshalb blieben wir zu Hause. Wir machten es uns auf dem Sofa gemütlich, tranken heiße Schokolade und schauten einen alten Film. Manchmal ist es schön, wenn man keine Pläne hat und einfach nur entspannen kann. So ein fauler Tag tut gut.",
-      persianTranslation: "تمام روز شنبه باران بارید، به همین دلیل ما در خانه ماندیم. ما روی مبل راحت نشستیم، شکلات داغ نوشیدیم و یک فیلم قدیمی تماشا کردیم. گاهی اوقات خوب است که هیچ برنامه‌ای نداشته باشی و فقط بتوانی استراحت کنی. چنین روز تنبلی خوب است."
+      germanStory: "Ich versuche, regelmäßig Sport zu machen, um fit zu bleiben. Normalerweise gehe ich dreimal pro Woche ins Fitnessstudio. Am Montag mache ich Krafttraining. Am Mittwoch besuche ich einen Yogakurs, der mir hilft, flexibel zu bleiben und mich zu entspannen. Und am Freitag gehe ich eine Stunde im Park laufen. Der Sport hilft mir nicht nur körperlich, sondern auch, um den Kopf nach einem langen Arbeitstag freizubekommen.",
+      persianTranslation: "من سعی می‌کنم به طور منظم ورزش کنم تا خوش‌فرم بمانم. معمولاً سه بار در هفته به باشگاه بدنسازی می‌روم. دوشنبه‌ها تمرینات قدرتی انجام می‌دهم. چهارشنبه‌ها در یک کلاس یوگا شرکت می‌کنم که به من کمک می‌کند انعطاف‌پذیر بمانم و آرام شوم. و جمعه‌ها یک ساعت در پارک می‌دوم. ورزش نه تنها از نظر جسمی به من کمک می‌کند، بلکه برای آزاد کردن ذهنم پس از یک روز کاری طولانی نیز مفید است."
     },
     { 
-      germanTitle: "Ein lustiger Fehler", 
-      persianTitle: "یک اشتباه خنده‌دار",
-      germanStory: "Als ich neulich einkaufen war, war ich sehr in Gedanken. An der Kasse wollte ich mit meiner Fernbedienung für das Auto bezahlen, anstatt mit meiner EC-Karte. Die Kassiererin und ich mussten beide sehr lachen. Manchmal ist man einfach ein bisschen durcheinander.",
-      persianTranslation: "وقتی اخیراً برای خرید رفته بودم، خیلی در فکر بودم. در صندوق می‌خواستم با ریموت ماشینم پرداخت کنم به جای کارت بانکی‌ام. صندوق‌دار و من هر دو خیلی خندیدیم. گاهی آدم کمی گیج می‌شود."
+        germanTitle: "Eine Party planen", 
+        persianTitle: "برنامه‌ریزی یک مهمانی",
+        germanStory: "Nächsten Monat habe ich Geburtstag und möchte eine kleine Party organisieren. Die Planung macht Spaß, ist aber auch viel Arbeit. Zuerst muss ich eine Gästeliste schreiben und digitale Einladungen verschicken. Dann muss ich überlegen, welche Speisen und Getränke ich anbieten möchte. Vielleicht mache ich ein Buffet. Außerdem werde ich eine Playlist mit guter Musik erstellen, damit wir auch tanzen können. Ich hoffe, es wird ein schöner Abend.",
+        persianTranslation: "ماه آینده تولدم است و می‌خواهم یک مهمانی کوچک ترتیب دهم. برنامه‌ریزی سرگرم‌کننده است، اما کار زیادی هم دارد. ابتدا باید یک لیست مهمان بنویسم و دعوت‌نامه‌های دیجیتال بفرستم. سپس باید فکر کنم چه غذاها و نوشیدنی‌هایی را می‌خواهم ارائه دهم. شاید یک بوفه درست کنم. علاوه بر این، یک لیست پخش با موسیقی خوب ایجاد خواهم کرد تا بتوانیم برقصیم. امیدوارم شب خوبی شود."
+    },
+    { 
+        germanTitle: "Ein unvergesslicher Ausflug", 
+        persianTitle: "یک گردش فراموش‌نشدنی",
+        germanStory: "Letzten Sommer machten wir mit Freunden einen Ausflug zu einem alten Schloss in den Bergen. Das Schloss stand auf einem hohen Felsen. Wir mussten eine Stunde durch den Wald wandern, um dorthin zu gelangen. Der Weg war anstrengend, aber die Aussicht von oben war atemberaubend. Man konnte das ganze Tal überblicken. Wir machten viele Fotos und hatten ein Picknick. Es war ein perfekter Tag, den ich so schnell nicht vergessen werde.",
+        persianTranslation: "تابستان گذشته با دوستانمان به یک قلعه قدیمی در کوهستان سفر کردیم. قلعه روی یک صخره بلند قرار داشت. ما باید یک ساعت در جنگل پیاده‌روی می‌کردیم تا به آنجا برسیم. مسیر خسته‌کننده بود، اما منظره از بالا نفس‌گیر بود. می‌شد تمام دره را دید. ما عکس‌های زیادی گرفتیم و یک پیک‌نیک داشتیم. این یک روز عالی بود که به این زودی‌ها فراموش نخواهم کرد."
+    },
+    { 
+        germanTitle: "Ein Problem mit dem Computer", 
+        persianTitle: "مشکلی با کامپیوتر",
+        germanStory: "Mein Laptop funktioniert seit gestern nicht mehr richtig. Er ist unglaublich langsam und die Programme stürzen ständig ab. Ich habe versucht, ihn neu zu starten und nach Viren zu suchen, aber das hat leider nicht geholfen. Ich kenne mich technisch nicht gut aus, deshalb bin ich ratlos. Wahrscheinlich muss ich ihn zu einem Experten bringen, damit er ihn repariert. Ich hoffe, es ist nicht zu teuer.",
+        persianTranslation: "لپ‌تاپ من از دیروز به درستی کار نمی‌کند. فوق‌العاده کند است و برنامه‌ها مدام از کار می‌افتند. من سعی کردم آن را دوباره راه‌اندازی کنم و به دنبال ویروس بگردم، اما متأسفانه کمکی نکرد. من از نظر فنی اطلاعات خوبی ندارم، برای همین درمانده‌ام. احتمالاً باید آن را پیش یک متخصص ببرم تا آن را تعمیر کند. امیدوارم خیلی گران نباشد."
+    },
+    { 
+        germanTitle: "Ein Besuch im Museum", 
+        persianTitle: "بازدید از موزه",
+        germanStory: "Am Wochenende war ich im städtischen Kunstmuseum. Es gab eine Sonderausstellung mit modernen Skulpturen, die mich sehr interessiert hat. Ich fand die Kunstwerke sehr beeindruckend und kreativ, auch wenn ich nicht alles verstanden habe. Ich lief fast drei Stunden durch die verschiedenen Räume. Es war ein sehr inspirierender Nachmittag und eine schöne Abwechslung zum Alltag.",
+        persianTranslation: "آخر هفته من در موزه هنر شهری بودم. یک نمایشگاه ویژه با مجسمه‌های مدرن وجود داشت که برایم بسیار جالب بود. من آثار هنری را بسیار تأثیرگذار و خلاقانه یافتم، حتی اگر همه چیز را نفهمیدم. من تقریباً سه ساعت در اتاق‌های مختلف قدم زدم. این یک بعد از ظهر بسیار الهام‌بخش و یک تنوع خوب از روزمرگی بود."
+    },
+    { 
+        germanTitle: "Die Wegbeschreibung", 
+        persianTitle: "آدرس دادن",
+        germanStory: "Gestern sprach mich ein Tourist auf der Straße an und fragte nach dem Weg zum Rathaus. Er sprach nur Englisch, aber das war kein Problem. Ich versuchte, ihm den Weg so einfach wie möglich zu erklären: 'Gehen Sie diese Straße geradeaus bis zur zweiten großen Kreuzung. Dort biegen Sie links ab. Nach ungefähr 200 Metern sehen Sie das Rathaus auf der rechten Seite.' Er bedankte sich freundlich und ich hoffe, dass er es gefunden hat.",
+        persianTranslation: "دیروز یک توریست در خیابان با من صحبت کرد و مسیر رسیدن به شهرداری را پرسید. او فقط انگلیسی صحبت می‌کرد، اما این مشکلی نبود. من سعی کردم مسیر را به ساده‌ترین شکل ممکن برایش توضیح دهم: «این خیابان را مستقیم تا دومین تقاطع بزرگ بروید. آنجا به چپ بپیچید. بعد از تقریباً ۲۰۰ متر شهرداری را در سمت راست خواهید دید.» او با مهربانی تشکر کرد و من امیدوارم که آن را پیدا کرده باشد."
+    },
+    { 
+        germanTitle: "Ein kleines Missgeschick", 
+        persianTitle: "یک اتفاق ناگوار کوچک",
+        germanStory: "Heute Morgen passierte mir in der Küche ein kleines Missgeschick. Ich war noch müde und verschüttete meinen Kaffee über mein ganzes weißes Hemd. Es gab einen großen braunen Fleck. Das war sehr ärgerlich, weil ich es eilig hatte. Ich musste mich schnell umziehen, bevor ich zur Arbeit ging. Manchmal beginnen Tage einfach nicht gut, aber ich habe versucht, darüber zu lachen.",
+        persianTranslation: "امروز صبح در آشپزخانه یک اتفاق ناگوار کوچک برایم افتاد. من هنوز خسته بودم و قهوه‌ام را روی تمام پیراهن سفیدم ریختم. یک لکه بزرگ قهوه‌ای ایجاد شد. این خیلی آزاردهنده بود، چون عجله داشتم. من باید سریع لباس عوض می‌کردم قبل از اینکه به سر کار بروم. گاهی روزها خوب شروع نمی‌شوند، اما من سعی کردم به آن بخندم."
+    },
+    { 
+        germanTitle: "Eine Diskussion über einen Film", 
+        persianTitle: "بحث در مورد یک فیلم",
+        germanStory: "Nach dem Kinobesuch diskutierten mein Freund und ich lange über den Film, den wir gesehen hatten. Ich fand den Film fantastisch und tiefgründig, aber er fand ihn ziemlich langweilig. Wir hatten komplett unterschiedliche Meinungen über die Schauspieler und das überraschende Ende. Es war trotzdem eine interessante Diskussion, weil wir lernten, die Perspektive des anderen zu verstehen.",
+        persianTranslation: "بعد از رفتن به سینما، من و دوستم مدت زیادی درباره فیلمی که دیده بودیم بحث کردیم. من فیلم را فوق‌العاده و عمیق یافتم، اما او آن را کاملاً خسته‌کننده یافت. ما نظرات کاملاً متفاوتی درباره بازیگران و پایان غافلگیرکننده داشتیم. با این حال، این یک بحث جالب بود، چون یاد گرفتیم دیدگاه یکدیگر را درک کنیم."
+    },
+    { 
+        germanTitle: "Ein typischer Arbeitstag", 
+        persianTitle: "یک روز کاری معمولی",
+        germanStory: "Mein Arbeitstag beginnt normalerweise um 9 Uhr im Büro. Als Erstes koche ich mir einen Kaffee und lese meine E-Mails. Dann habe ich oft Besprechungen mit Kollegen, in denen wir unsere Projekte planen. Mittags esse ich mit meinem Team in der Kantine. Am Nachmittag arbeite ich konzentriert an meinen Aufgaben. Um 17 Uhr habe ich Feierabend und fahre mit dem Fahrrad nach Hause.",
+        persianTranslation: "روز کاری من معمولاً ساعت ۹ در دفتر شروع می‌شود. اولین کار، یک قهوه برای خودم درست می‌کنم و ایمیل‌هایم را می‌خوانم. بعد اغلب با همکارانم جلساتی دارم که در آنها پروژه‌هایمان را برنامه‌ریزی می‌کنیم. ظهر با تیمم در غذاخوری ناهار می‌خورم. بعد از ظهر با تمرکز روی وظایفم کار می‌کنم. ساعت ۱۷ کارم تمام می‌شود و با دوچرخه به خانه می‌روم."
+    },
+    { 
+        germanTitle: "Ein Geschenk für einen Freund auswählen", 
+        persianTitle: "انتخاب هدیه برای یک دوست",
+        germanStory: "Mein bester Freund hat nächste Woche Geburtstag und ich habe noch keine Idee für ein Geschenk. Das ist immer so schwer! Er liest gerne Krimis, also ist vielleicht ein neues Buch eine gute Idee. Oder vielleicht ein Gutschein für ein Konzert, weil er eine bestimmte Band sehr liebt? Ich möchte ihm etwas Persönliches schenken, über das er sich wirklich freut. Ich werde am Wochenende in die Stadt gehen und nach etwas Passendem suchen.",
+        persianTranslation: "بهترین دوستم هفته آینده تولد دارد و من هنوز ایده‌ای برای هدیه ندارم. این همیشه خیلی سخت است! او دوست دارد رمان‌های جنایی بخواند، پس شاید یک کتاب جدید ایده خوبی باشد. یا شاید یک کوپن برای یک کنسرت، چون او یک گروه موسیقی خاص را خیلی دوست دارد؟ من می‌خواهم به او یک هدیه شخصی بدهم که واقعاً از آن خوشحال شود. آخر هفته به شهر می‌روم و به دنبال چیز مناسبی می‌گردم."
+    },
+    { 
+        germanTitle: "Die vier Jahreszeiten in meiner Heimat", 
+        persianTitle: "چهار فصل در کشور من",
+        germanStory: "In meiner Heimat gibt es vier sehr unterschiedliche Jahreszeiten, die alle ihren eigenen Charme haben. Die Sommer sind normalerweise sehr heiß und trocken. Im Herbst wird es kühler und die Blätter der Bäume verfärben sich in wunderschönen Rot- und Gelbtönen. Die Winter können kalt sein, aber Schnee gibt es selten. Im Frühling wird dann alles wieder grün und die Natur erwacht zu neuem Leben.",
+        persianTranslation: "در کشور من چهار فصل بسیار متفاوت وجود دارد که هر کدام جذابیت خاص خود را دارند. تابستان‌ها معمولاً بسیار گرم و خشک هستند. در پاییز هوا خنک‌تر می‌شود و برگ‌های درختان به رنگ‌های زیبای قرمز و زرد در می‌آیند. زمستان‌ها می‌توانند سرد باشند، اما برف به ندرت می‌بارد. در بهار سپس همه چیز دوباره سبز می‌شود و طبیعت به زندگی جدید بیدار می‌شود."
+    },
+    { 
+        germanTitle: "Ein Verkehrsunfall", 
+        persianTitle: "یک تصادف رانندگی",
+        germanStory: "Auf dem Weg zur Arbeit sah ich heute Morgen einen kleinen Verkehrsunfall. Ein Auto war einem anderen an einer roten Ampel hinten aufgefahren. Glücklicherweise schien niemand ernsthaft verletzt zu sein, aber beide Autos waren beschädigt. Die Fahrer standen auf der Straße und diskutierten laut. Wegen des Unfalls bildete sich sofort ein langer Stau, weshalb ich zu spät zur Arbeit kam.",
+        persianTranslation: "امروز صبح در راه سر کار یک تصادف رانندگی کوچک دیدم. یک ماشین در چراغ قرمز از پشت به دیگری زده بود. خوشبختانه به نظر می‌رسید کسی به طور جدی آسیب ندیده است، اما هر دو ماشین آسیب دیده بودند. رانندگان در خیابان ایستاده بودند و با صدای بلند بحث می‌کردند. به خاطر تصادف فوراً یک ترافیک طولانی ایجاد شد، به همین دلیل من دیر به سر کار رسیدم."
+    },
+    { 
+        germanTitle: "Ein Vorstellungsgespräch für einen Nebenjob", 
+        persianTitle: "مصاحبه برای یک کار پاره‌وقت",
+        germanStory: "Ich hatte heute ein Vorstellungsgespräch für einen Nebenjob in einem Buchladen. Davor war ich ziemlich nervös. Der Manager war aber sehr nett. Er stellte mir viele Fragen zu meinen Lieblingsbüchern und warum ich genau dort arbeiten möchte. Ich glaube, das Gespräch lief ganz gut, weil ich meine Leidenschaft für Bücher zeigen konnte. Sie wollen mir nächste Woche Bescheid geben.",
+        persianTranslation: "امروز من یک مصاحبه برای یک کار پاره‌وقت در یک کتابفروشی داشتم. قبل از آن خیلی مضطرب بودم. اما مدیر بسیار مهربان بود. او سوالات زیادی در مورد کتاب‌های مورد علاقه‌ام و اینکه چرا دقیقاً می‌خواهم آنجا کار کنم از من پرسید. فکر می‌کنم مصاحبه خیلی خوب پیش رفت، چون توانستم علاقه شدیدم به کتاب‌ها را نشان دهم. آنها می‌خواهند هفته آینده به من خبر دهند."
+    },
+    { 
+        germanTitle: "Kleidung für verschiedene Anlässe", 
+        persianTitle: "لباس برای مناسبت‌های مختلف",
+        germanStory: "Man trägt nicht für jeden Anlass die gleiche Kleidung. Wenn ich zur Arbeit gehe, ziehe ich oft eine Bluse und eine schicke Hose an, um professionell auszusehen. Am Wochenende, wenn ich mich mit Freunden treffe, trage ich lieber bequeme Jeans und ein T-Shirt. Und wenn ich zu einer Hochzeit eingeladen bin, dann wähle ich ein elegantes Kleid. Ich finde es wichtig, sich passend zum Anlass zu kleiden.",
+        persianTranslation: "آدم برای هر مناسبتی لباس یکسانی نمی‌پوشد. وقتی به سر کار می‌روم، اغلب یک بلوز و یک شلوار شیک می‌پوشم تا حرفه‌ای به نظر برسم. آخر هفته، وقتی با دوستانم ملاقات می‌کنم، ترجیح می‌دهم شلوار جین راحت و یک تی‌شرت بپوشم. و اگر به یک عروسی دعوت شوم، آنگاه یک لباس مجلسی انتخاب می‌کنم. به نظرم مهم است که متناسب با مناسبت لباس بپوشی."
+    },
+    { 
+        germanTitle: "Ein Streit und eine Versöhnung", 
+        persianTitle: "یک دعوا و یک آشتی",
+        germanStory: "Letzte Woche hatte ich einen dummen Streit mit meiner besten Freundin. Wir waren beide wütend und haben danach ein paar Tage nicht miteinander gesprochen. Das hat mich sehr traurig gemacht. Also habe ich sie angerufen. Wir haben lange über das Problem geredet und uns beide entschuldigt. Jetzt ist zum Glück alles wieder gut zwischen uns. Freundschaft ist zu wichtig für solche Streitereien.",
+        persianTranslation: "هفته گذشته من یک دعوای احمقانه با بهترین دوستم داشتم. ما هر دو عصبانی بودیم و بعد از آن چند روز با هم صحبت نکردیم. این مرا خیلی ناراحت کرد. برای همین به او زنگ زدم. ما مدت زیادی درباره مشکل صحبت کردیم و هر دو عذرخواهی کردیم. خوشبختانه حالا همه چیز دوباره بین ما خوب است. دوستی برای چنین دعواهایی خیلی مهم‌تر است."
+    },
+    { 
+        germanTitle: "Wie ich Deutsch lerne", 
+        persianTitle: "چگونه آلمانی یاد می‌گیرم",
+        germanStory: "Ich lerne Deutsch seit etwa einem Jahr und es macht mir viel Spaß. Ich besuche zweimal pro Woche einen Sprachkurs. Zusätzlich mache ich jeden Tag meine Hausaufgaben. Ich versuche auch, jeden Abend eine deutsche Serie mit Untertiteln zu schauen. Das hilft sehr beim Hörverstehen. Es ist nicht immer einfach, aber ich merke, dass ich langsam Fortschritte mache.",
+        persianTranslation: "من حدود یک سال است که آلمانی یاد می‌گیرم و برایم بسیار لذت‌بخش است. من دو بار در هفته در یک کلاس زبان شرکت می‌کنم. علاوه بر این، هر روز تکالیفم را انجام می‌دههم. من همچنین سعی می‌کنم هر شب یک سریال آلمانی با زیرنویس تماشا کنم. این در درک شنیداری بسیار کمک می‌کند. همیشه آسان نیست، اما متوجه می‌شوم که به آرامی در حال پیشرفت هستم."
+    },
+    { 
+        germanTitle: "Ein traditionelles Gericht aus meinem Land", 
+        persianTitle: "یک غذای سنتی از کشورم",
+        germanStory: "Ein sehr berühmtes und beliebtes Gericht aus meiner Heimat ist Ghorme Sabzi. Es ist ein köstlicher Eintopf aus vielen verschiedenen Kräutern, roten Bohnen und kleinen Fleischstücken. Die Zubereitung dauert mehrere Stunden, weil die Kräuter lange kochen müssen. Man isst es normalerweise mit Safranreis. Jeder in meiner Familie liebt dieses Gericht.",
+        persianTranslation: "یک غذای بسیار معروف و محبوب از کشور من قورمه سبزی است. این یک خورش لذیذ از سبزیجات مختلف، لوبیا قرمز و تکه‌های کوچک گوشت است. تهیه آن چندین ساعت طول می‌کشد، زیرا سبزیجات باید مدت طولانی بپزند. معمولاً آن را با برنج زعفرانی می‌خورند. همه در خانواده من این غذا را دوست دارند."
+    },
+    { 
+        germanTitle: "Eine E-Mail an den Vermieter", 
+        persianTitle: "ایمیلی به صاحب‌خانه",
+        germanStory: "Ich musste meinem Vermieter eine E-Mail schreiben, weil die Heizung in meiner Wohnung seit zwei Tagen kaputt ist. Ich habe das Problem genau beschrieben und höflich gefragt, wann er einen Handwerker schicken kann. Ich hoffe, er antwortet schnell und kümmert sich bald darum, denn die Nächte werden langsam ziemlich kalt in der Wohnung.",
+        persianTranslation: "من باید به صاحب‌خانه‌ام یک ایمیل می‌نوشتم، چون شوفاژ آپارتمانم دو روز است که خراب است. من مشکل را دقیقاً توصیف کردم و با ادب پرسیدم کی می‌تواند یک تعمیرکار بفرستد. امیدوارم او سریع جواب دهد و به زودی به آن رسیدگی کند، چون شب‌ها در آپارتمان کم‌کم خیلی سرد می‌شود."
+    },
+    { 
+        germanTitle: "Öffentliche Verkehrsmittel benutzen", 
+        persianTitle: "استفاده از وسایل نقلیه عمومی",
+        germanStory: "In meiner Stadt benutze ich fast jeden Tag öffentliche Verkehrsmittel. Ich fahre mit dem Bus zur Arbeit und am Wochenende mit der U-Bahn ins Stadtzentrum. Das ist viel billiger und umweltfreundlicher, als ein eigenes Auto zu haben. Manchmal, im Berufsverkehr, sind die Busse und Bahnen sehr voll, aber meistens ist es eine sehr praktische und schnelle Art, sich fortzubewegen.",
+        persianTranslation: "در شهرم من تقریباً هر روز از وسایل نقلیه عمومی استفاده می‌کنم. من با اتوبوس به سر کار می‌روم و آخر هفته با مترو به مرکز شهر. این بسیار ارزان‌تر و سازگارتر با محیط زیست از داشتن ماشین شخصی است. گاهی اوقات، در ساعات شلوغی، اتوبوس‌ها و قطارها خیلی پر هستند، اما بیشتر اوقات این یک روش بسیار کاربردی و سریع برای جابجایی است."
+    },
+    { 
+        germanTitle: "Eine Fahrradtour", 
+        persianTitle: "یک تور دوچرخه‌سواری",
+        germanStory: "Am letzten Samstag habe ich mit ein paar Freunden eine lange Fahrradtour gemacht. Wir sind an einem Fluss entlang gefahren, wo es einen schönen Radweg gab. Das Wetter war sonnig, aber nicht zu heiß. Wir hatten ein Picknick dabei und machten mittags eine lange Pause auf einer Wiese. Insgesamt sind wir fast 40 Kilometer gefahren. Am Abend war ich sehr müde, aber auch sehr glücklich.",
+        persianTranslation: "شنبه گذشته من با چند دوست یک تور دوچرخه‌سواری طولانی انجام دادم. ما در امتداد یک رودخانه راندیم که در آن یک مسیر دوچرخه‌سواری زیبا وجود داشت. هوا آفتابی بود، اما نه خیلی گرم. ما یک پیک‌نیک همراه داشتیم و ظهر یک استراحت طولانی در یک چمنزار داشتیم. در مجموع ما تقریباً ۴۰ کیلومتر راندیم. عصر خیلی خسته، اما همچنین خیلی خوشحال بودم."
+    },
+    { 
+        germanTitle: "Ein Bankgespräch", 
+        persianTitle: "گفتگو در بانک",
+        germanStory: "Ich musste heute zur Bank gehen, weil ich ein neues Konto eröffnen wollte. Ein freundlicher Bankangestellter hat mir dabei geholfen. Ich musste einige Formulare ausfüllen und meinen Ausweis vorzeigen. Er hat mir die verschiedenen Kontotypen und die Gebühren geduldig erklärt. Nach ungefähr einer halben Stunde war alles erledigt und ich hatte mein neues Konto.",
+        persianTranslation: "امروز باید به بانک می‌رفتم چون می‌خواستم یک حساب جدید باز کنم. یک کارمند مهربان بانک به من در این کار کمک کرد. من باید چند فرم را پر می‌کردم و کارت شناسایی‌ام را نشان می‌دادم. او انواع مختلف حساب‌ها و هزینه‌ها را با حوصله برایم توضیح داد. بعد از تقریباً نیم ساعت همه کارها انجام شد و من حساب جدیدم را داشتم."
+    },
+    { 
+        germanTitle: "Ein verlorenes Gepäckstück", 
+        persianTitle: "یک چمدان گمشده",
+        germanStory: "Nach meinem letzten Flug nach München konnte ich meinen Koffer am Gepäckband einfach nicht finden. Ich war sehr besorgt, weil alle meine wichtigen Sachen darin waren. Ich ging zum Gepäckschalter der Fluggesellschaft und füllte ein Verlustformular aus. Glücklicherweise riefen sie mich am nächsten Tag an. Mein Koffer war versehentlich in einem anderen Flugzeug nach Hamburg gelandet, aber sie schickten ihn mir nach Hause.",
+        persianTranslation: "بعد از آخرین پروازم به مونیخ، به سادگی نتوانستم چمدانم را روی نوار نقاله پیدا کنم. خیلی نگران بودم چون تمام وسایل مهمم داخل آن بود. به باجه بار شرکت هواپیمایی رفتم و یک فرم گم شدن پر کردم. خوشبختانه روز بعد به من زنگ زدند. چمدان من به اشتباه در هواپیمای دیگری به مقصد هامبورگ فرود آمده بود، اما آنها آن را برایم به خانه فرستادند."
+    },
+    { 
+        germanTitle: "Ein Konzertbesuch", 
+        persianTitle: "رفتن به کنسرت",
+        germanStory: "Letzte Woche war ich auf einem Rockkonzert meiner Lieblingsband. Die Stimmung in der Halle war fantastisch und alle Leute haben mitgesungen und getanzt. Die Band spielte alle ihre berühmten Lieder und gab sogar zwei Zugaben. Das Konzert dauerte über zwei Stunden und ich stand die ganze Zeit. Nach dem Konzert war meine Stimme heiser vom Singen, aber ich war überglücklich.",
+        persianTranslation: "هفته گذشته من در یک کنسرت راک از گروه موسیقی مورد علاقه‌ام بودم. جو سالن فوق‌العاده بود و همه مردم با هم می‌خواندند و می‌رقصیدند. گروه تمام آهنگ‌های معروفش را اجرا کرد و حتی دو آهنگ اضافی هم خواند. کنسرت بیش از دو ساعت طول کشید و من تمام مدت ایستاده بودم. بعد از کنسرت صدایم از آواز خواندن گرفته بود، اما بی‌نهایت خوشحال بودم."
+    },
+    { 
+        germanTitle: "Meine Kindheit auf dem Land", 
+        persianTitle: "کودکی من در روستا",
+        germanStory: "Ich hatte das Glück, eine sehr schöne Kindheit auf dem Land zu haben. Ich wuchs in einem kleinen Dorf auf und spielte den ganzen Tag draußen in der Natur. Im Sommer gingen wir im nahegelegenen See schwimmen und im Winter bauten wir große Schneemänner. Ich hatte viele Freunde in der Nachbarschaft und wir waren immer zusammen unterwegs. Ich erinnere mich sehr gerne an diese unbeschwerte und freie Zeit zurück.",
+        persianTranslation: "من شانس این را داشتم که کودکی بسیار زیبایی در روستا داشته باشم. من در یک روستای کوچک بزرگ شدم و تمام روز را بیرون در طبیعت بازی می‌کردم. در تابستان در دریاچه نزدیک شنا می‌کردیم و در زمستان آدم‌برفی‌های بزرگی می‌ساختیم. من دوستان زیادی در محله داشتم و ما همیشه با هم بودیم. من با خوشحالی آن دوران بی‌دغدغه و آزاد را به یاد می‌آورم."
+    },
+    { 
+        germanTitle: "Eine Wanderung in den Alpen", 
+        persianTitle: "پیاده‌روی در کوه‌های آلپ",
+        germanStory: "In den Sommerferien machten wir eine mehrtägige Wanderung in den Alpen. Wir standen jeden Tag früh auf, um die kühle Morgenluft zu genießen. Die Wege waren manchmal sehr steil, aber die Aussicht von den Gipfeln war jede Mühe wert. Wir sahen Kühe auf den Almen und aßen auf einer traditionellen Hütte zu Mittag. Es waren anstrengende, aber wunderschöne Tage in der Natur, weit weg von der Stadt.",
+        persianTranslation: "در تعطیلات تابستان ما یک پیاده‌روی چند روزه در کوه‌های آلپ داشتیم. ما هر روز زود بیدار می‌شدیم تا از هوای خنک صبح لذت ببریم. مسیرها گاهی بسیار شیب‌دار بودند، اما منظره از قله‌ها ارزش هر تلاشی را داشت. ما گاوها را در مراتع کوهستانی دیدیم و در یک کلبه سنتی ناهار خوردیم. این روزهای خسته‌کننده اما بسیار زیبایی در طبیعت، دور از شهر بود."
+    },
+    { 
+        germanTitle: "Ein Umzug in eine andere Stadt", 
+        persianTitle: "اسباب‌کشی به شهری دیگر",
+        germanStory: "Vor zwei Monaten bin ich wegen meines neuen Jobs in eine andere Stadt gezogen. Der Umzug selbst war sehr stressig. Ich musste alle meine Sachen in unzählige Kisten packen und eine Transportfirma organisieren. Die neue Stadt und die neue Arbeit gefallen mir sehr gut, aber ich vermisse manchmal meine Familie und meine alten Freunde. Es braucht Zeit, sich an einem neuen Ort wirklich zu Hause zu fühlen.",
+        persianTranslation: "دو ماه پیش من به خاطر شغل جدیدم به شهر دیگری نقل مکان کردم. خود اسباب‌کشی خیلی استرس‌زا بود. من باید تمام وسایلم را در جعبه‌های بی‌شمار بسته‌بندی می‌کردم و یک شرکت حمل و نقل را سازماندهی می‌کردم. شهر جدید و کار جدید را خیلی دوست دارم، اما گاهی دلم برای خانواده و دوستان قدیمی‌ام تنگ می‌شود. زمان می‌برد تا در یک مکان جدید واقعاً احساس کنی در خانه هستی."
+    },
+    { 
+        germanTitle: "Ein Tag als Tourist in der eigenen Stadt", 
+        persianTitle: "یک روز به عنوان توریست در شهر خود",
+        germanStory: "Gestern beschloss ich, ein Tourist in meiner eigenen Stadt zu sein. Ich besuchte all die berühmten Sehenswürdigkeiten, an denen ich normalerweise nur vorbeilaufe. Ich fuhr mit einem Hop-on-Hop-off-Bus und machte viele Fotos, genau wie ein echter Tourist. Dabei habe ich viele schöne Ecken und interessante Details entdeckt, die ich vorher noch nie bemerkt hatte. Es war eine sehr lustige und interessante Erfahrung.",
+        persianTranslation: "دیروز تصمیم گرفتم در شهر خودم یک توریست باشم. من از تمام جاذبه‌های دیدنی معروفی که معمولاً فقط از کنارشان رد می‌شوم، بازدید کردم. من با یک اتوبوس توریستی سوار شدم و عکس‌های زیادی گرفتم، درست مثل یک توریست واقعی. در این حین گوشه‌های زیبا و جزئیات جالبی را کشف کردم که قبلاً هرگز متوجه آنها نشده بودم. این یک تجربه بسیار سرگرم‌کننده و جالب بود."
+    },
+    { 
+        germanTitle: "Ein Haustier adoptieren", 
+        persianTitle: "به سرپرستی گرفتن یک حیوان خانگی",
+        germanStory: "Seit langem wünschte ich mir einen Hund. Letzte Woche haben wir uns entschieden, einen Hund aus dem Tierheim zu adoptieren. Wir haben einen kleinen Mischlingshund namens Max mit nach Hause genommen. Er ist sehr verspielt und unglaublich freundlich. Ein Haustier zu haben bedeutet viel Verantwortung, aber es bringt auch so viel Freude und Liebe in unser Leben. Es war die beste Entscheidung.",
+        persianTranslation: "مدت‌ها بود که آرزوی یک سگ را داشتم. هفته گذشته ما تصمیم گرفتیم یک سگ از پناهگاه حیوانات به سرپرستی بگیریم. ما یک سگ کوچک میکس به نام ماکس را با خود به خانه آوردیم. او بسیار بازیگوش و فوق‌العاده مهربان است. داشتن یک حیوان خانگی به معنای مسئولیت زیاد است، اما همچنین شادی و عشق زیادی را به زندگی ما می‌آورد. این بهترین تصمیم بود."
+    },
+    { 
+        germanTitle: "Eine Überraschungsparty", 
+        persianTitle: "یک مهمانی غافلگیرکننده",
+        germanStory: "Meine Freunde haben heimlich eine Überraschungsparty zu meinem 30. Geburtstag organisiert. Ich wusste absolut von nichts. Als ich an dem Abend nach Hause kam, waren alle meine Freunde und meine Familie da und riefen 'Überraschung!'. Ich war total sprachlos und so gerührt, dass mir die Tränen kamen. Es war der beste und emotionalste Geburtstag, den ich je hatte.",
+        persianTranslation: "دوستانم مخفیانه یک مهمانی غافلگیرکننده برای تولد ۳۰ سالگی‌ام ترتیب دادند. من مطلقاً از هیچ چیز خبر نداشتم. وقتی آن شب به خانه آمدم، همه دوستان و خانواده‌ام آنجا بودند و فریاد زدند «سورپرایز!». من کاملاً لال شده بودم و آنقدر تحت تأثیر قرار گرفتم که اشک‌هایم سرازیر شد. این بهترین و احساسی‌ترین تولدی بود که تا به حال داشتم."
+    },
+    { 
+        germanTitle: "Ein Gespräch über Zukunftspläne", 
+        persianTitle: "گفتگو درباره برنامه‌های آینده",
+        germanStory: "Ich habe neulich mit meinen Eltern lange über meine Zukunftspläne gesprochen. Ich erzählte ihnen, dass ich nach dem Studium gerne für ein paar Jahre im Ausland arbeiten würde, um Erfahrungen zu sammeln. Zuerst waren sie etwas besorgt, weil ich dann so weit weg wäre. Aber am Ende haben sie meine Idee unterstützt. Es ist ein gutes Gefühl zu wissen, dass meine Familie hinter mir steht, egal was ich entscheide.",
+        persianTranslation: "اخیراً با والدینم مدت زیادی درباره برنامه‌های آینده‌ام صحبت کردم. به آنها گفتم که دوست دارم بعد از تحصیل برای چند سال در خارج از کشور کار کنم تا تجربه کسب کنم. در ابتدا آنها کمی نگران بودند، چون آن وقت خیلی دور می‌شدم. اما در نهایت از ایده‌ام حمایت کردند. این حس خوبی است که بدانی خانواده‌ام پشت من هستند، مهم نیست چه تصمیمی بگیرم."
+    },
+    { 
+        germanTitle: "Ein Besuch auf dem Flohmarkt", 
+        persianTitle: "بازدید از بازار کهنه‌فروشان",
+        germanStory: "Am Sonntag besuchte ich einen großen Flohmarkt in der Nachbarstadt. Ich liebe es, zwischen all den alten Sachen zu stöbern, weil man nie weiß, welche Schätze man findet. Ich kaufte ein paar alte Bücher und eine schöne Vintage-Vase für nur fünf Euro. Das Handeln mit den Verkäufern macht auch immer besonders viel Spaß. Ein Flohmarkt ist für mich wie eine kleine Schatzsuche.",
+        persianTranslation: "روز یکشنبه من از یک بازار کهنه‌فروشان بزرگ در شهر همسایه دیدن کردم. من عاشق گشتن بین تمام وسایل قدیمی هستم، چون هرگز نمی‌دانی چه گنج‌هایی پیدا می‌کنی. من چند کتاب قدیمی و یک گلدان وینتیج زیبا را فقط با پنج یورو خریدم. چانه زدن با فروشندگان هم همیشه به طور خاص سرگرم‌کننده است. یک بازار کهنه‌فروشان برای من مانند یک گنج‌یابی کوچک است."
+    },
+    { 
+        germanTitle: "Eine Reklamation im Geschäft", 
+        persianTitle: "شکایت در یک فروشگاه",
+        germanStory: "Ich habe letzte Woche einen neuen Toaster gekauft, aber er funktionierte von Anfang an nicht. Also ging ich heute zurück ins Elektronikgeschäft, um ihn zu reklamieren. Ich zeigte dem Verkäufer den Kassenbon und erklärte das Problem. Er war sehr verständnisvoll und entschuldigte sich. Ich konnte mir sofort ein neues, funktionierendes Gerät aussuchen. Der Umtausch war zum Glück sehr unkompliziert.",
+        persianTranslation: "من هفته گذشته یک توستر جدید خریدم، اما از همان ابتدا کار نمی‌کرد. بنابراین امروز به فروشگاه الکترونیک برگشتم تا آن را پس دهم. من رسید را به فروشنده نشان دادم و مشکل را توضیح دادم. او بسیار با درک بود و عذرخواهی کرد. من توانستم فوراً یک دستگاه جدید و کارآمد انتخاب کنم. خوشبختانه تعویض بسیار بدون دردسر بود."
+    },
+    { 
+        germanTitle: "Ein lustiges Erlebnis in der Sprachschule", 
+        persianTitle: "یک تجربه خنده‌دار در آموزشگاه زبان",
+        germanStory: "In meinem Deutschkurs passierte letzte Woche etwas sehr Lustiges. Wir sollten Sätze mit Modalverben bilden. Ein Mitschüler aus Spanien wollte sagen 'Ich muss heute kochen', aber er verwechselte die Wörter und sagte 'Ich muss heute kotzen'. Die ganze Klasse, auch die Lehrerin, konnte nicht mehr vor Lachen. Solche lustigen Fehler passieren eben, wenn man eine neue Sprache lernt.",
+        persianTranslation: "هفته گذشته در کلاس آلمانی من اتفاق بسیار خنده‌داری افتاد. ما باید با افعال مُدال جمله می‌ساختیم. یک همکلاسی از اسپانیا می‌خواست بگوید «من امروز باید آشپزی کنم»، اما کلمات را اشتباه گرفت و گفت «من امروز باید بالا بیاورم». تمام کلاس، حتی معلم، از خنده نمی‌توانستند جلوی خود را بگیرند. چنین اشتباهات خنده‌داری وقتی یک زبان جدید یاد می‌گیری، اتفاق می‌افتد."
+    },
+    { 
+        germanTitle: "Ein schlechter Tag", 
+        persianTitle: "یک روز بد",
+        germanStory: "Gestern hatte ich einen wirklich schlechten Tag. Es fing damit an, dass ich meinen Bus zur Arbeit verpasst habe. Dann hatte ich einen kleinen Streit mit meinem Chef. Und auf dem Heimweg hat es stark angefangen zu regnen und ich hatte natürlich keinen Regenschirm dabei. Ich war froh, als ich endlich zu Hause war und der Tag vorbei war. Morgen wird es hoffentlich besser.",
+        persianTranslation: "دیروز من یک روز واقعاً بدی داشتم. با این شروع شد که اتوبوسم را برای رفتن به سر کار از دست دادم. بعد یک دعوای کوچک با رئیسم داشتم. و در راه خانه باران شدیدی شروع به باریدن کرد و من البته چتر همراهم نبود. خوشحال بودم وقتی بالاخره به خانه رسیدم و روز تمام شد. امیدوارم فردا بهتر شود."
+    },
+    { 
+        germanTitle: "Ein gemeinsamer Kochabend", 
+        persianTitle: "یک شب آشپزی مشترک",
+        germanStory: "Am Freitagabend trafen wir uns bei einer Freundin, um zusammen italienisch zu kochen. Jeder brachte ein paar Zutaten mit. Wir entschieden uns, Pizza komplett selbst zu machen, vom Teig bis zur Soße. Es war ein lustiges Chaos in der Küche und wir haben viel gelacht. Aber das Ergebnis war fantastisch! Gemeinsam zu kochen und dann zu essen ist einfach viel schöner als alleine.",
+        persianTranslation: "عصر جمعه ما در خانه یک دوست جمع شدیم تا با هم غذای ایتالیایی بپزیم. هر کس چند ماده اولیه با خود آورد. ما تصمیم گرفتیم پیتزا را کاملاً خودمان درست کنیم، از خمیر تا سس. در آشپزخانه یک هرج و مرج خنده‌دار بود و ما خیلی خندیدیم. اما نتیجه فوق‌العاده بود! آشپزی و سپس غذا خوردن با هم به سادگی بسیار زیباتر از تنهایی است."
+    },
+    { 
+        germanTitle: "Eine wichtige Prüfung", 
+        persianTitle: "یک امتحان مهم",
+        germanStory: "Nächste Woche habe ich eine sehr wichtige Prüfung an der Universität. Deshalb muss ich im Moment sehr viel lernen. Ich verbringe jeden Tag mehrere Stunden in der Bibliothek. Ich wiederhole den ganzen Stoff und mache alte Prüfungsaufgaben. Ich bin schon ein bisschen aufgeregt, aber ich fühle mich relativ gut vorbereitet. Ich hoffe, dass sich die ganze Mühe lohnen wird und ich die Prüfung bestehe.",
+        persianTranslation: "هفته آینده من یک امتحان بسیار مهم در دانشگاه دارم. به همین دلیل در حال حاضر باید خیلی زیاد درس بخوانم. من هر روز چندین ساعت را در کتابخانه می‌گذرانم. من تمام مطالب را مرور می‌کنم و سوالات امتحانات قدیمی را حل می‌کنم. من کمی هیجان‌زده هستم، اما احساس می‌کنم نسبتاً خوب آماده شده‌ام. امیدوارم که تمام این زحمات ارزشش را داشته باشد و من امتحان را قبول شوم."
+    },
+    { 
+        germanTitle: "Ein Anruf bei einer Behörde", 
+        persianTitle: "تماس با یک اداره",
+        germanStory: "Ich musste heute bei der Ausländerbehörde anrufen, um meinen Termin zur Visumsverlängerung zu vereinbaren. Ich war sehr lange in der telefonischen Warteschleife, bis endlich jemand ranging. Die Mitarbeiterin am Telefon war aber zum Glück sehr freundlich und kompetent. Sie half mir, einen passenden Termin zu finden. Manchmal braucht man viel Geduld, wenn man mit Behörden zu tun hat.",
+        persianTranslation: "امروز باید به اداره اتباع خارجی زنگ می‌زدم تا وقت ملاقاتم را برای تمدید ویزا تعیین کنم. من مدت بسیار طولانی در صف انتظار تلفنی بودم تا بالاخره کسی جواب داد. اما خوشبختانه کارمند پشت تلفن بسیار مهربان و باصلاحیت بود. او به من کمک کرد تا یک وقت مناسب پیدا کنم. گاهی اوقات وقتی با ادارات سر و کار داری، به صبر زیادی نیاز داری."
+    },
+    { 
+        germanTitle: "Ein Traumhaus beschreiben", 
+        persianTitle: "توصیف خانه رویایی",
+        germanStory: "Mein absolutes Traumhaus wäre ein kleines, modernes Holzhaus mitten in der Natur, vielleicht an einem See. Es hätte riesige Fenster, damit viel Licht hereinkommt und man die Natur beobachten kann. Im Wohnzimmer gäbe es einen gemütlichen Kamin für kalte Winterabende. Ich wünschte mir auch einen großen Garten, in dem ich mein eigenes Gemüse und Obst anbauen könnte. Das wäre für mich der perfekte Ort zum Leben.",
+        persianTranslation: "خانه رویایی مطلق من یک کلبه چوبی کوچک و مدرن در دل طبیعت خواهد بود، شاید کنار یک دریاچه. پنجره‌های غول‌پیکری خواهد داشت تا نور زیادی وارد شود و بتوان طبیعت را تماشا کرد. در اتاق نشیمن یک شومینه دنج برای عصرهای سرد زمستانی وجود خواهد داشت. من همچنین آرزوی یک باغ بزرگ را دارم که در آن بتوانم سبزیجات و میوه‌های خودم را بکارم. این برای من مکان عالی برای زندگی خواهد بود."
+    },
+    { 
+        germanTitle: "Ehrenamtliche Arbeit", 
+        persianTitle: "کار داوطلبانه",
+        germanStory: "Jeden Samstag arbeite ich für ein paar Stunden ehrenamtlich in einem Tierheim. Ich helfe dabei, die Käfige zu säubern, und gehe mit den Hunden spazieren. Die Arbeit ist unbezahlt, aber sie gibt mir ein unglaublich gutes Gefühl. Es ist schön zu sehen, wie sehr sich die Tiere über ein bisschen Aufmerksamkeit und Liebe freuen. Ich finde es wichtig, der Gemeinschaft auf irgendeine Weise etwas zurückzugeben.",
+        persianTranslation: "هر شنبه من برای چند ساعت به صورت داوطلبانه در یک پناهگاه حیوانات کار می‌کنم. من در تمیز کردن قفس‌ها کمک می‌کنم و با سگ‌ها به پیاده‌روی می‌روم. این کار بدون حقوق است، اما به من حس فوق‌العاده خوبی می‌دهد. دیدن اینکه حیوانات چقدر از کمی توجه و عشق خوشحال می‌شوند، زیباست. به نظرم مهم است که به نوعی چیزی به جامعه بازگردانیم."
+    },
+    { 
+        germanTitle: "Ein typisches deutsches Frühstück", 
+        persianTitle: "یک صبحانه معمولی آلمانی",
+        germanStory: "Ein typisch deutsches Frühstück, besonders am Wochenende, ist oft sehr reichhaltig. Es gibt verschiedene Sorten frischer Brötchen vom Bäcker, dazu Brot, Wurst, Käse und süße Aufstriche wie Marmelade oder Honig. Viele Erwachsene trinken dazu starken Kaffee. Manchmal gibt es auch noch ein gekochtes Ei oder Müsli mit Joghurt. Für dieses Frühstück nimmt man sich gerne viel Zeit.",
+        persianTranslation: "یک صبحانه معمولی آلمانی، به خصوص در آخر هفته، اغلب بسیار مفصل است. انواع مختلف نان‌های تازه از نانوایی، به همراه نان، کالباس، پنیر و مواد شیرین مالیدنی مانند مربا یا عسل وجود دارد. بسیاری از بزرگسالان با آن قهوه غلیظ می‌نوشند. گاهی اوقات یک تخم‌مرغ آب‌پز یا موسلی با ماست هم وجود دارد. برای این صبحانه با کمال میل وقت زیادی صرف می‌شود."
+    },
+    { 
+        germanTitle: "Eine Autopanne", 
+        persianTitle: "خرابی ماشین",
+        germanStory: "Gestern hatte ich eine Autopanne auf der Autobahn. Plötzlich machte der Motor komische Geräusche und verlor an Leistung. Ich fuhr sofort auf den Seitenstreifen, machte den Warnblinker an und rief den Pannendienst. Es war eine sehr unangenehme Situation. Nach einer Stunde kam endlich ein Abschleppwagen und brachte mein kaputtes Auto in eine Werkstatt. Das wird wohl teuer.",
+        persianTranslation: "دیروز من در اتوبان ماشینم خراب شد. ناگهان موتور صداهای عجیبی درآورد و قدرت خود را از دست داد. من فوراً به شانه خاکی رفتم، فلاشر را روشن کردم و به امداد خودرو زنگ زدم. این یک وضعیت بسیار ناخوشایند بود. بعد از یک ساعت بالاخره یک یدک‌کش آمد و ماشین خرابم را به یک تعمیرگاه برد. این احتمالاً گران تمام خواهد شد."
+    },
+    { 
+        germanTitle: "Ein interessanter Traum", 
+        persianTitle: "یک رویای جالب",
+        germanStory: "Letzte Nacht hatte ich einen sehr seltsamen, aber interessanten Traum. Ich träumte, dass ich mit Tieren sprechen konnte. Ein Eichhörnchen erzählte mir von seinen Problemen mit den Nüssen und ein Vogel sang mir ein trauriges Lied von seiner verlorenen Familie vor. Als ich aufwachte, war ich ein bisschen traurig, dass es nur ein Traum war. Es wäre faszinierend, wenn das wirklich möglich wäre.",
+        persianTranslation: "دیشب یک رویای بسیار عجیب اما جالب دیدم. من خواب دیدم که می‌توانم با حیوانات صحبت کنم. یک سنجاب از مشکلاتش با گردوها برایم گفت و یک پرنده برایم آهنگی غمگین از خانواده گمشده‌اش خواند. وقتی بیدار شدم، کمی غمگین بودم که این فقط یک رویا بود. شگفت‌انگیز می‌شد اگر این واقعاً ممکن بود."
+    },
+    { 
+        germanTitle: "Ein Tag ohne Handy", 
+        persianTitle: "یک روز بدون موبایل",
+        germanStory: "Gestern habe ich ein Experiment gemacht: einen ganzen Tag ohne mein Handy. Am Anfang fühlte es sich sehr komisch an. Ich hatte ständig das Gefühl, etwas zu verpassen. Aber nach ein paar Stunden wurde es sehr entspannter. Ich habe ein Buch gelesen, war lange spazieren und habe mich mit einem Freund unterhalten, ohne ständig abgelenkt zu sein. Ich hatte plötzlich viel mehr Zeit und war ruhiger. Das sollte ich öfter machen.",
+        persianTranslation: "دیروز یک آزمایش انجام دادم: یک روز کامل بدون موبایلم. در ابتدا حس بسیار عجیبی داشت. من دائماً احساس می‌کردم چیزی را از دست می‌دهم. اما بعد از چند ساعت بسیار آرامش‌بخش‌تر شد. من یک کتاب خواندم، مدت طولانی پیاده‌روی کردم و با یک دوست صحبت کردم، بدون اینکه مدام حواسم پرت شود. ناگهان وقت بسیار بیشتری داشتم و آرام‌تر بودم. باید این کار را بیشتر انجام دهم."
+    },
+    { 
+        germanTitle: "Ein Picknick am See", 
+        persianTitle: "پیک‌نیک کنار دریاچه",
+        germanStory: "Am Sonntag war das Wetter perfekt, also fuhren wir zu einem nahegelegenen See, um ein Picknick zu machen. Wir breiteten eine große Decke im Gras direkt am Ufer aus. Wir hatten Sandwiches, einen Nudelsalat und frisches Obst dabei. Nach dem Essen gingen wir sogar im See schwimmen, obwohl das Wasser noch ziemlich kalt war. Es war ein perfekter, entspannter Tag in der Natur mit guten Freunden.",
+        persianTranslation: "روز یکشنبه هوا عالی بود، بنابراین ما به یک دریاچه نزدیک رفتیم تا پیک‌نیک کنیم. ما یک پتوی بزرگ روی چمن درست کنار ساحل پهن کردیم. ما ساندویچ، یک سالاد ماکارونی و میوه تازه همراه داشتیم. بعد از غذا حتی در دریاچه شنا کردیم، اگرچه آب هنوز خیلی سرد بود. این یک روز عالی و آرام در طبیعت با دوستان خوب بود."
+    },
+    { 
+        germanTitle: "Ein Besuch im Fitnessstudio", 
+        persianTitle: "رفتن به باشگاه بدنسازی",
+        germanStory: "Ich habe mich letzte Woche in einem Fitnessstudio angemeldet, um etwas für meine Gesundheit zu tun. Gestern war ich das erste Mal dort. Ein Trainer hat mir alle Geräte erklärt und einen persönlichen Trainingsplan für mich erstellt. Das erste Training war sehr anstrengend, aber es hat sich gut angefühlt. Heute habe ich überall Muskelkater, aber ich bin motiviert und werde auf jeden Fall weitermachen.",
+        persianTranslation: "من هفته گذشته در یک باشگاه بدنسازی ثبت نام کردم تا کاری برای سلامتی‌ام انجام دهم. دیروز برای اولین بار آنجا بودم. یک مربی تمام دستگاه‌ها را برایم توضیح داد و یک برنامه تمرینی شخصی برایم تهیه کرد. اولین تمرین بسیار سخت بود، اما حس خوبی داشت. امروز همه جای بدنم درد می‌کند، اما من با انگیزه هستم و حتماً ادامه خواهم داد."
+    },
+    { 
+        germanTitle: "Eine Entschuldigung schreiben", 
+        persianTitle: "نوشتن یک نامه عذرخواهی",
+        germanStory: "Leider habe ich letzte Woche den Geburtstag eines guten Freundes komplett vergessen. Das war mir sehr peinlich. Deshalb habe ich ihm eine lange Nachricht geschrieben. Ich habe mich aufrichtig entschuldigt und erklärt, dass ich in letzter Zeit sehr viel Stress bei der Arbeit hatte. Er hat zum Glück sehr verständnisvoll reagiert und war nicht lange böse auf mich. Ich werde ihn am Wochenende auf einen Kaffee einladen.",
+        persianTranslation: "متأسفانه هفته گذشته تولد یک دوست خوب را کاملاً فراموش کردم. این برایم خیلی خجالت‌آور بود. به همین دلیل برایش یک پیام طولانی نوشتم. من صمیمانه عذرخواهی کردم و توضیح دادم که اخیراً استرس کاری زیادی داشتم. خوشبختانه او با درک زیادی واکنش نشان داد و مدت طولانی از من عصبانی نبود. من او را آخر هفته به یک قهوه دعوت خواهم کرد."
+    },
+    { 
+        germanTitle: "Ein Campingausflug", 
+        persianTitle: "سفر کمپینگ",
+        germanStory: "Am Wochenende machten wir einen kleinen Campingausflug in den Wald. Wir bauten unser Zelt auf einer Lichtung in der Nähe eines kleinen Flusses auf. Am Abend machten wir ein Lagerfeuer, grillten Würstchen und erzählten uns Geschichten. Nachts war es komplett still und wir konnten unzählige Sterne am Himmel beobachten. Es war toll, einfach mal weg von der Stadt und dem Lärm zu sein.",
+        persianTranslation: "آخر هفته ما یک سفر کمپینگ کوچک به جنگل داشتیم. ما چادرمان را در یک поляна نزدیک یک رودخانه کوچک برپا کردیم. عصر آتش روشن کردیم، سوسیس کباب کردیم و برای هم داستان تعریف کردیم. شب کاملاً ساکت بود و ما می‌توانستیم ستاره‌های بی‌شماری را در آسمان تماشا کنیم. عالی بود که برای مدتی از شهر و سر و صدا دور باشیم."
+    },
+    { 
+        germanTitle: "Eine neue Fähigkeit lernen", 
+        persianTitle: "یادگیری یک مهارت جدید",
+        germanStory: "Ich wollte schon immer lernen, wie man Gitarre spielt. Also habe ich mir letzte Woche eine günstige Gitarre gekauft und einen Online-Kurs begonnen. Die ersten Akkorde zu lernen ist sehr schwer und meine Finger tun ziemlich weh. Aber ich versuche, jeden Tag eine halbe Stunde zu üben. Ich bin sehr motiviert und hoffe, dass ich bald mein erstes einfaches Lied spielen kann.",
+        persianTranslation: "من همیشه می‌خواستم یاد بگیرم چگونه گیتار بنوازم. بنابراین هفته گذشته یک گیتار ارزان خریدم و یک دوره آنلاین را شروع کردم. یادگیری آکوردهای اول بسیار سخت است و انگشتانم خیلی درد می‌کنند. اما من سعی می‌کنم هر روز نیم ساعت تمرین کنم. من بسیار با انگیزه هستم و امیدوارم به زودی بتوانم اولین آهنگ ساده‌ام را بنوازم."
+    },
+    { 
+        germanTitle: "Ein besonderes Familienfest", 
+        persianTitle: "یک جشن خانوادگی خاص",
+        germanStory: "Letzten Samstag feierten meine Großeltern ihre Goldene Hochzeit, also ihr 50. Hochzeitsjubiläum. Das ist ein sehr besonderes Fest. Die ganze Familie kam zusammen, um zu gratulieren, auch Verwandte, die sehr weit weg wohnen. Wir haben zusammen gegessen, alte Geschichten erzählt und uns Fotoalben von früher angesehen. Es war ein sehr emotionaler und schöner Tag, der uns als Familie noch enger zusammengebracht hat.",
+        persianTranslation: "شنبه گذشته پدربزرگ و مادربزرگم جشن عروسی طلایی خود، یعنی پنجاهمین سالگرد ازدواجشان را برگزار کردند. این یک جشن بسیار خاص است. تمام خانواده برای تبریک گفتن دور هم جمع شدند، حتی بستگانی که خیلی دور زندگی می‌کنند. ما با هم غذا خوردیم، داستان‌های قدیمی تعریف کردیم و آلبوم‌های عکس قدیمی را نگاه کردیم. این یک روز بسیار احساسی و زیبا بود که ما را به عنوان خانواده به هم نزدیک‌تر کرد."
+    },
+    { 
+        germanTitle: "Ein guter Ratschlag", 
+        persianTitle: "یک نصیحت خوب",
+        germanStory: "Als ich mit meinem Studium sehr unzufrieden war, wusste ich nicht, was ich tun sollte. Mein Vater gab mir damals einen guten Ratschlag. Er sagte: 'Es ist keine Schande, eine Entscheidung zu ändern, wenn du merkst, dass sie dich unglücklich macht.' Dieser Ratschlag gab mir den Mut, das Studienfach zu wechseln. Heute bin ich sehr glücklich mit meiner neuen Wahl und dankbar für seine Worte.",
+        persianTranslation: "وقتی از تحصیلم خیلی ناراضی بودم، نمی‌دانستم چه کار کنم. پدرم آن زمان نصیحت خوبی به من کرد. او گفت: «تغییر دادن یک تصمیم اگر متوجه شوی که تو را ناراحت می‌کند، شرم‌آور نیست.» این نصیحت به من شجاعت داد تا رشته تحصیلی‌ام را عوض کنم. امروز من از انتخاب جدیدم بسیار خوشحالم و از حرف‌های او سپاسگزارم."
+    },
+    { 
+        germanTitle: "Eine unerwartete Begegnung", 
+        persianTitle: "یک برخورد غیرمنتظره",
+        germanStory: "Gestern traf ich in der Stadt zufällig meine alte Grundschullehrerin. Ich hatte sie seit über fünfzehn Jahren nicht mehr gesehen. Zuerst war ich nicht sicher, ob sie es ist, aber dann sprach sie mich an, weil sie mich erkannt hatte. Wir haben uns eine Weile über die alten Zeiten und unser jetziges Leben unterhalten. Das war eine sehr nette und völlig unerwartete Begegnung.",
+        persianTranslation: "دیروز در شهر به طور تصادفی معلم قدیمی دبستانم را ملاقات کردم. من بیش از پانزده سال بود که او را ندیده بودم. در ابتدا مطمئن نبودم که اوست، اما بعد او با من صحبت کرد چون مرا شناخته بود. ما مدتی درباره دوران قدیم و زندگی فعلی‌مان صحبت کردیم. این یک برخورد بسیار خوب و کاملاً غیرمنتظره بود."
+    },
+    { 
+        germanTitle: "Ein Tag im Leben eines Studenten", 
+        persianTitle: "یک روز از زندگی یک دانشجو",
+        germanStory: "Als Student ist kein Tag wie der andere, aber es gibt eine gewisse Routine. Normalerweise stehe ich auf, frühstücke schnell und gehe dann zu den Vorlesungen an der Universität. Den Nachmittag verbringe ich oft in der Bibliothek, um für Prüfungen zu lernen. Abends koche ich meistens mit meinen Mitbewohnern oder wir gehen in eine Studentenbar. Man muss sehr diszipliniert sein, aber man genießt auch viele Freiheiten.",
+        persianTranslation: "به عنوان یک دانشجو، هیچ روزی شبیه روز دیگر نیست، اما یک روال خاصی وجود دارد. معمولاً بیدار می‌شوم، سریع صبحانه می‌خورم و بعد به سخنرانی‌ها در دانشگاه می‌روم. بعد از ظهر را اغلب در کتابخانه می‌گذرانم تا برای امتحانات درس بخوانم. عصرها بیشتر با هم‌اتاقی‌هایم آشپزی می‌کنم یا به یک بار دانشجویی می‌رویم. باید خیلی منضبط بود، اما از آزادی‌های زیادی هم لذت می‌بری."
+    },
+    { 
+        germanTitle: "Ein Missverständnis am Telefon", 
+        persianTitle: "یک سوءتفاهم تلفنی",
+        germanStory: "Ich rief gestern bei einer Firma an, um mich nach meiner Bestellung zu erkundigen. Die Verbindung war sehr schlecht und die Person am Telefon sprach sehr schnell. Ich dachte, sie sagte, meine Bestellung sei 'storniert'. Ich war schon sehr wütend. Aber dann wiederholte sie es: 'Ihre Bestellung ist schon unterwegs.' Es war ein lustiges Missverständnis. Man muss am Telefon immer sehr genau hinhören.",
+        persianTranslation: "دیروز به شرکتی زنگ زدم تا در مورد سفارشم سوال کنم. ارتباط خیلی بد بود و فرد پشت تلفن خیلی سریع صحبت می‌کرد. من فکر کردم او گفت سفارش من «لغو شده» است. من دیگر خیلی عصبانی بودم. اما بعد او تکرار کرد: «سفارش شما در راه است.» این یک سوءتفاهم خنده‌دار بود. باید همیشه پای تلفن با دقت گوش داد."
+    },
+    { 
+        germanTitle: "Eine Reise in die Vergangenheit", 
+        persianTitle: "سفری به گذشته",
+        germanStory: "Wenn ich mit einer Zeitmaschine in die Vergangenheit reisen könnte, würde ich die 'Goldenen Zwanziger' Jahre in Berlin besuchen. Ich stelle mir diese Zeit unglaublich aufregend und kreativ vor, mit all der neuen Kunst, Musik und dem Theater. Natürlich weiß ich, dass es auch viele soziale Probleme gab, aber es wäre faszinierend, die besondere Atmosphäre dieser Zeit einmal selbst zu erleben.",
+        persianTranslation: "اگر می‌توانستم با یک ماشین زمان به گذشته سفر کنم، دهه «بیست طلایی» در برلین را بازدید می‌کردم. من این دوران را فوق‌العاده هیجان‌انگیز و خلاقانه تصور می‌کنم، با تمام آن هنر، موسیقی و تئاتر جدید. البته می‌دانم که مشکلات اجتماعی زیادی هم وجود داشت، اما تجربه کردن جو خاص آن زمان به شخصه شگفت‌انگیز خواهد بود."
+    },
+    { 
+        germanTitle: "Ein Kompliment bekommen", 
+        persianTitle: "دریافت یک تعریف",
+        germanStory: "Heute bei der Arbeit hat mir eine Kollegin ein sehr nettes Kompliment gemacht. Sie sagte, dass sie meine positive Art und meine Hilfsbereitschaft im Team sehr schätzt. Das hat mich wirklich sehr gefreut und mir den ganzen Tag versüßt. Ein ehrliches und unerwartetes Kompliment kann eine große positive Wirkung haben und die Motivation steigern.",
+        persianTranslation: "امروز در محل کار یک همکار از من تعریف بسیار خوبی کرد. او گفت که از رفتار مثبت و کمک‌رسانی من در تیم بسیار قدردانی می‌کند. این واقعاً مرا بسیار خوشحال کرد و تمام روزم را شیرین کرد. یک تعریف صادقانه و غیرمنتظره می‌تواند تأثیر مثبت بزرگی داشته باشد و انگیزه را افزایش دهد."
+    },
+    { 
+        germanTitle: "Ein Regentag zu Hause", 
+        persianTitle: "یک روز بارانی در خانه",
+        germanStory: "Es hat den ganzen Samstag stark geregnet, deshalb haben wir unsere Pläne abgesagt und sind zu Hause geblieben. Wir haben es uns auf dem Sofa gemütlich gemacht, eine Kanne Tee gekocht und einen alten Filmklassiker angeschaut. Manchmal ist es wunderschön, wenn man keine Termine hat und einfach nur entspannen kann. So ein fauler Tag zu Hause tut der Seele gut.",
+        persianTranslation: "تمام روز شنبه باران شدیدی بارید، به همین دلیل ما برنامه‌هایمان را لغو کردیم و در خانه ماندیم. ما روی مبل راحت نشستیم، یک قوری چای دم کردیم و یک فیلم کلاسیک قدیمی تماشا کردیم. گاهی اوقات وقتی هیچ قراری نداری و فقط می‌توانی استراحت کنی، فوق‌العاده است. چنین روز تنبلی برای روح خوب است."
+    },
+    { 
+        germanTitle: "Ein lustiger Fehler", 
+        persianTitle: "یک اشتباه خنده‌دار",
+        germanStory: "Als ich neulich im Supermarkt einkaufen war, war ich sehr in Gedanken vertieft. An der Kasse legte ich alle meine Waren auf das Band und wollte bezahlen. Aber anstatt meine EC-Karte aus der Tasche zu holen, hielt ich dem Kassierer meine Fernbedienung für das Auto hin. Er schaute mich verwirrt an und wir mussten beide sehr lachen. Manchmal ist man einfach ein bisschen durcheinander.",
+        persianTranslation: "اخیراً وقتی در سوپرمارکت خرید می‌کردم، خیلی در فکر فرو رفته بودم. در صندوق تمام کالاهایم را روی نوار نقاله گذاشتم و می‌خواستم پرداخت کنم. اما به جای اینکه کارت بانکی‌ام را از کیفم بیرون بیاورم، ریموت ماشینم را به صندوقدار دادم. او با گیجی به من نگاه کرد و هر دوی ما خیلی خندیدیم. گاهی آدم просто کمی گیج است."
+    },
+    { 
+        germanTitle: "Ein Besuch im Theater", 
+        persianTitle: "رفتن به تئاتر",
+        germanStory: "Letzte Woche hat mir meine Freundin zum Geburtstag Karten für das Theater geschenkt. Wir haben uns eine moderne Inszenierung von Shakespeares 'Romeo und Julia' angesehen. Das Bühnenbild und die Kostüme waren sehr kreativ und ungewöhnlich. Es war eine ganz andere, viel intensivere Erfahrung als ins Kino zu gehen. Ich habe mir vorgenommen, jetzt öfter ins Theater zu gehen.",
+        persianTranslation: "هفته گذشته دوستم برای تولدم بلیط تئاتر به من هدیه داد. ما یک اجرای مدرن از «رومئو و ژولیت» شکسپیر را تماشا کردیم. طراحی صحنه و لباس‌ها بسیار خلاقانه و غیرمعمول بود. این یک تجربه کاملاً متفاوت و بسیار شدیدتر از رفتن به سینما بود. من تصمیم گرفته‌ام که از این به بعد بیشتر به تئاتر بروم."
+    },
+    { 
+        germanTitle: "Eine gute Tat", 
+        persianTitle: "یک کار خوب",
+        germanStory: "Auf dem Heimweg sah ich heute einen älteren Mann, der große Schwierigkeiten hatte, seine schweren Einkaufstüten zu tragen. Er musste alle paar Meter eine Pause machen. Ich ging zu ihm und fragte, ob ich ihm helfen könne. Er war sehr dankbar. Ich trug seine Taschen bis zu seiner Haustür im dritten Stock. Es war nur eine kleine Geste, aber es fühlte sich sehr gut an, jemandem geholfen zu haben.",
+        persianTranslation: "امروز در راه خانه یک مرد مسن را دیدم که در حمل کیسه‌های خرید سنگینش مشکل زیادی داشت. او باید هر چند متر یک بار استراحت می‌کرد. من به سمت او رفتم و پرسیدم آیا می‌توانم به او کمک کنم. او بسیار سپاسگزار بود. من کیسه‌هایش را تا در خانه‌اش در طبقه سوم حمل کردم. این فقط یک حرکت کوچک بود، اما حس بسیار خوبی داشت که به کسی کمک کرده‌ام."
+    },
+    { 
+        germanTitle: "Ein spannendes Sportereignis", 
+        persianTitle: "یک رویداد ورزشی هیجان‌انگیز",
+        germanStory: "Gestern Abend habe ich mit Freunden das Finale der Fußball-Weltmeisterschaft im Fernsehen geschaut. Es war ein unglaublich spannendes und dramatisches Spiel, das erst in der Verlängerung entschieden wurde. Die Atmosphäre bei uns zu Hause war fast wie im Stadion. Wir haben bis zur letzten Minute mitgefiebert und am Ende laut gejubelt. Solche gemeinsamen Erlebnisse sind einfach unbezahlbar.",
+        persianTranslation: "دیشب با دوستانم فینال جام جهانی فوتبال را از تلویزیون تماشا کردم. این یک بازی فوق‌العاده هیجان‌انگیز و دراماتیک بود که تازه در وقت اضافه مشخص شد. جو خانه ما تقریباً مثل ورزشگاه بود. ما تا آخرین لحظه هیجان‌زده بودیم و در پایان با صدای بلند شادی کردیم. چنین تجربیات مشترکی به سادگی بی‌قیمت هستند."
+    },
+    { 
+        germanTitle: "Ein Brief aus der Heimat", 
+        persianTitle: "نامه‌ای از وطن",
+        germanStory: "Heute lag ein handgeschriebener Brief von meiner Großmutter aus der Heimat in meinem Briefkasten. Sie hat mir von ihrem Alltag im Dorf erzählt. Einen echten Brief zu bekommen ist heutzutage etwas ganz Besonderes. Es fühlt sich viel persönlicher an als eine schnelle E-Mail oder eine Nachricht. Ich habe mich riesig darüber gefreut und werde ihr bald zurückschreiben.",
+        persianTranslation: "امروز یک نامه دست‌نویس از مادربزرگم از وطن در صندوق پستم بود. او از روزمرگی‌هایش در روستا برایم گفته بود. امروزه دریافت یک نامه واقعی چیز بسیار خاصی است. بسیار شخصی‌تر از یک ایمیل یا پیام سریع حس می‌شود. من از این بابت بی‌نهایت خوشحال شدم و به زودی برایش جواب خواهم نوشت."
+    },
+    { 
+        germanTitle: "Eine Zugverspätung", 
+        persianTitle: "تأخیر قطار",
+        germanStory: "Mein Zug nach Hamburg hatte heute Morgen eine ganze Stunde Verspätung wegen eines technischen Problems an der Strecke. Das war sehr ärgerlich, weil ich einen wichtigen Termin in Hamburg hatte. Viele Leute am Bahnsteig waren ungeduldig und haben sich beschwert. Zugverspätungen sind in letzter Zeit leider keine Seltenheit mehr, aber man kann als Passagier nichts dagegen tun.",
+        persianTranslation: "قطار من به هامبورگ امروز صبح به دلیل یک مشکل فنی در مسیر، یک ساعت کامل تأخیر داشت. این خیلی آزاردهنده بود چون من یک قرار مهم در هامبورگ داشتم. بسیاری از مردم در سکو بی‌صبر بودند و شکایت می‌کردند. متأسفانه تأخیر قطارها اخیراً دیگر نادر نیست، اما به عنوان مسافر کاری نمی‌توان در مورد آن انجام داد."
+    },
+    { 
+        germanTitle: "Ein altes Fotoalbum", 
+        persianTitle: "یک آلبوم عکس قدیمی",
+        germanStory: "Bei meinen Eltern auf dem Dachboden haben wir neulich ein altes Fotoalbum wiedergefunden. Es waren viele Schwarz-Weiß-Fotos von meinen Großeltern als junge Leute und von meinen Eltern als Kinder darin. Es war faszinierend zu sehen, wie die Mode und die Frisuren damals waren. Solche alten Fotoalben sind wie kleine Zeitmaschinen, die Geschichten erzählen.",
+        persianTranslation: "اخیراً در اتاق زیر شیروانی والدینم ما یک آلبوم عکس قدیمی را دوباره پیدا کردیم. عکس‌های سیاه و سفید زیادی از پدربزرگ و مادربزرگم در جوانی و از والدینم در کودکی در آن بود. دیدن اینکه مد و مدل موها در آن زمان چگونه بوده، شگفت‌انگیز بود. چنین آلبوم‌های عکس قدیمی مانند ماشین‌های زمان کوچکی هستند که داستان‌ها را روایت می‌کنند."
+    },
+    { 
+        germanTitle: "Ein Gespräch über Hobbys", 
+        persianTitle: "گفتگو درباره سرگرمی‌ها",
+        germanStory: "In der Mittagspause sprachen wir mit den Kollegen über unsere Hobbys. Eine Kollegin erzählte, dass sie in ihrer Freizeit in einer Band singt. Ein anderer Kollege sammelt begeistert alte Münzen. Ich erzählte vom Gärtnern auf meinem Balkon. Es ist immer wieder interessant zu erfahren, was die Leute außerhalb der Arbeit für Leidenschaften haben. Man lernt sie von einer ganz anderen Seite kennen.",
+        persianTranslation: "در وقت ناهار با همکاران درباره سرگرمی‌هایمان صحبت کردیم. یک همکار گفت که در اوقات فراغتش در یک گروه موسیقی می‌خواند. یک همکار دیگر با اشتیاق سکه‌های قدیمی جمع می‌کند. من از باغبانی در بالکنم گفتم. همیشه جالب است که بدانی مردم خارج از کار چه علاقه‌هایی دارند. آدم آنها را از یک جنبه کاملاً متفاوت می‌شناسد."
+    },
+    { 
+        germanTitle: "Eine Nacht im Hotel", 
+        persianTitle: "یک شب در هتل",
+        germanStory: "Für eine kurze Geschäftsreise musste ich letzte Woche eine Nacht im Hotel übernachten. Das Zimmer war modern eingerichtet und das Bett war unglaublich bequem. Das Beste war aber das riesige Frühstücksbuffet am nächsten Morgen. Es gab eine riesige Auswahl an allem, was man sich wünschen kann. Eine Nacht im Hotel fühlt sich für mich immer ein bisschen wie ein kleiner Luxus-Urlaub an.",
+        persianTranslation: "برای یک سفر کاری کوتاه هفته گذشته باید یک شب در هتل می‌ماندم. اتاق به سبک مدرن تزئین شده بود و تخت فوق‌العاده راحت بود. اما بهترین قسمت بوفه صبحانه غول‌پیکر روز بعد بود. انتخاب بسیار بزرگی از هر چیزی که می‌توانستی آرزو کنی وجود داشت. یک شب در هتل برای من همیشه کمی شبیه یک تعطیلات لوکس کوچک است."
+    },
+    { 
+        germanTitle: "Ein plötzlicher Stromausfall", 
+        persianTitle: "قطعی ناگهانی برق",
+        germanStory: "Gestern Abend gab es einen plötzlichen Stromausfall in unserer ganzen Straße. Plötzlich war alles dunkel und absolut still. Wir suchten nach Kerzen und zündeten sie an. Es war eigentlich eine ganz gemütliche und besondere Atmosphäre. Wir saßen im Wohnzimmer zusammen und redeten, anstatt fernzusehen. Nach einer Stunde ging das Licht zum Glück wieder an.",
+        persianTranslation: "دیشب یک قطعی ناگهانی برق در تمام خیابان ما رخ داد. ناگهان همه جا تاریک و کاملاً ساکت شد. ما به دنبال شمع گشتیم و آنها را روشن کردیم. در واقع یک جو کاملاً دنج و خاص بود. ما با هم در اتاق نشیمن نشستیم و صحبت کردیم، به جای اینکه تلویزیون تماشا کنیم. خوشبختانه بعد از یک ساعت برق دوباره وصل شد."
+    },
+    { 
+        germanTitle: "Ein Besuch im botanischen Garten", 
+        persianTitle: "بازدید از باغ گیاه‌شناسی",
+        germanStory: "Da das Wetter am Sonntag so schön war, besuchten wir den botanischen Garten. Es war beeindruckend, die vielen verschiedenen und exotischen Pflanzen aus der ganzen Welt zu sehen. Besonders gut gefiel mir das große Tropenhaus. Dort war es sehr warm und feucht, genau wie in einem echten Dschungel. Es war ein sehr lehrreicher und gleichzeitig entspannender Nachmittag.",
+        persianTranslation: "چون هوای روز یکشنبه خیلی خوب بود، ما از باغ گیاه‌شناسی دیدن کردیم. دیدن گیاهان مختلف و عجیب و غریب از سراسر جهان بسیار تأثیرگذار بود. من به خصوص از خانه بزرگ استوایی خوشم آمد. آنجا بسیار گرم و مرطوب بود، درست مثل یک جنگل واقعی. این یک بعد از ظهر بسیار آموزنده و در عین حال آرامش‌بخش بود."
+    },
+    { 
+        germanTitle: "Eine lustige Geschichte über ein Tier", 
+        persianTitle: "یک داستان خنده‌دار درباره یک حیوان",
+        germanStory: "Die Katze meiner Nachbarin ist sehr klug. Sie hat letzte Woche gelernt, wie man die Türklinke herunterdrückt, um die Tür zu öffnen. Eines Morgens kam sie einfach in unsere Küche spaziert, sprang auf den Tisch und wollte unsere Wurst vom Frühstück klauen. Wir waren alle sehr überrascht und mussten herzlich lachen. Jetzt müssen wir immer die Küchentür abschließen, wenn wir lüften.",
+        persianTranslation: "گربه همسایه‌ام بسیار باهوش است. او هفته گذشته یاد گرفت چگونه دستگیره در را پایین بکشد تا در را باز کند. یک روز صبح او به سادگی وارد آشپزخانه ما شد، روی میز پرید و می‌خواست کالباس صبحانه ما را بدزدد. ما همه خیلی متعجب شدیم و از ته دل خندیدیم. حالا باید همیشه در آشپزخانه را وقتی هوا را عوض می‌کنیم، قفل کنیم."
+    },
+    { 
+        germanTitle: "Ein handgemachtes Geschenk", 
+        persianTitle: "یک هدیه دست‌ساز",
+        germanStory: "Zum Muttertag wollte ich meiner Mutter dieses Jahr etwas Persönliches schenken. Also habe ich ein Fotoalbum mit vielen alten und neuen Bildern von unserer Familie gebastelt. Ich habe jede Seite liebevoll dekoriert und kleine Anekdoten dazugeschrieben. Meine Mutter war zu Tränen gerührt und hat sich riesig gefreut. Ein handgemachtes Geschenk ist oft viel wertvoller als etwas Teures, das man kauft.",
+        persianTranslation: "برای روز مادر امسال می‌خواستم به مادرم یک هدیه شخصی بدهم. بنابراین یک آلبوم عکس با عکس‌های قدیمی و جدید زیادی از خانواده‌مان درست کردم. من هر صفحه را با عشق تزئین کردم و حکایت‌های کوچکی کنارش نوشتم. مادرم اشک در چشمانش جمع شد و بی‌نهایت خوشحال شد. یک هدیه دست‌ساز اغلب بسیار ارزشمندتر از چیز گران‌قیمتی است که می‌خری."
+    },
+    { 
+        germanTitle: "Ein Tag am Meer", 
+        persianTitle: "یک روز کنار دریا",
+        germanStory: "Wir sind für einen Tag an die Nordsee gefahren, um dem Stadtleben zu entfliehen. Die frische, salzige Meeresluft war herrlich. Wir machten einen langen Spaziergang am leeren Strand und sammelten Muscheln. Das Wasser war natürlich noch viel zu kalt zum Schwimmen, aber wir saßen in einem gemütlichen Strandkorb und aßen ein leckeres Fischbrötchen. Das war wie ein perfekter kleiner Kurzurlaub.",
+        persianTranslation: "ما برای یک روز به دریای شمال رفتیم تا از زندگی شهری فرار کنیم. هوای تازه و شور دریا عالی بود. ما یک پیاده‌روی طولانی در ساحل خالی داشتیم و صدف جمع کردیم. آب البته هنوز برای شنا خیلی سرد بود، اما ما در یک صندلی ساحلی دنج نشستیم و یک ساندویچ ماهی خوشمزه خوردیم. این مانند یک تعطیلات کوتاه عالی بود."
+    },
+    { 
+        germanTitle: "Eine wichtige Entscheidung treffen", 
+        persianTitle: "تصمیم گرفتن",
+        germanStory: "Ich musste vor kurzem eine wichtige berufliche Entscheidung treffen: Sollte ich meinen sicheren Job für ein interessantes, aber unsicheres Jobangebot wechseln? Ich habe eine Liste mit allen Vor- und Nachteilen geschrieben und lange mit meiner Familie darüber gesprochen. Nach langem Überlegen habe ich mich für die neue Stelle entschieden. Es war keine leichte Entscheidung, aber ich bin gespannt auf die neue Herausforderung.",
+        persianTranslation: "من اخیراً باید یک تصمیم مهم شغلی می‌گرفتم: آیا باید شغل امنم را برای یک پیشنهاد شغلی جالب اما نامطمئن عوض کنم؟ من یک لیست با تمام مزایا و معایب نوشتم و مدت طولانی با خانواده‌ام در این باره صحبت کردم. پس از تفکر طولانی، تصمیم گرفتم شغل جدید را بپذیرم. این تصمیم آسانی نبود، اما من برای چالش جدید هیجان‌زده هستم."
+    },
+    { 
+        germanTitle: "Ein Geheimnis", 
+        persianTitle: "یک راز",
+        germanStory: "Meine kleine Schwester hat mir gestern ein großes Geheimnis anvertraut. Sie plant, unseren Eltern zu ihrem Hochzeitstag eine Überraschungsreise nach Paris zu schenken. Sie hat schon Geld gespart. Ich darf absolut niemandem etwas davon erzählen, besonders nicht unseren Eltern. Es ist manchmal schwer, ein so schönes Geheimnis für sich zu behalten, aber ich freue mich schon sehr auf ihre überraschten Gesichter.",
+        persianTranslation: "خواهر کوچکم دیروز یک راز بزرگ را به من سپرد. او قصد دارد به والدینمان به مناسبت سالگرد ازدواجشان یک سفر غافلگیرکننده به پاریس هدیه بدهد. او دیگر پول پس‌انداز کرده است. من مطلقاً نباید به کسی چیزی در این باره بگویم، به خصوص به والدینمان. گاهی اوقات نگه داشتن چنین راز زیبایی سخت است، اما من از الان خیلی برای چهره‌های غافلگیر شده آنها خوشحالم."
+    },
+    { 
+        germanTitle: "Ein Glücksmoment", 
+        persianTitle: "یک لحظه خوشبختی",
+        germanStory: "Gestern saß ich nach einem anstrengenden Arbeitstag im Park auf einer Bank. Die Sonne ging gerade unter und färbte den Himmel in wunderschönen Orange- und Rottönen. Vögel zwitscherten und alles war friedlich. In diesem Moment fühlte ich mich einfach nur ruhig, glücklich und dankbar. Manchmal sind es diese kleinen, einfachen Momente im Leben, die am allerschönsten sind.",
+        persianTranslation: "دیروز بعد از یک روز کاری سخت، روی یک نیمکت در پارک نشسته بودم. خورشید در حال غروب بود و آسمان را به رنگ‌های زیبای نارنجی و قرمز درآورده بود. پرندگان جیک جیک می‌کردند و همه چیز آرام بود. در آن لحظه من فقط احساس آرامش، خوشبختی و سپاسگزاری می‌کردم. گاهی اوقات این لحظات کوچک و ساده زندگی هستند که از همه زیباترند."
+    },
+    { 
+        germanTitle: "Ein wichtiges Arbeitstreffen", 
+        persianTitle: "یک جلسه کاری مهم",
+        germanStory: "Wir hatten heute ein sehr wichtiges Arbeitstreffen mit einem potenziellen neuen Kunden. Wir haben ihm unsere Ideen für ein großes Projekt präsentiert. Das Treffen dauerte fast zwei Stunden und war sehr intensiv, aber auch sehr produktiv. Der Kunde schien von unseren Vorschlägen und unserer Arbeit sehr begeistert zu sein. Ich habe ein gutes Gefühl und denke, dass wir den Auftrag bekommen werden.",
+        persianTranslation: "امروز ما یک جلسه کاری بسیار مهم با یک مشتری بالقوه جدید داشتیم. ما ایده‌هایمان را برای یک پروژه بزرگ به او ارائه دادیم. جلسه تقریباً دو ساعت طول کشید و بسیار فشرده، اما همچنین بسیار پربار بود. به نظر می‌رسید مشتری از پیشنهادات و کار ما بسیار هیجان‌زده است. من حس خوبی دارم و فکر می‌کنم که ما قرارداد را خواهیم گرفت."
+    },
+    { 
+        germanTitle: "Ein ungewöhnliches Hobby", 
+        persianTitle: "یک سرگرمی غیرمعمول",
+        germanStory: "Mein Nachbar hat ein ziemlich ungewöhnliches Hobby: Er ist Hobby-Imker. Er hat mehrere Bienenstöcke hinten in seinem Garten stehen. Er hat mir schon viel über das faszinierende Leben der Bienen erzählt. Letzte Woche hat er mir ein Glas von seinem eigenen, selbstgemachten Honig geschenkt. Er war unglaublich köstlich, viel besser als der Honig aus dem Supermarkt.",
+        persianTranslation: "همسایه‌ام یک سرگرمی کاملاً غیرمعمول دارد: او زنبوردار آماتور است. او چندین کندو در پشت باغش دارد. او چیزهای زیادی درباره زندگی شگفت‌انگیز زنبورها به من گفته است. هفته گذشته او یک شیشه از عسل خودش، دست‌ساز خودش، را به من هدیه داد. فوق‌العاده خوشمزه بود، خیلی بهتر از عسل سوپرمارکتی."
+    },
+    { 
+        germanTitle: "Ein Besuch bei Freunden", 
+        persianTitle: "دیدار با دوستان",
+        germanStory: "Am Wochenende haben wir Freunde besucht, die vor einem Jahr in eine andere Stadt gezogen sind. Wir haben bei ihnen übernachtet. Wir haben zusammen gekocht, einen langen Spaziergang durch ihre neue Stadt gemacht und bis spät in die Nacht geredet und gelacht. Es ist immer wieder schön, gute Freunde zu treffen, auch wenn man sich wegen der Entfernung nicht mehr so oft sieht.",
+        persianTranslation: "آخر هفته ما به دیدن دوستانی رفتیم که یک سال پیش به شهر دیگری نقل مکان کرده بودند. ما شب را نزد آنها ماندیم. ما با هم آشپزی کردیم، یک پیاده‌روی طولانی در شهر جدیدشان داشتیم و تا دیروقت شب صحبت کردیم و خندیدیم. دیدار با دوستان خوب همیشه زیباست، حتی اگر به خاطر فاصله دیگر همدیگر را زیاد نبینید."
+    },
+    { 
+        germanTitle: "Ein Spaziergang durch die Altstadt", 
+        persianTitle: "قدم زدن در شهر قدیمی",
+        germanStory: "Ich liebe es, an einem Sonntagnachmittag ohne Ziel durch die Altstadt zu spazieren. Die engen, verwinkelten Gassen, die alten Fachwerkhäuser und die kleinen, individuellen Geschäfte haben einen ganz besonderen Charme. Man fühlt sich ein bisschen wie auf einer Reise in eine andere Zeit. Ich entdecke jedes Mal eine neue schöne Ecke, die ich vorher noch nicht bemerkt hatte.",
+        persianTranslation: "من عاشق این هستم که بعد از ظهر یکشنبه بدون هدف در شهر قدیمی قدم بزنم. کوچه‌های باریک و پیچ در پیچ، خانه‌های قدیمی نیمه‌چوبی و مغازه‌های کوچک و منحصر به فرد جذابیت بسیار خاصی دارند. آدم کمی احساس می‌کند در سفری به زمان دیگری است. من هر بار یک گوشه زیبای جدید را کشف می‌کنم که قبلاً متوجه آن نشده بودم."
+    },
+    { 
+        germanTitle: "Einen verlorenen Gegenstand wiederfinden", 
+        persianTitle: "پیدا کردن یک شیء گمشده",
+        germanStory: "Ich habe gestern meinen Lieblingsschal, ein Geschenk von meiner Oma, im Bus verloren. Ich habe es erst bemerkt, als ich schon zu Hause war. Ich habe mich sehr geärgert. Heute Morgen rief ich beim Fundbüro der Busgesellschaft an. Und tatsächlich: Jemand hatte meinen Schal gefunden und abgegeben! Ich war so erleichtert und froh über die ehrliche Person.",
+        persianTranslation: "من دیروز شال مورد علاقه‌ام را، که هدیه‌ای از مادربزرگم بود، در اتوبوس گم کردم. تازه وقتی به خانه رسیدم متوجه شدم. خیلی ناراحت شدم. امروز صبح به دفتر اشیاء گمشده شرکت اتوبوسرانی زنگ زدم. و واقعاً: کسی شال مرا پیدا کرده و تحویل داده بود! من خیلی خیالم راحت شد و از آن شخص صادق خوشحال شدم."
+    },
+    { 
+        germanTitle: "Eine neue Sprache lernen: Tipps", 
+        persianTitle: "یادگیری یک زبان جدید: نکات",
+        germanStory: "Eine neue Sprache zu lernen, erfordert viel Geduld und Disziplin. Mein bester Tipp ist, jeden Tag ein bisschen zu üben, anstatt nur einmal pro Woche für mehrere Stunden. Es hilft auch sehr, Medien in der neuen Sprache zu konsumieren, zum Beispiel Filme oder Podcasts mit Untertiteln. Und am wichtigsten ist: Man darf keine Angst haben, Fehler zu machen. Fehler sind ein normaler Teil des Lernprozesses.",
+        persianTranslation: "یادگیری یک زبان جدید نیازمند صبر و انضباط زیادی است. بهترین نکته من این است که هر روز کمی تمرین کنی، به جای اینکه فقط یک بار در هفته برای چندین ساعت. همچنین مصرف رسانه‌ها به زبان جدید، مثلاً فیلم‌ها یا پادکست‌ها با زیرنویس، بسیار کمک می‌کند. و از همه مهمتر: نباید از اشتباه کردن ترسید. اشتباهات بخش عادی از فرآیند یادگیری هستند."
+    },
+    { 
+        germanTitle: "Ein Tag im Schnee", 
+        persianTitle: "یک روز در برف",
+        germanStory: "Endlich hat es über Nacht genug geschneit, sodass wir Schlitten fahren konnten. Wir sind zu einem großen Hügel in der Nähe gefahren. Es hat riesigen Spaß gemacht, mit dem Schlitten den Hügel immer wieder hinunterzurasen. Nach zwei Stunden waren wir komplett nass und durchgefroren, aber überglücklich. Zu Hause haben wir uns dann mit einem heißen Kakao wieder aufgewärmt.",
+        persianTranslation: "بالاخره شب به اندازه کافی برف بارید تا بتوانیم سورتمه‌سواری کنیم. ما به یک تپه بزرگ در نزدیکی رفتیم. با سورتمه بارها و بارها از تپه پایین آمدن بسیار سرگرم‌کننده بود. بعد از دو ساعت کاملاً خیس و یخ‌زده بودیم، اما بی‌نهایت خوشحال. در خانه بعد با یک کاکائوی داغ خودمان را دوباره گرم کردیم."
+    },
+    { 
+        germanTitle: "Ein peinlicher Moment", 
+        persianTitle: "یک لحظه خجالت‌آور",
+        germanStory: "Gestern in der vollen U-Bahn winkte und lächelte ich einer Person enthusiastisch zu, weil ich fest davon überzeugt war, es sei eine gute Freundin. Aber es war eine völlig fremde Person. Sie schaute mich nur sehr komisch an. Das war mir extrem peinlich. Ich wurde ganz rot im Gesicht und bin an der nächsten Station sofort ausgestiegen. Solche Momente vergisst man nicht so schnell.",
+        persianTranslation: "دیروز در متروی شلوغ با اشتیاق به شخصی دست تکان دادم و لبخند زدم، چون کاملاً مطمئن بودم که او یک دوست خوب است. اما او یک فرد کاملاً غریبه بود. او فقط با تعجب به من نگاه کرد. این برایم بی‌نهایت خجالت‌آور بود. صورتم کاملاً قرمز شد و در ایستگاه بعدی فوراً پیاده شدم. چنین لحظاتی را به این زودی‌ها فراموش نمی‌کنی."
+    },
+    { 
+        germanTitle: "Ein Gerücht in der Nachbarschaft", 
+        persianTitle: "شایعه‌ای در محله",
+        germanStory: "In unserer Nachbarschaft ging letzte Woche das Gerücht um, dass ein berühmter Fußballspieler in unsere Straße ziehen würde. Alle waren sehr aufgeregt und neugierig. Es stellte sich aber schnell heraus, dass der neue Nachbar nur zufällig den gleichen Nachnamen wie der Fußballer hatte. Es war eine lustige Verwechslung und wir haben alle darüber gelacht.",
+        persianTranslation: "هفته گذشته در محله ما شایعه شد که یک فوتبالیست معروف به خیابان ما نقل مکان خواهد کرد. همه خیلی هیجان‌زده و کنجکاو بودند. اما به زودی معلوم شد که همسایه جدید فقط به طور تصادفی همان نام خانوادگی فوتبالیست را داشت. این یک اشتباه خنده‌دار بود و همه ما به آن خندیدیم."
+    },
+    { 
+        germanTitle: "Eine Wohnungsrenovierung", 
+        persianTitle: "یک بازسازی آپارتمان",
+        germanStory: "Wir renovieren gerade unsere Küche und das ist anstrengender als gedacht. Überall ist Staub und Lärm. Wir können seit einer Woche nicht mehr richtig kochen und müssen oft Essen bestellen oder bei Freunden essen. Es ist sehr chaotisch. Aber ich freue mich schon riesig darauf, wenn alles fertig ist. Die neue Küche wird bestimmt toll aussehen.",
+        persianTranslation: "ما در حال بازسازی آشپزخانه‌مان هستیم و این خسته‌کننده‌تر از آن چیزی است که فکر می‌کردم. همه جا گرد و غبار و سر و صدا است. ما یک هفته است که نمی‌توانیم درست آشپزی کنیم و اغلب باید غذا سفارش دهیم یا در خانه دوستان غذا بخوریم. خیلی شلوغ است. اما من از الان بی‌نهایت خوشحالم وقتی همه چیز تمام شود. آشپزخانه جدید حتماً عالی به نظر خواهد رسید."
+    },
+    { 
+        germanTitle: "Ein Neuanfang", 
+        persianTitle: "یک شروع جدید",
+        germanStory: "Nachdem ich unerwartet meinen Job verloren hatte, war ich zuerst sehr traurig und besorgt. Aber dann habe ich es als eine Chance für einen kompletten Neuanfang gesehen. Ich habe eine Weiterbildung in einem neuen Bereich gemacht und einen Job gefunden, der mir viel mehr Spaß macht. Manchmal sind Veränderungen, auch wenn sie zuerst schwierig sind, das Beste, was einem passieren kann.",
+        persianTranslation: "بعد از اینکه به طور غیرمنتظره شغلم را از دست دادم، در ابتدا خیلی غمگین و نگران بودم. اما بعد آن را به عنوان فرصتی برای یک شروع کاملاً جدید دیدم. من یک دوره آموزشی تکمیلی در یک حوزه جدید گذراندم و شغلی پیدا کردم که برایم بسیار لذت‌بخش‌تر است. گاهی اوقات تغییرات، حتی اگر در ابتدا سخت باشند، بهترین چیزی است که می‌تواند برای آدم اتفاق بیفتد."
+    },
+    { 
+        germanTitle: "Eine wichtige Lektion", 
+        persianTitle: "یک درس مهم",
+        germanStory: "Früher wollte ich in Diskussionen immer unbedingt Recht haben und gewinnen. Aber ich habe eine wichtige Lektion gelernt: Es ist nicht immer wichtig, Recht zu haben. Manchmal ist es viel wichtiger, freundlich zu sein und eine gute Beziehung zu erhalten. Heute versuche ich, auch die Perspektive der anderen Person zu verstehen, anstatt nur auf meiner Meinung zu bestehen. Das hat vieles einfacher gemacht.",
+        persianTranslation: "در گذشته همیشه می‌خواستم در بحث‌ها حتماً حق با من باشد و برنده شوم. اما یک درس مهم یاد گرفتم: همیشه حق با تو بودن مهم نیست. گاهی اوقات مهربان بودن و حفظ یک رابطه خوب بسیار مهم‌تر است. امروز سعی می‌کنم دیدگاه فرد مقابل را نیز درک کنم، به جای اینکه فقط بر نظر خودم اصرار کنم. این بسیاری از چیزها را آسان‌تر کرده است."
+    },
+    { 
+        germanTitle: "Ein unerwarteter Gast", 
+        persianTitle: "یک مهمان ناخوانده",
+        germanStory: "Gestern Abend klingelte es plötzlich an meiner Tür. Draußen stand ein alter Schulfreund, den ich seit über zehn Jahren nicht mehr gesehen hatte. Er war geschäftlich in der Stadt und hat meine Adresse im Internet gefunden. Es war eine unglaubliche Überraschung. Wir haben die halbe Nacht geredet, alte Erinnerungen ausgetauscht und viel gelacht. Es war, als wäre keine Zeit vergangen.",
+        persianTranslation: "دیشب ناگهان زنگ در خانه‌ام به صدا درآمد. بیرون یک دوست قدیمی دوران مدرسه ایستاده بود که بیش از ده سال بود او را ندیده بودم. او برای کار در شهر بود و آدرس مرا در اینترنت پیدا کرده بود. این یک غافلگیری باورنکردنی بود. ما نیمی از شب را صحبت کردیم، خاطرات قدیمی را مرور کردیم و زیاد خندیدیم. انگار هیچ زمانی نگذشته بود."
+    },
+    { 
+        germanTitle: "Ein Tag in der Natur", 
+        persianTitle: "یک روز در طبیعت",
+        germanStory: "Um dem Stress der lauten Stadt zu entfliehen, habe ich den ganzen Sonntag in der Natur verbracht. Ich bin in einem großen Wald spazieren gegangen und habe bewusst mein Handy ausgeschaltet. Ich habe nur die Geräusche der Vögel und des Windes in den Bäumen gehört. Diese absolute Ruhe und Stille war genau das, was ich gebraucht habe, um meine Batterien wieder vollständig aufzuladen.",
+        persianTranslation: "برای فرار از استرس شهر پر سر و صدا، تمام روز یکشنبه را در طبیعت گذراندم. من در یک جنگل بزرگ قدم زدم و عمداً موبایلم را خاموش کردم. من فقط به صدای پرندگان و باد در درختان گوش دادم. این آرامش و سکوت مطلق دقیقاً همان چیزی بود که برای شارژ مجدد کامل باتری‌هایم نیاز داشتم."
+    },
+    { 
+        germanTitle: "Ein Tag im Homeoffice", 
+        persianTitle: "یک روز در دفتر کار خانگی",
+        germanStory: "Seit der Pandemie arbeite ich zwei Tage pro Woche im Homeoffice. Das hat Vor- und Nachteile. Ich spare den langen Weg zur Arbeit und kann meine Zeit flexibler einteilen. Aber ich vermisse auch den direkten Kontakt und die spontanen Gespräche mit meinen Kollegen. Heute hatte ich viele Videokonferenzen. Es ist wichtig, auch zu Hause eine klare Struktur im Arbeitstag zu haben, um produktiv zu bleiben.",
+        persianTranslation: "از زمان همه‌گیری، من دو روز در هفته در دفتر کار خانگی کار می‌کنم. این مزایا و معایبی دارد. من از مسیر طولانی تا محل کار صرفه‌جویی می‌کنم و می‌توانم وقتم را انعطاف‌پذیرتر تنظیم کنم. اما دلم برای تماس مستقیم و گفتگوهای خودجوش با همکارانم نیز تنگ می‌شود. امروز کنفرانس‌های ویدیویی زیادی داشتم. مهم است که در خانه نیز ساختار روشنی در روز کاری داشته باشی تا بهره‌ور بمانی."
+    },
+    { 
+        germanTitle: "Ein überraschender Gewinn", 
+        persianTitle: "یک برد غافلگیرکننده",
+        germanStory: "Ich mache eigentlich nie bei Gewinnspielen mit, aber letzte Woche habe ich eine Ausnahme gemacht. Ein lokales Radio verloste Tickets für ein großes Musikfestival. Ich füllte online ein Formular aus und vergaß es wieder. Gestern bekam ich einen Anruf. 'Herzlichen Glückwunsch, Sie haben gewonnen!', sagte eine fröhliche Stimme. Ich konnte es kaum glauben! Ich habe sofort meine beste Freundin angerufen. Jetzt freuen wir uns riesig auf ein unvergessliches Wochenende mit toller Musik.",
+        persianTranslation: "من در واقع هرگز در قرعه‌کشی‌ها شرکت نمی‌کنم، اما هفته گذشته یک استثنا قائل شدم. یک رادیوی محلی بلیط‌هایی برای یک جشنواره بزرگ موسیقی هدیه می‌داد. من یک فرم را آنلاین پر کردم و دوباره فراموشش کردم. دیروز یک تماس تلفنی دریافت کردم. یک صدای شاد گفت: «تبریک می‌گویم، شما برنده شدید!». به سختی می‌توانستم باور کنم! فوراً به بهترین دوستم زنگ زدم. حالا ما بی‌نهایت برای یک آخر هفته فراموش‌نشدنی با موسیقی عالی خوشحالیم."
+    },
+    { 
+        germanTitle: "Ein Kochkurs", 
+        persianTitle: "یک کلاس آشپزی",
+        germanStory: "Um meine Kochkünste zu verbessern, habe ich mich für einen italienischen Kochkurs angemeldet. Gestern war der erste Abend. Der Lehrer, ein echter Italiener namens Marco, war sehr sympathisch und lustig. Wir haben gelernt, wie man frische Pasta selbst macht. Es war mehr Arbeit als gedacht, aber es hat viel Spaß gemacht. Am Ende haben wir unsere selbstgemachten Nudeln mit einer leckeren Tomatensoße gegessen. Es war köstlich! Nächste Woche lernen wir, wie man Tiramisu macht.",
+        persianTranslation: "برای بهتر کردن مهارت‌های آشپزی‌ام، در یک کلاس آشپزی ایتالیایی ثبت‌نام کردم. دیروز اولین شب بود. معلم، یک ایتالیایی واقعی به نام مارکو، بسیار خوش‌برخورد و بامزه بود. ما یاد گرفتیم چگونه خودمان پاستای تازه درست کنیم. کار بیشتری از آنچه فکر می‌کردم بود، اما بسیار سرگرم‌کننده بود. در پایان، ما نودل‌های دست‌ساز خودمان را با یک سس گوجه‌فرنگی خوشمزه خوردیم. لذیذ بود! هفته آینده یاد می‌گیریم چگونه تیرامیسو درست کنیم."
+    },
+    { 
+        germanTitle: "Eine gute Tat", 
+        persianTitle: "یک کار خوب",
+        germanStory: "Als ich heute von der Arbeit nach Hause ging, sah ich eine ältere Dame, der ihre Einkaufstüte gerissen war. Alles fiel auf den Boden. Ich zögerte nicht und half ihr sofort, alles wieder aufzusammeln. Sie hatte Schwierigkeiten, alles zu tragen, also begleitete ich sie bis zu ihrer Haustür. Sie bedankte sich mehrmals und war sehr dankbar. Es war nur eine kleine Hilfe, aber es gab mir ein sehr gutes Gefühl für den Rest des Tages.",
+        persianTranslation: "امروز وقتی از سر کار به خانه می‌رفتم، خانم مسنی را دیدم که کیسه خریدش پاره شده بود. همه چیز روی زمین ریخت. من تردید نکردم و فوراً به او کمک کردم تا همه چیز را دوباره جمع کند. او در حمل همه چیز مشکل داشت، بنابراین من او را تا در خانه‌اش همراهی کردم. او چندین بار تشکر کرد و بسیار سپاسگزار بود. این فقط یک کمک کوچک بود، اما برای بقیه روز به من حس بسیار خوبی داد."
     }
   ],
-  // FIX: Added missing B1 and B2 level entries to satisfy the Record<Level, ...> type.
   B1: [],
   B2: [],
 };
 
-// FIX: Added and exported the getTopicsForLevel function, which was missing.
 export const getTopicsForLevel = (level: Level): StoryTopic[] => {
   const topicsForLevel = predefinedTopics[level] || [];
   return topicsForLevel.map((topic, index) => ({
